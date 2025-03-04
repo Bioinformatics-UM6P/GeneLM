@@ -1,0 +1,536 @@
+2025-02-14 16:17:12,252 - INFO - Inference using: 0
+
+2025-02-14 16:17:37,198 - INFO - Task 368e770f-22b7-4d30-bf92-7c04f31117fa submitted - File: sequence_tiny.fasta - Format: GFF
+2025-02-14 16:17:37,211 - INFO - Processing task 368e770f-22b7-4d30-bf92-7c04f31117fa - File: __files__/uploads/368e770f-22b7-4d30-bf92-7c04f31117fa_sequence_tiny.fasta - Format: GFF
+2025-02-14 16:17:38,370 - INFO - Task c00b4828-7844-4550-9f9d-1aa4013e5a69 submitted - File: sequence_tiny.fasta - Format: GFF
+2025-02-14 16:17:39,637 - INFO - Task e9889d11-61fd-44fb-9cc8-bfbae2d3ffc8 submitted - File: sequence_tiny.fasta - Format: GFF
+2025-02-14 16:17:50,272 - INFO - Task e9889d11-61fd-44fb-9cc8-bfbae2d3ffc8 successfully canceled
+2025-02-14 16:17:56,144 - INFO - Task 368e770f-22b7-4d30-bf92-7c04f31117fa completed - Result: __files__/results/368e770f-22b7-4d30-bf92-7c04f31117fa_sequence_tiny.gff
+2025-02-14 16:30:40,217 - INFO - Inference using: 0
+
+2025-02-14 16:30:49,937 - INFO - Task 7eae971f-48d1-41a7-a09e-8f24070f1026 submitted - File: sequence_tiny.fasta - Format: GFF
+2025-02-14 16:30:49,948 - INFO - Processing task 7eae971f-48d1-41a7-a09e-8f24070f1026 - File: __files__/uploads/7eae971f-48d1-41a7-a09e-8f24070f1026_sequence_tiny.fasta - Format: GFF
+2025-02-14 16:30:52,377 - INFO - Task e50ba69d-06e9-408e-8276-cb41dbd7eee3 submitted - File: sequence_tiny.fasta - Format: GFF
+2025-02-14 16:30:54,406 - INFO - Task f887cca8-66b7-4892-8a1b-799281408781 submitted - File: sequence_tiny.fasta - Format: GFF
+2025-02-14 16:31:08,084 - INFO - Progress check - Task f887cca8-66b7-4892-8a1b-799281408781 - Status: Queued - Progress: 0%
+2025-02-14 16:31:08,662 - INFO - Task 7eae971f-48d1-41a7-a09e-8f24070f1026 completed - Result: __files__/results/7eae971f-48d1-41a7-a09e-8f24070f1026_sequence_tiny.gff
+2025-02-14 16:31:08,662 - INFO - Processing task e50ba69d-06e9-408e-8276-cb41dbd7eee3 - File: __files__/uploads/e50ba69d-06e9-408e-8276-cb41dbd7eee3_sequence_tiny.fasta - Format: GFF
+2025-02-14 16:31:14,736 - WARNING - Result retrieval failed - Task f887cca8-66b7-4892-8a1b-799281408781 not completed or found
+2025-02-14 16:31:26,295 - WARNING - Canceling active task f887cca8-66b7-4892-8a1b-799281408781. Stopping execution.
+2025-02-14 16:31:26,296 - INFO - Task f887cca8-66b7-4892-8a1b-799281408781 successfully canceled
+2025-02-14 16:31:27,479 - INFO - Task e50ba69d-06e9-408e-8276-cb41dbd7eee3 completed - Result: __files__/results/e50ba69d-06e9-408e-8276-cb41dbd7eee3_sequence_tiny.gff
+2025-02-14 16:31:45,404 - INFO - Task f887cca8-66b7-4892-8a1b-799281408781 successfully canceled
+2025-02-14 16:32:01,341 - WARNING - Cancel request failed - Task f887cca8-66b7-4892-8a1b-799281408781 not found
+2025-02-14 16:32:02,995 - WARNING - Cancel request failed - Task f887cca8-66b7-4892-8a1b-799281408781 not found
+2025-02-14 16:32:03,188 - WARNING - Cancel request failed - Task f887cca8-66b7-4892-8a1b-799281408781 not found
+2025-02-14 16:32:03,397 - WARNING - Cancel request failed - Task f887cca8-66b7-4892-8a1b-799281408781 not found
+2025-02-14 16:32:03,626 - WARNING - Cancel request failed - Task f887cca8-66b7-4892-8a1b-799281408781 not found
+2025-02-14 16:32:05,231 - WARNING - Cancel request failed - Task f887cca8-66b7-4892-8a1b-799281408781 not found
+2025-02-14 16:32:05,429 - WARNING - Cancel request failed - Task f887cca8-66b7-4892-8a1b-799281408781 not found
+2025-02-14 16:32:05,656 - WARNING - Cancel request failed - Task f887cca8-66b7-4892-8a1b-799281408781 not found
+2025-02-14 16:32:13,679 - INFO - Task f28bec1c-9348-43a5-a04f-73ca6ee42c68 submitted - File: sequence_tiny.fasta - Format: GFF
+2025-02-14 16:35:18,946 - INFO - Inference using: 0
+
+2025-02-14 16:36:07,097 - INFO - Inference using: 0
+
+2025-02-14 16:36:12,217 - INFO - Inference using: 0
+
+2025-02-14 16:36:20,745 - INFO - Inference using: 0
+
+2025-02-14 16:36:25,941 - INFO - Inference using: 0
+
+2025-02-14 16:36:30,967 - INFO - Inference using: 0
+
+2025-02-14 16:36:42,023 - INFO - Inference using: 0
+
+2025-02-14 16:36:47,172 - INFO - Inference using: 0
+
+2025-02-14 16:36:52,195 - INFO - Inference using: 0
+
+2025-02-14 16:37:11,446 - INFO - Inference using: 0
+
+2025-02-14 16:37:19,704 - INFO - Inference using: 0
+
+2025-02-14 16:37:28,909 - INFO - Inference using: 0
+
+2025-02-14 16:37:52,606 - INFO - Inference using: 0
+
+2025-02-14 16:38:21,005 - INFO - Inference using: 0
+
+2025-02-14 16:38:30,197 - INFO - Task da1ed61b-5472-45ef-9f95-80e734f0dc48 submitted - File: sequence_tiny.fasta - Format: GFF
+2025-02-14 16:38:30,213 - INFO - Processing task da1ed61b-5472-45ef-9f95-80e734f0dc48 - File: __files__/uploads/da1ed61b-5472-45ef-9f95-80e734f0dc48_sequence_tiny.fasta - Format: GFF
+2025-02-14 16:38:33,012 - INFO - Task aeb65387-a132-499a-8b87-02154dc01f4f submitted - File: sequence_tiny.fasta - Format: GFF
+2025-02-14 16:38:34,967 - INFO - Task 2d416b22-7c10-4d78-a3df-edc5ddb60a5e submitted - File: sequence_tiny.fasta - Format: GFF
+2025-02-14 16:38:40,376 - INFO - Task 8dd7111d-6077-4796-98b3-e7178296ca2d submitted - File: sequence_tiny.fasta - Format: GFF
+2025-02-14 16:38:49,040 - WARNING - Canceling active task 2d416b22-7c10-4d78-a3df-edc5ddb60a5e. Stopping execution.
+2025-02-14 16:38:49,041 - INFO - Task 2d416b22-7c10-4d78-a3df-edc5ddb60a5e successfully canceled
+2025-02-14 16:38:49,066 - INFO - Task da1ed61b-5472-45ef-9f95-80e734f0dc48 completed - Result: __files__/results/da1ed61b-5472-45ef-9f95-80e734f0dc48_sequence_tiny.gff
+2025-02-14 16:38:49,067 - INFO - Processing task aeb65387-a132-499a-8b87-02154dc01f4f - File: __files__/uploads/aeb65387-a132-499a-8b87-02154dc01f4f_sequence_tiny.fasta - Format: GFF
+2025-02-14 16:38:54,613 - INFO - Task 772dd4ba-4d2f-40ad-9fa4-c14b222f30b8 submitted - File: sequence_tiny.fasta - Format: GFF
+2025-02-14 16:39:07,905 - INFO - Task aeb65387-a132-499a-8b87-02154dc01f4f completed - Result: __files__/results/aeb65387-a132-499a-8b87-02154dc01f4f_sequence_tiny.gff
+2025-02-14 16:39:07,906 - INFO - Processing task 8dd7111d-6077-4796-98b3-e7178296ca2d - File: __files__/uploads/8dd7111d-6077-4796-98b3-e7178296ca2d_sequence_tiny.fasta - Format: GFF
+2025-02-14 16:39:26,224 - INFO - Task 8dd7111d-6077-4796-98b3-e7178296ca2d completed - Result: __files__/results/8dd7111d-6077-4796-98b3-e7178296ca2d_sequence_tiny.gff
+2025-02-14 16:39:26,224 - INFO - Processing task 772dd4ba-4d2f-40ad-9fa4-c14b222f30b8 - File: __files__/uploads/772dd4ba-4d2f-40ad-9fa4-c14b222f30b8_sequence_tiny.fasta - Format: GFF
+2025-02-14 16:39:44,677 - INFO - Task 772dd4ba-4d2f-40ad-9fa4-c14b222f30b8 completed - Result: __files__/results/772dd4ba-4d2f-40ad-9fa4-c14b222f30b8_sequence_tiny.gff
+2025-02-14 16:42:22,739 - INFO - Inference using: 0
+
+2025-02-14 16:42:35,546 - INFO - Task 7016557f-7b19-4dab-a3df-34792640eddc submitted - File: sequence_tiny.fasta - Format: GFF
+2025-02-14 16:42:35,560 - INFO - Processing task 7016557f-7b19-4dab-a3df-34792640eddc - File: __files__/uploads/7016557f-7b19-4dab-a3df-34792640eddc_sequence_tiny.fasta - Format: GFF
+2025-02-14 16:42:37,867 - INFO - Task f0e37d8e-1ad6-4942-a22c-4b1d31cbde48 submitted - File: sequence_tiny.fasta - Format: GFF
+2025-02-14 16:42:54,326 - INFO - Task 7016557f-7b19-4dab-a3df-34792640eddc completed - Result: __files__/results/7016557f-7b19-4dab-a3df-34792640eddc_sequence_tiny.gff
+2025-02-14 16:42:54,326 - INFO - Processing task f0e37d8e-1ad6-4942-a22c-4b1d31cbde48 - File: __files__/uploads/f0e37d8e-1ad6-4942-a22c-4b1d31cbde48_sequence_tiny.fasta - Format: GFF
+2025-02-14 16:42:54,547 - WARNING - Canceling active task f0e37d8e-1ad6-4942-a22c-4b1d31cbde48. Stopping execution.
+2025-02-14 16:42:54,548 - INFO - Task f0e37d8e-1ad6-4942-a22c-4b1d31cbde48 successfully canceled
+2025-02-14 16:43:12,950 - INFO - Task f0e37d8e-1ad6-4942-a22c-4b1d31cbde48 was canceled during execution. Stopping.
+2025-02-14 16:43:36,397 - WARNING - Result retrieval failed - Task f0e37d8e-1ad6-4942-a22c-4b1d31cbde48 not completed or found
+2025-02-14 16:43:45,123 - INFO - Progress check - Task f0e37d8e-1ad6-4942-a22c-4b1d31cbde48 - Status: Canceled - Progress: 100%
+2025-02-14 16:43:56,144 - INFO - Task b123b99d-8d15-4525-8629-b59e12d5ab81 submitted - File: sequence_tiny.fasta - Format: GFF
+2025-02-14 16:43:56,145 - INFO - Processing task b123b99d-8d15-4525-8629-b59e12d5ab81 - File: __files__/uploads/b123b99d-8d15-4525-8629-b59e12d5ab81_sequence_tiny.fasta - Format: GFF
+2025-02-14 16:43:57,719 - INFO - Task a44ccadf-e2dd-49ce-a63c-5ffccfb965b2 submitted - File: sequence_tiny.fasta - Format: GFF
+2025-02-14 16:43:59,598 - INFO - Task 6e76a805-0beb-429c-a46f-fce6df065a4a submitted - File: sequence_tiny.fasta - Format: GFF
+2025-02-14 16:44:10,046 - WARNING - Canceling active task 6e76a805-0beb-429c-a46f-fce6df065a4a. Stopping execution.
+2025-02-14 16:44:10,046 - INFO - Task 6e76a805-0beb-429c-a46f-fce6df065a4a successfully canceled
+2025-02-14 16:44:14,911 - INFO - Task b123b99d-8d15-4525-8629-b59e12d5ab81 completed - Result: __files__/results/b123b99d-8d15-4525-8629-b59e12d5ab81_sequence_tiny.gff
+2025-02-14 16:44:14,911 - INFO - Processing task a44ccadf-e2dd-49ce-a63c-5ffccfb965b2 - File: __files__/uploads/a44ccadf-e2dd-49ce-a63c-5ffccfb965b2_sequence_tiny.fasta - Format: GFF
+2025-02-14 16:44:33,443 - INFO - Task a44ccadf-e2dd-49ce-a63c-5ffccfb965b2 completed - Result: __files__/results/a44ccadf-e2dd-49ce-a63c-5ffccfb965b2_sequence_tiny.gff
+2025-02-14 16:46:04,455 - INFO - Inference using: 0
+
+2025-02-14 16:46:04,467 - INFO - Task 6e76a805-0beb-429c-a46f-fce6df065a4a successfully canceled
+2025-02-14 16:46:13,650 - INFO - Inference using: 0
+
+2025-02-14 16:46:16,417 - INFO - Task d6224a71-5696-41cb-a748-853993963e2b submitted - File: sequence_tiny.fasta - Format: GFF
+2025-02-14 16:46:16,425 - INFO - Processing task d6224a71-5696-41cb-a748-853993963e2b - File: __files__/uploads/d6224a71-5696-41cb-a748-853993963e2b_sequence_tiny.fasta - Format: GFF
+2025-02-14 16:46:17,887 - INFO - Task 52c41020-1b1a-4d6e-91f1-1212280aba34 submitted - File: sequence_tiny.fasta - Format: GFF
+2025-02-14 16:46:19,425 - INFO - Task b3263022-0c4e-4407-b029-1db84b3b42ca submitted - File: sequence_tiny.fasta - Format: GFF
+2025-02-14 16:46:29,127 - WARNING - Canceling active task b3263022-0c4e-4407-b029-1db84b3b42ca. Stopping execution.
+2025-02-14 16:46:29,128 - INFO - Task b3263022-0c4e-4407-b029-1db84b3b42ca successfully canceled
+2025-02-14 16:46:35,272 - INFO - Task d6224a71-5696-41cb-a748-853993963e2b completed - Result: __files__/results/d6224a71-5696-41cb-a748-853993963e2b_sequence_tiny.gff
+2025-02-14 16:46:35,272 - INFO - Processing task 52c41020-1b1a-4d6e-91f1-1212280aba34 - File: __files__/uploads/52c41020-1b1a-4d6e-91f1-1212280aba34_sequence_tiny.fasta - Format: GFF
+2025-02-14 16:46:44,556 - WARNING - Result retrieval failed - Task b3263022-0c4e-4407-b029-1db84b3b42ca not completed or found
+2025-02-14 16:46:53,927 - INFO - Progress check - Task b3263022-0c4e-4407-b029-1db84b3b42ca - Status: Canceled - Progress: 0%
+2025-02-14 16:46:53,954 - INFO - Task 52c41020-1b1a-4d6e-91f1-1212280aba34 completed - Result: __files__/results/52c41020-1b1a-4d6e-91f1-1212280aba34_sequence_tiny.gff
+2025-02-14 16:46:53,954 - ERROR - Error while processing task 52c41020-1b1a-4d6e-91f1-1212280aba34: task_done() called too many times
+2025-02-14 16:47:03,613 - INFO - Progress check - Task b3263022-0c4e-4407-b029-1db84b3b42ca - Status: Canceled - Progress: 0%
+2025-02-14 16:47:06,168 - INFO - Progress check - Task b3263022-0c4e-4407-b029-1db84b3b42ca - Status: Canceled - Progress: 0%
+2025-02-14 16:47:06,987 - INFO - Progress check - Task b3263022-0c4e-4407-b029-1db84b3b42ca - Status: Canceled - Progress: 0%
+2025-02-14 16:47:07,433 - INFO - Progress check - Task b3263022-0c4e-4407-b029-1db84b3b42ca - Status: Canceled - Progress: 0%
+2025-02-14 16:47:07,756 - INFO - Progress check - Task b3263022-0c4e-4407-b029-1db84b3b42ca - Status: Canceled - Progress: 0%
+2025-02-14 16:47:07,948 - INFO - Progress check - Task b3263022-0c4e-4407-b029-1db84b3b42ca - Status: Canceled - Progress: 0%
+2025-02-14 16:47:08,173 - INFO - Progress check - Task b3263022-0c4e-4407-b029-1db84b3b42ca - Status: Canceled - Progress: 0%
+2025-02-14 16:47:12,003 - INFO - Task 658686f8-ead0-447b-a744-599aba2009e2 submitted - File: sequence_tiny.fasta - Format: GFF
+2025-02-14 16:47:12,004 - INFO - Processing task 658686f8-ead0-447b-a744-599aba2009e2 - File: __files__/uploads/658686f8-ead0-447b-a744-599aba2009e2_sequence_tiny.fasta - Format: GFF
+2025-02-14 16:47:30,809 - INFO - Task 658686f8-ead0-447b-a744-599aba2009e2 completed - Result: __files__/results/658686f8-ead0-447b-a744-599aba2009e2_sequence_tiny.gff
+2025-02-14 16:48:13,792 - INFO - Progress check - Task b3263022-0c4e-4407-b029-1db84b3b42ca - Status: Canceled - Progress: 0%
+2025-02-14 16:48:14,573 - INFO - Progress check - Task b3263022-0c4e-4407-b029-1db84b3b42ca - Status: Canceled - Progress: 0%
+2025-02-14 16:48:14,750 - INFO - Progress check - Task b3263022-0c4e-4407-b029-1db84b3b42ca - Status: Canceled - Progress: 0%
+2025-02-14 16:48:14,940 - INFO - Progress check - Task b3263022-0c4e-4407-b029-1db84b3b42ca - Status: Canceled - Progress: 0%
+2025-02-14 16:48:15,165 - INFO - Progress check - Task b3263022-0c4e-4407-b029-1db84b3b42ca - Status: Canceled - Progress: 0%
+2025-02-14 16:48:15,376 - INFO - Progress check - Task b3263022-0c4e-4407-b029-1db84b3b42ca - Status: Canceled - Progress: 0%
+2025-02-14 16:48:15,632 - INFO - Progress check - Task b3263022-0c4e-4407-b029-1db84b3b42ca - Status: Canceled - Progress: 0%
+2025-02-14 16:48:15,921 - INFO - Progress check - Task b3263022-0c4e-4407-b029-1db84b3b42ca - Status: Canceled - Progress: 0%
+2025-02-14 16:49:35,697 - INFO - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 submitted - File: tmp2c5pz62y.fasta - Format: GFF
+2025-02-14 16:49:35,697 - INFO - Processing task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - File: __files__/uploads/18ea8761-5242-4960-8a80-91e5a09e4fd7_tmp2c5pz62y.fasta - Format: GFF
+2025-02-14 16:49:35,830 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Generating ORF - Progress: 20%
+2025-02-14 16:49:40,846 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Fist Stage CDS Classification - Progress: 60%
+2025-02-14 16:49:45,852 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Fist Stage CDS Classification - Progress: 60%
+2025-02-14 16:49:50,857 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Fist Stage CDS Classification - Progress: 60%
+2025-02-14 16:49:55,863 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Fist Stage CDS Classification - Progress: 60%
+2025-02-14 16:50:00,869 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Fist Stage CDS Classification - Progress: 60%
+2025-02-14 16:50:05,875 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Fist Stage CDS Classification - Progress: 60%
+2025-02-14 16:50:10,881 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Fist Stage CDS Classification - Progress: 60%
+2025-02-14 16:50:15,886 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Fist Stage CDS Classification - Progress: 60%
+2025-02-14 16:50:20,890 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:50:25,896 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:50:30,901 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:50:35,907 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:50:40,913 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:50:45,919 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:50:50,925 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:50:55,931 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:51:00,936 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:51:05,941 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:51:10,945 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:51:15,949 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:51:20,955 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:51:25,961 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:51:30,967 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:51:35,972 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:51:40,978 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:51:45,984 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:51:50,990 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:51:55,996 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:52:01,002 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:52:06,008 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:52:11,014 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:52:16,020 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:52:21,026 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:52:34,369 - INFO - Inference using: 0
+
+2025-02-14 16:52:39,557 - INFO - Inference using: 0
+
+2025-02-14 16:52:44,686 - INFO - Inference using: 0
+
+2025-02-14 16:52:44,700 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:52:49,707 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:52:59,883 - INFO - Inference using: 0
+
+2025-02-14 16:53:05,142 - INFO - Inference using: 0
+
+2025-02-14 16:53:10,275 - INFO - Inference using: 0
+
+2025-02-14 16:53:15,608 - INFO - Inference using: 0
+
+2025-02-14 16:53:20,729 - INFO - Inference using: 0
+
+2025-02-14 16:53:20,740 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:53:25,746 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:53:31,936 - INFO - Inference using: 0
+
+2025-02-14 16:53:31,945 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:53:52,268 - INFO - Inference using: 0
+
+2025-02-14 16:53:57,306 - INFO - Inference using: 0
+
+2025-02-14 16:54:02,389 - INFO - Inference using: 0
+
+2025-02-14 16:54:02,398 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:54:07,405 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:54:12,412 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:54:17,419 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:54:22,426 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:54:27,433 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:54:32,440 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:54:37,447 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:54:42,454 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:54:47,461 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:54:52,468 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:54:57,475 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:55:02,482 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:55:07,489 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:55:12,496 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:55:17,503 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:55:22,510 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:55:27,517 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:55:32,524 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:55:37,531 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:55:42,538 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:55:47,545 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:55:52,552 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:55:57,560 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:56:02,566 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:56:07,572 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:56:12,578 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:56:17,583 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:56:22,589 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:56:27,596 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:56:32,603 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:56:37,610 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:56:42,617 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:56:47,623 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:56:52,630 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:56:57,637 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:57:02,644 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:57:07,651 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:57:12,657 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:57:17,664 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:57:22,671 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:57:27,679 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:57:32,687 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:57:37,694 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:57:42,700 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:57:47,707 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:57:52,714 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:57:57,722 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:58:02,729 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:58:07,736 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:58:12,743 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:58:17,750 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:58:22,757 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:58:27,764 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:58:32,770 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:58:37,777 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:58:42,785 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:58:47,792 - INFO - Progress check - Task 18ea8761-5242-4960-8a80-91e5a09e4fd7 - Status: Processing - Progress: 1%
+2025-02-14 16:58:51,859 - INFO - Task 113bbbe3-81fd-4991-a9a7-2d7384a7edcb submitted - File: tmp7xli8w61.fasta - Format: GFF
+2025-02-14 16:58:51,868 - INFO - Processing task 113bbbe3-81fd-4991-a9a7-2d7384a7edcb - File: __files__/uploads/113bbbe3-81fd-4991-a9a7-2d7384a7edcb_tmp7xli8w61.fasta - Format: GFF
+2025-02-14 16:58:51,876 - INFO - Progress check - Task 113bbbe3-81fd-4991-a9a7-2d7384a7edcb - Status: Start - Progress: 10%
+2025-02-14 16:58:56,880 - INFO - Progress check - Task 113bbbe3-81fd-4991-a9a7-2d7384a7edcb - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:59:01,886 - INFO - Progress check - Task 113bbbe3-81fd-4991-a9a7-2d7384a7edcb - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:59:06,891 - INFO - Progress check - Task 113bbbe3-81fd-4991-a9a7-2d7384a7edcb - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 16:59:11,065 - INFO - Task 113bbbe3-81fd-4991-a9a7-2d7384a7edcb completed - Result: __files__/results/113bbbe3-81fd-4991-a9a7-2d7384a7edcb_tmp7xli8w61.gff
+2025-02-14 16:59:11,897 - INFO - Progress check - Task 113bbbe3-81fd-4991-a9a7-2d7384a7edcb - Status: Completed - Progress: 100%
+2025-02-14 16:59:11,905 - INFO - Result retrieved - Task 113bbbe3-81fd-4991-a9a7-2d7384a7edcb - File URL: http://10.52.88.33:8000/tis/download/113bbbe3-81fd-4991-a9a7-2d7384a7edcb_tmp7xli8w61.gff
+2025-02-14 17:09:44,425 - INFO - Inference using: 0
+
+2025-02-14 17:10:02,773 - INFO - Inference using: 0
+
+2025-02-14 17:10:08,160 - INFO - Inference using: 0
+
+2025-02-14 17:10:19,105 - INFO - Inference using: 0
+
+2025-02-14 17:10:24,039 - INFO - Inference using: 0
+
+2025-02-14 17:11:03,502 - INFO - Inference using: 0
+
+2025-02-14 17:11:08,583 - INFO - Inference using: 0
+
+2025-02-14 17:11:13,542 - INFO - Inference using: 0
+
+2025-02-14 17:13:21,100 - INFO - Inference using: 0
+
+2025-02-14 17:13:26,285 - INFO - Inference using: 0
+
+2025-02-14 17:13:31,249 - INFO - Inference using: 0
+
+2025-02-14 17:13:44,311 - INFO - Inference using: 0
+
+2025-02-14 17:13:49,226 - INFO - Inference using: 0
+
+2025-02-14 17:18:29,808 - INFO - Task 3c9d00f4-3593-4ab2-8a69-3787879fed86 submitted - File: sequence_tiny.fasta - Format: GFF
+2025-02-14 17:18:29,819 - INFO - Processing task 3c9d00f4-3593-4ab2-8a69-3787879fed86 - File: __files__/uploads/3c9d00f4-3593-4ab2-8a69-3787879fed86_sequence_tiny.fasta - Format: GFF
+2025-02-14 17:18:48,576 - INFO - Task 3c9d00f4-3593-4ab2-8a69-3787879fed86 completed - Result: __files__/results/3c9d00f4-3593-4ab2-8a69-3787879fed86_sequence_tiny.gff
+2025-02-14 17:18:53,056 - INFO - Progress check - Task 3c9d00f4-3593-4ab2-8a69-3787879fed86 - Status: Completed - Progress: 100%
+2025-02-14 17:19:32,215 - INFO - Inference using: 0
+
+2025-02-14 17:19:37,344 - INFO - Inference using: 0
+
+2025-02-14 17:19:37,357 - INFO - Result retrieved - Task 3c9d00f4-3593-4ab2-8a69-3787879fed86 - File URL: http://10.52.88.33:8000/tis/download/3c9d00f4-3593-4ab2-8a69-3787879fed86_sequence_tiny.gff
+2025-02-14 17:25:56,587 - INFO - Task 311bbd07-8c74-4dc4-b466-526e073e3c42 submitted - File: tmp93lr7eu1.fasta - Format: GFF
+2025-02-14 17:25:56,597 - INFO - Processing task 311bbd07-8c74-4dc4-b466-526e073e3c42 - File: __files__/uploads/311bbd07-8c74-4dc4-b466-526e073e3c42_tmp93lr7eu1.fasta - Format: GFF
+2025-02-14 17:25:56,602 - INFO - Progress check - Task 311bbd07-8c74-4dc4-b466-526e073e3c42 - Status: Start - Progress: 10%
+2025-02-14 17:26:01,608 - INFO - Progress check - Task 311bbd07-8c74-4dc4-b466-526e073e3c42 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 17:26:06,614 - INFO - Progress check - Task 311bbd07-8c74-4dc4-b466-526e073e3c42 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 17:26:11,619 - INFO - Progress check - Task 311bbd07-8c74-4dc4-b466-526e073e3c42 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 17:26:15,939 - INFO - Task 311bbd07-8c74-4dc4-b466-526e073e3c42 completed - Result: __files__/results/311bbd07-8c74-4dc4-b466-526e073e3c42_tmp93lr7eu1.gff
+2025-02-14 17:26:16,624 - INFO - Progress check - Task 311bbd07-8c74-4dc4-b466-526e073e3c42 - Status: Completed - Progress: 100%
+2025-02-14 17:26:16,632 - INFO - Result retrieved - Task 311bbd07-8c74-4dc4-b466-526e073e3c42 - File URL: http://10.52.88.33:8000/tis/download/311bbd07-8c74-4dc4-b466-526e073e3c42_tmp93lr7eu1.gff
+2025-02-14 17:28:56,734 - INFO - Task 6ff65de7-3e3c-4e49-9def-68cef8a3bd4c submitted - File: tmpag3sqtpw.fasta - Format: GFF
+2025-02-14 17:28:56,735 - INFO - Processing task 6ff65de7-3e3c-4e49-9def-68cef8a3bd4c - File: __files__/uploads/6ff65de7-3e3c-4e49-9def-68cef8a3bd4c_tmpag3sqtpw.fasta - Format: GFF
+2025-02-14 17:28:56,740 - INFO - Progress check - Task 6ff65de7-3e3c-4e49-9def-68cef8a3bd4c - Status: Processing - Progress: 1%
+2025-02-14 17:29:01,748 - INFO - Progress check - Task 6ff65de7-3e3c-4e49-9def-68cef8a3bd4c - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 17:29:06,753 - INFO - Progress check - Task 6ff65de7-3e3c-4e49-9def-68cef8a3bd4c - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 17:29:11,758 - INFO - Progress check - Task 6ff65de7-3e3c-4e49-9def-68cef8a3bd4c - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 17:29:15,877 - INFO - Task 6ff65de7-3e3c-4e49-9def-68cef8a3bd4c completed - Result: __files__/results/6ff65de7-3e3c-4e49-9def-68cef8a3bd4c_tmpag3sqtpw.gff
+2025-02-14 17:29:16,765 - INFO - Progress check - Task 6ff65de7-3e3c-4e49-9def-68cef8a3bd4c - Status: Completed - Progress: 100%
+2025-02-14 17:29:16,772 - INFO - Result retrieved - Task 6ff65de7-3e3c-4e49-9def-68cef8a3bd4c - File URL: http://10.52.88.33:8000/tis/download/6ff65de7-3e3c-4e49-9def-68cef8a3bd4c_tmpag3sqtpw.gff
+2025-02-14 17:33:06,898 - INFO - Inference using: 0
+
+2025-02-14 17:33:23,942 - INFO - Inference using: 0
+
+2025-02-14 17:33:35,294 - INFO - Inference using: 0
+
+2025-02-14 17:35:58,721 - INFO - Inference using: 0
+
+2025-02-14 17:37:42,893 - INFO - Inference using: 0
+
+2025-02-14 17:39:57,351 - INFO - Inference using: 0
+
+2025-02-14 17:40:02,552 - INFO - Inference using: 0
+
+2025-02-14 17:40:05,338 - INFO - Task 82f4a1a7-8f0c-467d-b3f8-0eeef9f2201e submitted - File: tmpp110029f.fasta - Format: GFF
+2025-02-14 17:40:05,344 - INFO - Processing task 82f4a1a7-8f0c-467d-b3f8-0eeef9f2201e - File: __files__/uploads/82f4a1a7-8f0c-467d-b3f8-0eeef9f2201e_tmpp110029f.fasta - Format: GFF
+2025-02-14 17:40:05,349 - INFO - Progress check - Task 82f4a1a7-8f0c-467d-b3f8-0eeef9f2201e - Status: Start - Progress: 10%
+2025-02-14 17:40:10,354 - INFO - Progress check - Task 82f4a1a7-8f0c-467d-b3f8-0eeef9f2201e - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 17:40:15,359 - INFO - Progress check - Task 82f4a1a7-8f0c-467d-b3f8-0eeef9f2201e - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 17:40:20,364 - INFO - Progress check - Task 82f4a1a7-8f0c-467d-b3f8-0eeef9f2201e - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 17:40:24,594 - INFO - Task 82f4a1a7-8f0c-467d-b3f8-0eeef9f2201e completed - Result: __files__/results/82f4a1a7-8f0c-467d-b3f8-0eeef9f2201e_tmpp110029f.gff
+2025-02-14 17:40:25,370 - INFO - Progress check - Task 82f4a1a7-8f0c-467d-b3f8-0eeef9f2201e - Status: Completed - Progress: 100%
+2025-02-14 17:40:25,377 - INFO - Result retrieved - Task 82f4a1a7-8f0c-467d-b3f8-0eeef9f2201e - File URL: http://10.52.88.33:8000/tis/download/82f4a1a7-8f0c-467d-b3f8-0eeef9f2201e_tmpp110029f.gff
+2025-02-14 17:44:25,664 - INFO - Task a1222fdc-e500-465b-8c8d-69319f655666 submitted - File: tmpiv8z0k9l.fasta - Format: GFF
+2025-02-14 17:44:25,665 - INFO - Processing task a1222fdc-e500-465b-8c8d-69319f655666 - File: __files__/uploads/a1222fdc-e500-465b-8c8d-69319f655666_tmpiv8z0k9l.fasta - Format: GFF
+2025-02-14 17:44:25,700 - INFO - Progress check - Task a1222fdc-e500-465b-8c8d-69319f655666 - Status: Fist Stage CDS Classification - Progress: 60%
+2025-02-14 17:44:30,705 - INFO - Progress check - Task a1222fdc-e500-465b-8c8d-69319f655666 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 17:44:35,711 - INFO - Progress check - Task a1222fdc-e500-465b-8c8d-69319f655666 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 17:44:40,716 - INFO - Progress check - Task a1222fdc-e500-465b-8c8d-69319f655666 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-14 17:44:45,231 - INFO - Task a1222fdc-e500-465b-8c8d-69319f655666 completed - Result: __files__/results/a1222fdc-e500-465b-8c8d-69319f655666_tmpiv8z0k9l.gff
+2025-02-14 17:44:45,722 - INFO - Progress check - Task a1222fdc-e500-465b-8c8d-69319f655666 - Status: Completed - Progress: 100%
+2025-02-14 17:44:45,729 - INFO - Result retrieved - Task a1222fdc-e500-465b-8c8d-69319f655666 - File URL: http://10.52.88.33:8000/tis/download/a1222fdc-e500-465b-8c8d-69319f655666_tmpiv8z0k9l.gff
+2025-02-17 15:54:41,999 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10993 MB
+2025-02-17 15:54:47,162 - INFO - Inference using: cuda
+
+2025-02-17 15:54:47,162 - INFO - Optimal batch size: 1024
+2025-02-18 10:34:40,499 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10954 MB
+2025-02-18 10:34:53,597 - INFO - Inference using: cuda
+
+2025-02-18 10:34:53,597 - INFO - Optimal batch size: 730
+2025-02-18 10:34:57,458 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10955 MB
+2025-02-18 10:34:58,846 - INFO - Inference using: cuda
+
+2025-02-18 10:34:58,846 - INFO - Optimal batch size: 730
+2025-02-18 10:35:02,841 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10903 MB
+2025-02-18 10:35:03,924 - INFO - Inference using: cuda
+
+2025-02-18 10:35:03,924 - INFO - Optimal batch size: 726
+2025-02-18 10:35:56,220 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10939 MB
+2025-02-18 10:35:57,346 - INFO - Inference using: cuda
+
+2025-02-18 10:35:57,346 - INFO - Optimal batch size: 729
+2025-02-18 10:36:01,149 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10950 MB
+2025-02-18 10:36:02,250 - INFO - Inference using: cuda
+
+2025-02-18 10:36:02,250 - INFO - Optimal batch size: 730
+2025-02-18 10:36:06,112 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10950 MB
+2025-02-18 10:36:07,509 - INFO - Inference using: cuda
+
+2025-02-18 10:36:07,509 - INFO - Optimal batch size: 730
+2025-02-18 10:36:18,179 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10948 MB
+2025-02-18 10:36:20,559 - INFO - Inference using: cuda
+
+2025-02-18 10:36:20,559 - INFO - Optimal batch size: 729
+2025-02-18 10:37:50,935 - INFO - GPU Total Memory: 11925 MB, Free Memory: 11008 MB
+2025-02-18 10:37:52,260 - INFO - Inference using: cuda
+
+2025-02-18 10:37:52,260 - INFO - Optimal batch size: 733
+2025-02-18 10:38:03,711 - INFO - GPU Total Memory: 11925 MB, Free Memory: 11015 MB
+2025-02-18 10:38:04,838 - INFO - Inference using: cuda
+
+2025-02-18 10:38:04,838 - INFO - Optimal batch size: 734
+2025-02-18 10:39:04,285 - INFO - GPU Total Memory: 11925 MB, Free Memory: 11016 MB
+2025-02-18 10:39:08,704 - INFO - Inference using: cuda
+
+2025-02-18 10:39:08,704 - INFO - Optimal batch size: 734
+2025-02-18 10:39:12,617 - INFO - GPU Total Memory: 11925 MB, Free Memory: 11016 MB
+2025-02-18 10:39:13,705 - INFO - Inference using: cuda
+
+2025-02-18 10:39:13,706 - INFO - Optimal batch size: 734
+2025-02-18 10:39:17,605 - INFO - GPU Total Memory: 11925 MB, Free Memory: 11022 MB
+2025-02-18 10:39:18,730 - INFO - Inference using: cuda
+
+2025-02-18 10:39:18,730 - INFO - Optimal batch size: 734
+2025-02-18 10:39:42,538 - INFO - GPU Total Memory: 11925 MB, Free Memory: 11018 MB
+2025-02-18 10:39:43,649 - INFO - Inference using: cuda
+
+2025-02-18 10:39:43,649 - INFO - Optimal batch size: 734
+2025-02-18 10:39:49,945 - INFO - GPU Total Memory: 11925 MB, Free Memory: 11017 MB
+2025-02-18 10:39:51,063 - INFO - Inference using: cuda
+
+2025-02-18 10:39:51,063 - INFO - Optimal batch size: 734
+2025-02-18 10:39:54,953 - INFO - GPU Total Memory: 11925 MB, Free Memory: 11014 MB
+2025-02-18 10:39:56,266 - INFO - Inference using: cuda
+
+2025-02-18 10:39:56,266 - INFO - Optimal batch size: 734
+2025-02-18 10:40:21,240 - INFO - GPU Total Memory: 11925 MB, Free Memory: 11029 MB
+2025-02-18 10:40:22,392 - INFO - Inference using: cuda
+
+2025-02-18 10:40:22,393 - INFO - Optimal batch size: 735
+2025-02-18 10:40:26,373 - INFO - GPU Total Memory: 11925 MB, Free Memory: 11010 MB
+2025-02-18 10:40:27,486 - INFO - Inference using: cuda
+
+2025-02-18 10:40:27,486 - INFO - Optimal batch size: 734
+2025-02-18 10:41:16,904 - INFO - GPU Total Memory: 11925 MB, Free Memory: 11017 MB
+2025-02-18 10:41:29,696 - INFO - Inference using: cuda
+
+2025-02-18 10:41:29,697 - INFO - Optimal batch size: 734
+2025-02-18 10:41:33,448 - INFO - GPU Total Memory: 11925 MB, Free Memory: 11034 MB
+2025-02-18 10:41:34,586 - INFO - Inference using: cuda
+
+2025-02-18 10:41:34,586 - INFO - Optimal batch size: 735
+2025-02-18 10:41:38,389 - INFO - GPU Total Memory: 11925 MB, Free Memory: 11028 MB
+2025-02-18 10:41:39,557 - INFO - Inference using: cuda
+
+2025-02-18 10:41:39,557 - INFO - Optimal batch size: 735
+2025-02-18 10:41:45,372 - INFO - GPU Total Memory: 11925 MB, Free Memory: 11028 MB
+2025-02-18 10:41:46,501 - INFO - Inference using: cuda
+
+2025-02-18 10:41:46,502 - INFO - Optimal batch size: 735
+2025-02-18 10:41:50,418 - INFO - GPU Total Memory: 11925 MB, Free Memory: 11031 MB
+2025-02-18 10:41:51,518 - INFO - Inference using: cuda
+
+2025-02-18 10:41:51,518 - INFO - Optimal batch size: 735
+2025-02-18 10:43:01,743 - INFO - Task 3701594b-d319-4bbd-ae9f-4cc8bcc5ef5b submitted - File: tmpagrvb0x0.fasta - Format: GFF
+2025-02-18 10:43:01,752 - INFO - Processing task 3701594b-d319-4bbd-ae9f-4cc8bcc5ef5b - File: __files__/uploads/3701594b-d319-4bbd-ae9f-4cc8bcc5ef5b_tmpagrvb0x0.fasta - Format: GFF
+2025-02-18 10:43:01,762 - INFO - Progress check - Task 3701594b-d319-4bbd-ae9f-4cc8bcc5ef5b - Status: Start - Progress: 10%
+2025-02-18 10:43:06,768 - INFO - Progress check - Task 3701594b-d319-4bbd-ae9f-4cc8bcc5ef5b - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-18 10:43:11,774 - INFO - Progress check - Task 3701594b-d319-4bbd-ae9f-4cc8bcc5ef5b - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-18 10:43:16,780 - INFO - Progress check - Task 3701594b-d319-4bbd-ae9f-4cc8bcc5ef5b - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-18 10:43:21,785 - INFO - Progress check - Task 3701594b-d319-4bbd-ae9f-4cc8bcc5ef5b - Status: Fist Stage CDS Classification - Progress: 60%
+2025-02-18 10:43:22,053 - INFO - Task 3701594b-d319-4bbd-ae9f-4cc8bcc5ef5b completed - Result: __files__/results/3701594b-d319-4bbd-ae9f-4cc8bcc5ef5b_tmpagrvb0x0.gff
+2025-02-18 10:43:26,792 - INFO - Progress check - Task 3701594b-d319-4bbd-ae9f-4cc8bcc5ef5b - Status: Completed - Progress: 100%
+2025-02-18 10:43:26,799 - INFO - Result retrieved - Task 3701594b-d319-4bbd-ae9f-4cc8bcc5ef5b - File URL: http://10.52.88.33:8000/tis/download/3701594b-d319-4bbd-ae9f-4cc8bcc5ef5b_tmpagrvb0x0.gff
+2025-02-18 10:44:57,910 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10978 MB
+2025-02-18 10:44:59,126 - INFO - Inference using: cuda
+
+2025-02-18 10:44:59,127 - INFO - Optimal batch size: 731
+2025-02-18 10:45:07,659 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10980 MB
+2025-02-18 10:45:08,772 - INFO - Inference using: cuda
+
+2025-02-18 10:45:08,772 - INFO - Optimal batch size: 732
+2025-02-18 10:45:12,687 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10964 MB
+2025-02-18 10:45:13,888 - INFO - Inference using: cuda
+
+2025-02-18 10:45:13,888 - INFO - Optimal batch size: 730
+2025-02-18 10:45:17,788 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10969 MB
+2025-02-18 10:45:18,867 - INFO - Inference using: cuda
+
+2025-02-18 10:45:18,867 - INFO - Optimal batch size: 731
+2025-02-18 10:45:23,041 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10970 MB
+2025-02-18 10:45:24,219 - INFO - Inference using: cuda
+
+2025-02-18 10:45:24,220 - INFO - Optimal batch size: 731
+2025-02-18 10:45:24,231 - INFO - Task f6943630-527f-44e4-90cd-674ecfeb8963 submitted - File: tmpywsxo7g0.fasta - Format: GFF
+2025-02-18 10:45:24,236 - INFO - Processing task f6943630-527f-44e4-90cd-674ecfeb8963 - File: __files__/uploads/f6943630-527f-44e4-90cd-674ecfeb8963_tmpywsxo7g0.fasta - Format: GFF
+2025-02-18 10:45:24,244 - INFO - Progress check - Task f6943630-527f-44e4-90cd-674ecfeb8963 - Status: Start - Progress: 10%
+2025-02-18 10:45:29,249 - INFO - Progress check - Task f6943630-527f-44e4-90cd-674ecfeb8963 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-18 10:45:34,255 - INFO - Progress check - Task f6943630-527f-44e4-90cd-674ecfeb8963 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-18 10:45:39,259 - INFO - Progress check - Task f6943630-527f-44e4-90cd-674ecfeb8963 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-18 10:45:44,265 - INFO - Progress check - Task f6943630-527f-44e4-90cd-674ecfeb8963 - Status: Fist Stage CDS Classification - Progress: 60%
+2025-02-18 10:45:49,270 - INFO - Progress check - Task f6943630-527f-44e4-90cd-674ecfeb8963 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-18 10:45:54,276 - INFO - Progress check - Task f6943630-527f-44e4-90cd-674ecfeb8963 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-18 10:45:59,281 - INFO - Progress check - Task f6943630-527f-44e4-90cd-674ecfeb8963 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-18 10:46:04,287 - INFO - Progress check - Task f6943630-527f-44e4-90cd-674ecfeb8963 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-18 10:46:04,346 - INFO - Task f6943630-527f-44e4-90cd-674ecfeb8963 completed - Result: __files__/results/f6943630-527f-44e4-90cd-674ecfeb8963_tmpywsxo7g0.gff
+2025-02-18 10:46:09,293 - INFO - Progress check - Task f6943630-527f-44e4-90cd-674ecfeb8963 - Status: Completed - Progress: 100%
+2025-02-18 10:46:09,300 - INFO - Result retrieved - Task f6943630-527f-44e4-90cd-674ecfeb8963 - File URL: http://10.52.88.33:8000/tis/download/f6943630-527f-44e4-90cd-674ecfeb8963_tmpywsxo7g0.gff
+2025-02-18 10:47:27,127 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10959 MB
+2025-02-18 10:47:39,873 - INFO - Inference using: cuda
+
+2025-02-18 10:47:39,873 - INFO - Optimal batch size: 730
+2025-02-18 10:47:51,599 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10954 MB
+2025-02-18 10:47:52,768 - INFO - Inference using: cuda
+
+2025-02-18 10:47:52,768 - INFO - Optimal batch size: 730
+2025-02-18 10:47:56,775 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10954 MB
+2025-02-18 10:47:57,891 - INFO - Inference using: cuda
+
+2025-02-18 10:47:57,891 - INFO - Optimal batch size: 730
+2025-02-18 10:48:01,838 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10920 MB
+2025-02-18 10:48:02,984 - INFO - Inference using: cuda
+
+2025-02-18 10:48:02,985 - INFO - Optimal batch size: 728
+2025-02-18 10:48:09,700 - INFO - Task 9368f4dd-cb10-49e5-b76b-8c0ff1931461 submitted - File: tmptdc6p3jk.fasta - Format: GFF
+2025-02-18 10:48:09,711 - INFO - Processing task 9368f4dd-cb10-49e5-b76b-8c0ff1931461 - File: __files__/uploads/9368f4dd-cb10-49e5-b76b-8c0ff1931461_tmptdc6p3jk.fasta - Format: GFF
+2025-02-18 10:48:09,714 - INFO - Progress check - Task 9368f4dd-cb10-49e5-b76b-8c0ff1931461 - Status: Start - Progress: 10%
+2025-02-18 10:48:14,720 - INFO - Progress check - Task 9368f4dd-cb10-49e5-b76b-8c0ff1931461 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-18 10:48:19,725 - INFO - Progress check - Task 9368f4dd-cb10-49e5-b76b-8c0ff1931461 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-18 10:48:24,731 - INFO - Progress check - Task 9368f4dd-cb10-49e5-b76b-8c0ff1931461 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-18 10:48:29,737 - INFO - Progress check - Task 9368f4dd-cb10-49e5-b76b-8c0ff1931461 - Status: Fist Stage CDS Classification - Progress: 60%
+2025-02-18 10:48:34,742 - INFO - Progress check - Task 9368f4dd-cb10-49e5-b76b-8c0ff1931461 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-18 10:48:39,748 - INFO - Progress check - Task 9368f4dd-cb10-49e5-b76b-8c0ff1931461 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-18 10:48:44,753 - INFO - Progress check - Task 9368f4dd-cb10-49e5-b76b-8c0ff1931461 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-02-18 10:48:48,648 - INFO - Task 9368f4dd-cb10-49e5-b76b-8c0ff1931461 completed - Result: __files__/results/9368f4dd-cb10-49e5-b76b-8c0ff1931461_tmptdc6p3jk.gff
+2025-02-18 10:48:49,761 - INFO - Progress check - Task 9368f4dd-cb10-49e5-b76b-8c0ff1931461 - Status: Completed - Progress: 100%
+2025-02-18 10:48:49,768 - INFO - Result retrieved - Task 9368f4dd-cb10-49e5-b76b-8c0ff1931461 - File URL: http://10.52.88.33:8000/tis/download/9368f4dd-cb10-49e5-b76b-8c0ff1931461_tmptdc6p3jk.gff
+2025-02-18 11:05:38,106 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10926 MB
+2025-02-18 11:05:39,287 - INFO - Inference using: cuda
+
+2025-02-18 11:05:39,287 - INFO - Optimal batch size: 728
+2025-02-18 11:05:43,145 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10937 MB
+2025-02-18 11:05:44,277 - INFO - Inference using: cuda
+
+2025-02-18 11:05:44,277 - INFO - Optimal batch size: 729
+2025-02-18 11:05:55,903 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10926 MB
+2025-02-18 11:05:57,005 - INFO - Inference using: cuda
+
+2025-02-18 11:05:57,006 - INFO - Optimal batch size: 728
+2025-02-18 11:06:00,945 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10928 MB
+2025-02-18 11:06:02,086 - INFO - Inference using: cuda
+
+2025-02-18 11:06:02,086 - INFO - Optimal batch size: 728
+2025-02-18 15:29:47,592 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10989 MB
+2025-02-18 15:29:48,815 - INFO - Inference using: cuda
+
+2025-02-18 15:29:48,816 - INFO - Optimal batch size: 732
+2025-02-18 15:29:52,884 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10991 MB
+2025-02-18 15:29:54,033 - INFO - Inference using: cuda
+
+2025-02-18 15:29:54,033 - INFO - Optimal batch size: 732

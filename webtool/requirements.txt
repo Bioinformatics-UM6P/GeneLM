@@ -1,0 +1,18 @@
+# ui
+streamlit
+graphviz
+
+# api
+fastapi
+uvicorn
+pydantic
+asyncio
+python-multipart
+python-dotenv
+pyinstaller
+
+# model pipeline utils
+torch
+transformers
+git+https://github.com/Genereux-akotenou/orfipy
+biopython
