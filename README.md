@@ -1,6 +1,6 @@
 ## GeneLM
 
-[![Watch the video](./webtool/ui/static/hero.png)](https://genereux-akotenou.github.io/assets/images/demo-gene-prediction-prokaryotes.mp4)
+[![Watch the video](./webtool/ui/static/hero.png)](./webtool/ui/static/demo-gene-prediction-prokaryotes.mp4)
 
 GeneLM: Gene Language Model for Translation Initiation Site Predictor in Bacteria
 : This tool predicts coding sequences (CDS) and refines Translation Initiation Sites (TIS) for bacterial genomes using two stages genomic language model pipeline.
