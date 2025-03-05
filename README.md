@@ -1,11 +1,29 @@
 ## GeneLM
 
-[![Watch the video](./webtool/ui/static/hero.png)](./webtool/ui/static/demo-gene-prediction-prokaryotes.mp4)
+[![Watch the video](./webtool/ui/static/cta.png)](./webtool/ui/static/demo-gene-prediction-prokaryotes.mp4)
 
-GeneLM: Gene Language Model for Translation Initiation Site Predictor in Bacteria
-: This tool predicts coding sequences (CDS) and refines Translation Initiation Sites (TIS) for bacterial genomes using two stages genomic language model pipeline.
-The code for model training can be found in the subfolder [finetune](./finetune/) while the web tool we developed for can be found in the subfolder [webtool](./finetune/).
+GeneLM: Gene Language Model for Translation Initiation Site Prediction in Bacteria. This repository includes the implementation of GeneLM, a genomic language model designed for predicting coding sequences (CDS) and refining Translation Initiation Sites (TIS) in bacterial genomes. The model operates through a two-stage genomic language model pipeline. In this package, we provide resources including: source codes of the GeneLM model, usage examples, pre-trained models, fine-tuned models, and a web-based visualization tool. The repository is still under development, and more features will be included gradually. Training of GeneLM consists of general-purpose pre-training and task-specific fine-tuning. The code for model training can be found in the subfolder [finetune](./finetune/), while the web tool we developed can be found in the subfolder [webtool](./webtool/). Our implementation extends existing transformer-based models and adapts them for genomic sequence analysis.
 
+## Citation
+If you have used GeneLM in your research, please kindly cite the following publications:
+```bib
+@article{xxxxxxxxx,
+    author = {Author, Name and Another, Name},
+    title = "{Dummy Title for GeneLM}",
+    journal = {Journal Name},
+    volume = {XX},
+    number = {X},
+    pages = {XXX-XXX},
+    year = {YYYY},
+    month = {MM},
+    issn = {XXXX-XXXX},
+    doi = {XX.XXXX/XXXXXXX},
+    url = {https://dummy.url},
+    eprint = {https://dummy.url/pdf},
+}
+```
+
+<!-- 
 To load our TIS Annotator model, you can use transformers library: 
 
 ```python
@@ -40,18 +58,18 @@ with torch.no_grad():
   predicted_class = torch.argmax(logits, dim=-1).item()
 ```
 
-This will give first stage classifition ouput you can refine using the second stage classifier. See instructions here: [Loading model for second stage](https://huggingface.co/Genereux-akotenou/BacteriaTIS-DNABERT-K6-89M)
+This will give first stage classifition ouput you can refine using the second stage classifier. See instructions here: [Loading model for second stage](https://huggingface.co/Genereux-akotenou/BacteriaTIS-DNABERT-K6-89M) -->
 
 ## Benchmarck Table
 <img src="./webtool/ui/static/TIS_vs_Prodigal.png"/>
 
-<!-- | Method  | Bacteria                                      | Total Verified CDS | Prodigal Matched | Prodigal Missed | Prodigal Total Found | TIS_Annotator Matched | TIS_Annotator Missed | TIS_Annotator Total Found |
+| Method  | Bacteria                                      | Total Verified CDS | Prodigal Matched | Prodigal Missed | Prodigal Total Found | TIS_Annotator Matched | TIS_Annotator Missed | TIS_Annotator Total Found |
 |---------|----------------------------------------------|--------------------|------------------|----------------|------------------|------------------|----------------|------------------|
 |         | **Escherichia coli K-12 MG1655**             | 769                | 338              | 431            | 4347             | 744              | 25             | 4213             |
 |         | **Halobacterium salinarum R1**               | 530                | 243              | 287            | 2851             | 438              | 92             | 2659             |
 |         | **Mycobacterium tuberculosis H37Rv**         | 701                | 311              | 390            | 4204             | 626              | 75             | 3853             |
 |         | **Natronomonas pharaonis DSM 2160**          | 315                | 169              | 146            | 2873             | 248              | 67             | 2737             |
-|         | **Roseobacter denitrificans Och114**         | 526                | 0                | 526            | 4120             | 492              | 34             | 4006             | -->
+|         | **Roseobacter denitrificans Och114**         | 526                | 0                | 526            | 4120             | 492              | 34             | 4006             |
 
 ## Web tools guidelines
 
