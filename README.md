@@ -1,9 +1,6 @@
 ## GeneLM
 
-<video width="600" controls>
-  <source src="https://genereux-akotenou.github.io/assets/images/demo-gene-prediction-prokaryotes.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://youtu.be/vt5fpE0bzSY)
 
 GeneLM: Gene Language Model for Translation Initiation Site Predictor in Bacteria
 : This tool predicts coding sequences (CDS) and refines Translation Initiation Sites (TIS) for bacterial genomes using two stages genomic language model pipeline.
@@ -57,6 +54,13 @@ This will give first stage classifition ouput you can refine using the second st
 |         | **Roseobacter denitrificans Och114**         | 526                | 0                | 526            | 4120             | 492              | 34             | 4006             | -->
 
 ## Web tools guidelines
+
+### Demo
+<video width="600" controls>
+  <source src="https://genereux-akotenou.github.io/assets/images/demo-gene-prediction-prokaryotes.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 <img src="./webtool/ui/static/app.png"/>
 
 #### 1. Create environment
