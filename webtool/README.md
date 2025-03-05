@@ -38,4 +38,3 @@ uvicorn --app-dir api api:app --host 127.0.0.1 --port 8000 --reload
 
 ### 1.4. Perform Annotation
 Navigate to the web tool and submit a FASTA/FNA file containing your full genome sequence.
-
