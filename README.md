@@ -4,27 +4,60 @@
 
 GeneLM: Gene Language Model for Translation Initiation Site Prediction in Bacteria. This repository includes the implementation of GeneLM, a genomic language model designed for predicting coding sequences (CDS) and refining Translation Initiation Sites (TIS) in bacterial genomes. The model operates through a two-stage genomic language model pipeline. In this package, we provide resources including: source codes of the GeneLM model, usage examples, pre-trained models, fine-tuned models, and a web-based visualization tool. The repository is still under development, and more features will be included gradually. Training of GeneLM consists of general-purpose pre-training and task-specific fine-tuning. The code for model training can be found in the subfolder [finetune](./finetune/), while the web tool we developed can be found in the subfolder [webtool](./webtool/). Our implementation extends existing transformer-based models and adapts them for genomic sequence analysis.
 
-## Citation
-If you have used GeneLM in your research, please kindly cite the following publications:
-```bib
-@article{xxxxxxxxx,
-    author = {Author, Name and Another, Name},
-    title = "{Dummy Title for GeneLM}",
-    journal = {Journal Name},
-    volume = {XX},
-    number = {X},
-    pages = {XXX-XXX},
-    year = {YYYY},
-    month = {MM},
-    issn = {XXXX-XXXX},
-    doi = {XX.XXXX/XXXXXXX},
-    url = {https://dummy.url},
-    eprint = {https://dummy.url/pdf},
-}
+## Benchmark
+
+We evaluated our approach against the widely used gene annotation tool, Prodigal, on an experimentally verified bacterial dataset. The results of this comparison are presented in the image below:
+
+<img src="./webtool/ui/static/benchmark_table.png"/>
+
+## 1. Web tools
+
+To streamline gene annotation after model training, we developed a post-processing pipeline that integrates an interactive web interface and an API-based system.
+
+Our web-based annotation tool allows users to submit genome sequences for automatic annotation. It supports two input modes: 
+1. **Direct input** – Users can paste a genome sequence into the provided text area.
+2. **File upload** – Users can upload a FASTA file for processing.
+
+After providing input, users can specify the desired output format (GFF or CSV). Once submitted, the system processes the annotation and generates structured output files. A preview of the interface is shown below:
+
+<img src="./webtool/ui/static/web_tool_merged.png"/>
+
+### 1.1 Setting Up the Environment
+#### Step 1: Create a Python Environment
+```sh
+git clone https://github.com/Bioinformatics-UM6P/GeneLM
+cd webtool
+python -m venv venv
 ```
 
-<!-- 
-To load our TIS Annotator model, you can use transformers library: 
+#### Step 2: Activate the Environment
+```sh
+source ./venv/bin/activate
+```
+
+#### Step 3: Install Dependencies
+```sh
+pip install -r requirements.txt
+```
+
+### 1.2 Launch the Web Tool UI
+```sh
+streamlit run ui/app.py
+```
+
+### 1.3 Start the API Server
+```sh
+uvicorn --app-dir api api:app --host 127.0.0.1 --port 8000 --reload
+```
+
+### 1.4. Perform Annotation
+Navigate to the web tool and submit a FASTA/FNA file containing your full genome sequence. The results should look like this: 
+
+<img src="./webtool/ui/static/web_tool_2b.png"/>
+
+
+## 2. Loading model from hugginface
+Depending wethever you wanna classify CDS of TIS you can download the model from higginface au use it following higginface api. To load our GeneLM CDS-CLASSIFIER model, you can use transformers library: 
 
 ```python
 import torch
@@ -58,68 +91,48 @@ with torch.no_grad():
   predicted_class = torch.argmax(logits, dim=-1).item()
 ```
 
-This will give first stage classifition ouput you can refine using the second stage classifier. See instructions here: [Loading model for second stage](https://huggingface.co/Genereux-akotenou/BacteriaTIS-DNABERT-K6-89M) -->
+This will give first stage classifition ouput you can refine using the second stage classifier. See instructions here: [Loading model for second stage](https://huggingface.co/Genereux-akotenou/BacteriaTIS-DNABERT-K6-89M)
 
-## Benchmarck Table
-<img src="./webtool/ui/static/TIS_vs_Prodigal.png"/>
 
-| Method  | Bacteria                                      | Total Verified CDS | Prodigal Matched | Prodigal Missed | Prodigal Total Found | TIS_Annotator Matched | TIS_Annotator Missed | TIS_Annotator Total Found |
-|---------|----------------------------------------------|--------------------|------------------|----------------|------------------|------------------|----------------|------------------|
-|         | **Escherichia coli K-12 MG1655**             | 769                | 338              | 431            | 4347             | 744              | 25             | 4213             |
-|         | **Halobacterium salinarum R1**               | 530                | 243              | 287            | 2851             | 438              | 92             | 2659             |
-|         | **Mycobacterium tuberculosis H37Rv**         | 701                | 311              | 390            | 4204             | 626              | 75             | 3853             |
-|         | **Natronomonas pharaonis DSM 2160**          | 315                | 169              | 146            | 2873             | 248              | 67             | 2737             |
-|         | **Roseobacter denitrificans Och114**         | 526                | 0                | 526            | 4120             | 492              | 34             | 4006             |
+## 3. Fine-tuning
+If you are interested in the fine-tuning code pipeline or the data used in this process, all relevant materials can be found in the [finetune](./finetune/) folder of this repository.
 
-## Web tools guidelines
+### Structure of the Fine-tuning Folder
+Within the `finetune/` directory, you will find two key subfolders:
 
-### Demo
-<video width="600" controls>
-  <source src="https://genereux-akotenou.github.io/assets/images/demo-gene-prediction-prokaryotes.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+1. **data-pipeline/** – This folder contains scripts and preprocessing workflows for preparing training data. It includes:
+   - Data collection and formatting procedures
+   - Preprocessing scripts to clean and structure genomic sequences
 
-<img src="./webtool/ui/static/app.png"/>
+2. **train-pipeline/** – This folder provides all necessary scripts for training and fine-tuning the model. It includes:
+   - Model configuration files
+   - Training scripts for executing fine-tuning using preprocessed data
+   - Hyperparameter settings and training logs for reproducibility
 
-#### 1. Create environment
-Firstly, we will create a python environment called
-```sh
-python -m venv venv
+### Fine-tuning Process Overview
+The fine-tuning process involves:
+1. **Data Preparation** – Formatting raw genomic sequences into a structured dataset.
+2. **Model Training** – Using the preprocessed data to fine-tune a pre-trained model.
+3. **Evaluation** – Assessing performance using validation datasets and benchmark comparisons.
+4. **Result Analysis** – Generating reports and metrics to analyze model effectiveness.
+
+By following the resources in this directory, users can replicate or extend the fine-tuning process for their specific use cases.
+
+## 4. Citation
+If you have used GeneLM in your research, please kindly cite the following publication:
+```bib
+@article{xxxxxxxxx,
+    author = {Author, Name and Another, Name},
+    title = "{Dummy Title for GeneLM}",
+    journal = {Journal Name},
+    volume = {XX},
+    number = {X},
+    pages = {XXX-XXX},
+    year = {YYYY},
+    month = {MM},
+    issn = {XXXX-XXXX},
+    doi = {XX.XXXX/XXXXXXX},
+    url = {https://dummy.url},
+    eprint = {https://dummy.url/pdf},
+}
 ```
-Secondly, we will login to the environement
-```sh
-source ./venv/bin/activate
-```
-#### 2. Install prerequisite libraries
-
-```sh
-pip install -r requirements.txt
-```
-
-####  3. Launch the web tool ui
-```
-streamlit run ui/app.py
-```
-
-####  4. Launch the api
-```
-uvicorn --app-dir api api:app --host 127.0.0.1 --port 8000 --reload
-```
-
-#### 5. Start annotation
-
-Go on the web tool page and submit a fasta/fna file containing your full genome sequence:
-
-<img src="./webtool/ui/static/task.png"/>
-
-The results should look like this: 
-
-<img src="./webtool/ui/static/results.png"/>
-
-
-<!-- 
-
-uvicorn --app-dir api api:app --host 10.52.88.33 --port 8000 --reload 
-python start.py 
-
--->

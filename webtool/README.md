@@ -1,98 +1,41 @@
-## TIS Annotator
+## 1. Web tools
 
-Translation Initiation Site Predictor in Bacteria
-: This tool predicts coding sequences (CDS) and refines Translation Initiation Sites (TIS) for bacterial genomes using two stages genomic language model pipeline.
-The code for model training can be found at [LLM_GeneAnnotator](https://github.com/Genereux-akotenou/LLM_GeneAnnotator).
+To streamline gene annotation after model training, we developed a post-processing pipeline that integrates an interactive web interface and an API-based system.
 
-To load our TIS Annotator model, you can use transformers library: 
+Our web-based annotation tool allows users to submit genome sequences for automatic annotation. It supports two input modes: 
+1. **Direct input** – Users can paste a genome sequence into the provided text area.
+2. **File upload** – Users can upload a FASTA file for processing.
 
-```python
-import torch
-from transformers import AutoModelForSequenceClassification, AutoTokenizer
+After providing input, users can specify the desired output format (GFF or CSV). Once submitted, the system processes the annotation and generates structured output files.
 
-# Load Model
-model_checkpoint = "Genereux-akotenou/BacteriaCDS-DNABERT-K6-89M"
-model = AutoModelForSequenceClassification.from_pretrained(model_checkpoint)
-tokenizer = AutoTokenizer.from_pretrained(model_checkpoint)
-```
-**Inference Example**: This model works with 6-mer tokenized sequences. You need to convert raw DNA sequences into k-mer format:
-
-```python
-def generate_kmer(sequence: str, k: int, overlap: int = 1):
-    return " ".join([sequence[j:j+k] for j in range(0, len(sequence) - k + 1, overlap)])
-
-sequence = "ATGAGAACCAGCCGGAGACCTCCTGCTCGTACATGAAAGGCTCGAGCAGCCGGGCGAGGGCGGTAG" 
-seq_kmer = generate_kmer(sequence, k=6, overlap=3)
-
-# Run inference
-inputs = tokenizer(
-  seq_kmer,
-  return_tensors="pt",
-  max_length=tokenizer.model_max_length,
-  padding="max_length",
-  truncation=True
-)
-with torch.no_grad():
-  outputs = model(**inputs)
-  logits = outputs.logits
-  predicted_class = torch.argmax(logits, dim=-1).item()
-```
-
-This will give first stage classifition ouput you can refine using the second stage classifier. See instructions here: [Loading model for second stage](https://huggingface.co/Genereux-akotenou/BacteriaTIS-DNABERT-K6-89M)
-
-## Benchmarck Table
-<img src="./ui/static/TIS_vs_Prodigal.png"/>
-
-<!-- | Method  | Bacteria                                      | Total Verified CDS | Prodigal Matched | Prodigal Missed | Prodigal Total Found | TIS_Annotator Matched | TIS_Annotator Missed | TIS_Annotator Total Found |
-|---------|----------------------------------------------|--------------------|------------------|----------------|------------------|------------------|----------------|------------------|
-|         | **Escherichia coli K-12 MG1655**             | 769                | 338              | 431            | 4347             | 744              | 25             | 4213             |
-|         | **Halobacterium salinarum R1**               | 530                | 243              | 287            | 2851             | 438              | 92             | 2659             |
-|         | **Mycobacterium tuberculosis H37Rv**         | 701                | 311              | 390            | 4204             | 626              | 75             | 3853             |
-|         | **Natronomonas pharaonis DSM 2160**          | 315                | 169              | 146            | 2873             | 248              | 67             | 2737             |
-|         | **Roseobacter denitrificans Och114**         | 526                | 0                | 526            | 4120             | 492              | 34             | 4006             | -->
-
-## Web tools guidelines
-<img src="./ui/static/app.png"/>
-
-#### 1. Create environment
-Firstly, we will create a python environment called
+### 1.1 Setting Up the Environment
+#### Step 1: Create a Python Environment
 ```sh
+git clone https://github.com/Bioinformatics-UM6P/GeneLM
+cd webtool
 python -m venv venv
 ```
-Secondly, we will login to the environement
+
+#### Step 2: Activate the Environment
 ```sh
 source ./venv/bin/activate
 ```
-#### 2. Install prerequisite libraries
 
+#### Step 3: Install Dependencies
 ```sh
 pip install -r requirements.txt
 ```
 
-####  3. Launch the web tool ui
-```
+### 1.2 Launch the Web Tool UI
+```sh
 streamlit run ui/app.py
 ```
 
-####  4. Launch the api
-```
+### 1.3 Start the API Server
+```sh
 uvicorn --app-dir api api:app --host 127.0.0.1 --port 8000 --reload
 ```
 
-#### 5. Start annotation
+### 1.4. Perform Annotation
+Navigate to the web tool and submit a FASTA/FNA file containing your full genome sequence.
 
-Go on the web tool page and submit a fasta/fna file containing your full genome sequence:
-
-<img src="./ui/static/task.png"/>
-
-The results should look like this: 
-
-<img src="./ui/static/results.png"/>
-
-
-<!-- 
-
-uvicorn --app-dir api api:app --host 10.52.88.33 --port 8000 --reload 
-python start.py 
-
--->
