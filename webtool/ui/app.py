@@ -61,7 +61,7 @@ def get_result_file(uuid):
 # FUNCTION 
 # ---------------------------------------------------------------
 st.set_page_config(
-    page_title='TIS',
+    page_title='GeneLM - TIS Predictor',
     page_icon='🧊',
     initial_sidebar_state='collapsed',
     # layout='wide',
@@ -257,7 +257,7 @@ def load_custom_header():
     </style>
 
     <div class="custom-header">
-        <div>TIS Predictor</div>
+        <div>GeneLM - TIS Predictor</div>
         <nav>
             <!--<a href="#home">Home</a>
             <a href="#data">Data</a>
@@ -266,8 +266,8 @@ def load_custom_header():
         </nav>
     </div>
     <div class="hero">
-        <h1>TIS  - AI powered Gene Annotation</h1>
-        <p>Effortlessly analyze genomes using our AI-driven annotation tool.</p>
+        <h1>GeneLM  - AI powered Gene Predictior tool</h1>
+        <p>Effortlessly analyze genomes using our AI-driven annotation pipeline.</p>
         <a href="?tab=tool" class="btn" target="_self">Try the Tool</a>
     </div>
     <div class="content-wrapper"></div>
@@ -444,16 +444,24 @@ def annotation_process(uploaded_file, output_format, flowchart, flowchart_placeh
 # ---------------------------------------------------------------
 def home():
     st.subheader("Translation Initiation Site Predictor in Bacteria")
+    
     st.markdown("""
-    **Project Overview:**
-    This tool predicts translation initiation sites in bacterial genomes.
+    ## **Project Overview**
+    Accurate gene annotation is essential for understanding bacterial genomes and their functional roles. This tool leverages transformer-based models to predict **Translation Initiation Sites (TIS)** in bacterial sequences, improving upon traditional gene prediction methods. Using **Genomic Language Models (gLMs)**, we enhance the identification of coding sequences and refine TIS predictions.
 
-    **GitHub Repository:** [GitHub](https://github.com/your-repo)
+    ---
+    ### **Features**
+    - **Predicts Translation Initiation Sites (TIS) with high precision**
+    - **Leverages transformer-based architectures for sequence classification**
+    - **Fine-tuned on complete bacterial genomes to improve annotation accuracy**
+    - **Outperforms conventional gene prediction tools in various bacterial species**
+    
+    ---
+    ### **GitHub Repository**
+    The implementation and source code are available on GitHub:  
+    [GitHub Repository](https://github.com/Bioinformatics-UM6P/GeneLM)
 
-    **Reference Paper:** [Link to paper]
-
-    **How to Cite:**
-    *Author(s), Year. Title. Journal/Conference. DOI/Link*
+    ---
     """)
 
 def try_the_tool():
@@ -784,11 +792,11 @@ def api_documentation():
             1. **Load the appropriate model**:
                 - Use `BacteriaCDS-DNABERT-K6-89M` for CDS classification.
                 - Use `BacteriaTIS-DNABERT-K6-89M` for TIS classification.
-            2. **Prepare the genome sequence** in 6-mer format (if needed).
+            2. **Prepare the genome sequence** in 6-mer format.
             3. **Run inference** on your sequence.
             4. **Interpret outputs** (classification labels and confidence scores).
 
-            **Now you can run bacterial gene annotation locally!**
+            **See full example of hugginface documentation: [BacteriaCDS-DNABERT-K6-89M](https://huggingface.co/Genereux-akotenou/BacteriaCDS-DNABERT-K6-89M) and [BacteriaTIS-DNABERT-K6-89M](https://huggingface.co/Genereux-akotenou/BacteriaTIS-DNABERT-K6-89M)**
         """)
 
 
@@ -799,8 +807,7 @@ def disclaimer():
     This tool is based on machine learning predictions and should be verified manually.
     
     **Contact:**
-    - Email: your_email@example.com
-    - Support: [GitHub Issues](https://github.com/your-repo/issues)
+    - Support: [GitHub Issues](https://github.com/Bioinformatics-UM6P/GeneLM/issues)
     """)
 
     

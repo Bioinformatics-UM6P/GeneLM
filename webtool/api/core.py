@@ -264,16 +264,16 @@ class AnnotatorPipeline:
             with output_file.open("w") as f:
                 current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 f.write("##gff-version 3\n")
-                f.write(f"##Generated using TIS_Predictor, {current_time}\n")
+                f.write(f"##Generated using GeneLM, {current_time}\n")
                 f.write(f"##Project Name: test_{str(task_uuid).split('-')[-2]}\n")
                 f.write(f"##Job Id: {task_uuid}\n")
-                f.write(f"##Tool: TIS_Predictor\n")
+                f.write(f"##Tool: GeneLM\n")
 
                 for _, row in df.iterrows():
                     if row['prediction_max_likelihood'] == 1:
                         gff_line = "\t".join([
                             row["seq_id"],
-                            "TIS_Predictor",
+                            "GeneLM",
                             "CDS",
                             str(row["start"]),
                             str(row["end"]),

@@ -1,0 +1,91 @@
+2025-03-06 10:15:41,747 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10795 MB
+2025-03-06 10:15:48,629 - INFO - Inference using: cuda
+
+2025-03-06 10:15:48,629 - INFO - Optimal batch size: 719
+2025-03-06 10:16:15,530 - INFO - Task ccc23e6f-0afe-4b29-a297-38be51098f34 submitted - File: tmpth61r5em.fasta - Format: CSV
+2025-03-06 10:16:15,535 - INFO - Processing task ccc23e6f-0afe-4b29-a297-38be51098f34 - File: __files__/uploads/ccc23e6f-0afe-4b29-a297-38be51098f34_tmpth61r5em.fasta - Format: CSV
+2025-03-06 10:16:15,536 - INFO - Progress check - Task ccc23e6f-0afe-4b29-a297-38be51098f34 - Status: Start - Progress: 10%
+2025-03-06 10:16:20,542 - INFO - Progress check - Task ccc23e6f-0afe-4b29-a297-38be51098f34 - Status: Fist Stage CDS Classification - Progress: 60%
+2025-03-06 10:16:25,547 - INFO - Progress check - Task ccc23e6f-0afe-4b29-a297-38be51098f34 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-03-06 10:16:30,551 - INFO - Progress check - Task ccc23e6f-0afe-4b29-a297-38be51098f34 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-03-06 10:16:35,557 - INFO - Progress check - Task ccc23e6f-0afe-4b29-a297-38be51098f34 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-03-06 10:16:35,880 - INFO - Task ccc23e6f-0afe-4b29-a297-38be51098f34 completed - Result: __files__/results/ccc23e6f-0afe-4b29-a297-38be51098f34_tmpth61r5em.csv
+2025-03-06 10:16:40,564 - INFO - Progress check - Task ccc23e6f-0afe-4b29-a297-38be51098f34 - Status: Completed - Progress: 100%
+2025-03-06 10:16:40,570 - INFO - Result retrieved - Task ccc23e6f-0afe-4b29-a297-38be51098f34 - File URL: http://127.0.0.1:8000/tis/download/ccc23e6f-0afe-4b29-a297-38be51098f34_tmpth61r5em.csv
+2025-03-06 10:18:16,165 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10816 MB
+2025-03-06 10:18:17,325 - INFO - Inference using: cuda
+
+2025-03-06 10:18:17,325 - INFO - Optimal batch size: 721
+2025-03-06 10:18:32,651 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10821 MB
+2025-03-06 10:18:33,806 - INFO - Inference using: cuda
+
+2025-03-06 10:18:33,806 - INFO - Optimal batch size: 721
+2025-03-06 10:18:37,796 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10821 MB
+2025-03-06 10:18:38,875 - INFO - Inference using: cuda
+
+2025-03-06 10:18:38,875 - INFO - Optimal batch size: 721
+2025-03-06 10:18:43,510 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10813 MB
+2025-03-06 10:18:44,893 - INFO - Inference using: cuda
+
+2025-03-06 10:18:44,893 - INFO - Optimal batch size: 720
+2025-03-06 10:19:09,561 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10765 MB
+2025-03-06 10:19:10,702 - INFO - Inference using: cuda
+
+2025-03-06 10:19:10,703 - INFO - Optimal batch size: 717
+2025-03-06 10:19:14,781 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10754 MB
+2025-03-06 10:19:15,863 - INFO - Inference using: cuda
+
+2025-03-06 10:19:15,863 - INFO - Optimal batch size: 716
+2025-03-06 10:19:39,254 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10797 MB
+2025-03-06 10:19:40,396 - INFO - Inference using: cuda
+
+2025-03-06 10:19:40,396 - INFO - Optimal batch size: 719
+2025-03-06 10:19:46,115 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10809 MB
+2025-03-06 10:19:47,223 - INFO - Inference using: cuda
+
+2025-03-06 10:19:47,223 - INFO - Optimal batch size: 720
+2025-03-06 10:19:51,232 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10813 MB
+2025-03-06 10:19:52,322 - INFO - Inference using: cuda
+
+2025-03-06 10:19:52,323 - INFO - Optimal batch size: 720
+2025-03-06 10:20:00,106 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10771 MB
+2025-03-06 10:20:01,214 - INFO - Inference using: cuda
+
+2025-03-06 10:20:01,214 - INFO - Optimal batch size: 718
+2025-03-06 10:20:05,277 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10800 MB
+2025-03-06 10:20:06,376 - INFO - Inference using: cuda
+
+2025-03-06 10:20:06,376 - INFO - Optimal batch size: 720
+2025-03-06 10:20:14,121 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10794 MB
+2025-03-06 10:20:15,281 - INFO - Inference using: cuda
+
+2025-03-06 10:20:15,283 - INFO - Optimal batch size: 719
+2025-03-06 10:20:24,119 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10811 MB
+2025-03-06 10:20:25,300 - INFO - Inference using: cuda
+
+2025-03-06 10:20:25,300 - INFO - Optimal batch size: 720
+2025-03-06 10:20:29,381 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10793 MB
+2025-03-06 10:20:30,654 - INFO - Inference using: cuda
+
+2025-03-06 10:20:30,654 - INFO - Optimal batch size: 719
+2025-03-06 10:20:34,923 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10789 MB
+2025-03-06 10:20:35,999 - INFO - Inference using: cuda
+
+2025-03-06 10:20:35,999 - INFO - Optimal batch size: 719
+2025-03-06 10:21:58,101 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10806 MB
+2025-03-06 10:21:59,224 - INFO - Inference using: cuda
+
+2025-03-06 10:21:59,225 - INFO - Optimal batch size: 720
+2025-03-06 10:22:07,100 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10801 MB
+2025-03-06 10:22:08,153 - INFO - Inference using: cuda
+
+2025-03-06 10:22:08,154 - INFO - Optimal batch size: 720
+2025-03-06 10:22:49,159 - INFO - Task 39aa8764-c520-48fb-9f81-770785145745 submitted - File: tmpv6nb50n4.fasta - Format: GFF
+2025-03-06 10:22:49,194 - INFO - Processing task 39aa8764-c520-48fb-9f81-770785145745 - File: __files__/uploads/39aa8764-c520-48fb-9f81-770785145745_tmpv6nb50n4.fasta - Format: GFF
+2025-03-06 10:22:49,195 - INFO - Progress check - Task 39aa8764-c520-48fb-9f81-770785145745 - Status: Processing - Progress: 1%
+2025-03-06 10:22:54,202 - INFO - Progress check - Task 39aa8764-c520-48fb-9f81-770785145745 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-03-06 10:22:59,208 - INFO - Progress check - Task 39aa8764-c520-48fb-9f81-770785145745 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-03-06 10:23:04,213 - INFO - Progress check - Task 39aa8764-c520-48fb-9f81-770785145745 - Status: Second Stage TIS Refinement - Progress: 80%
+2025-03-06 10:23:08,896 - INFO - Task 39aa8764-c520-48fb-9f81-770785145745 completed - Result: __files__/results/39aa8764-c520-48fb-9f81-770785145745_tmpv6nb50n4.gff
+2025-03-06 10:23:09,218 - INFO - Progress check - Task 39aa8764-c520-48fb-9f81-770785145745 - Status: Completed - Progress: 100%
+2025-03-06 10:23:09,223 - INFO - Result retrieved - Task 39aa8764-c520-48fb-9f81-770785145745 - File URL: http://127.0.0.1:8000/tis/download/39aa8764-c520-48fb-9f81-770785145745_tmpv6nb50n4.gff
