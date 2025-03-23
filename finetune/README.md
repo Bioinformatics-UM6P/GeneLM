@@ -1,6 +1,8 @@
-## Note
+## ⚠️ **Note**
 
-<div style="color: red;">Note: The contents of finetune/data-pipeline/* and finetune/train-pipeline/* have been excluded from this release. We will make the full code pipeline for self-training—including data preprocessing and training scripts—publicly available soon to allow full reproducibility of our work.</div>
+<div style="color: red;">
+<b>Note:</b> The contents of <code><b>finetune/data-pipeline/*</b></code> and <code><b>finetune/train-pipeline/*</b></code> have been excluded from this release. We will make the full code pipeline for self-training — including data preprocessing and training scripts — publicly available soon to allow full <b>reproducibility of our work<b/>.
+</div>
 
 ## Finetune Directory Structure
 
