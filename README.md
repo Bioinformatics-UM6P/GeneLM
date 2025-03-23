@@ -122,14 +122,15 @@ By following the resources in this directory, users can replicate or extend the 
 ## 4. Citation
 If you have used GeneLM in your research, please kindly cite the following publication:
 ```bib
-@article{akotenou2025genomic,
-    author = {Akotenou, G. and El Allali, A.},
-    title = {Genomic Language Models (gLMs) Decode Bacterial Genomes for Improved Gene Prediction and Translation Initiation Site Identification},
-    journal = {bioRxiv},
-    year = {2025},
-    month = {March},
-    doi = {10.1101/2025.03.20.644312},
-    url = {https://doi.org/10.1101/2025.03.20.644312},
-    eprint = {https://www.biorxiv.org/content/10.1101/2025.03.20.644312v1}
+@article {Akotenou2025.03.20.644312,
+	author = {Akotenou, Genereux and El Allali, Achraf},
+	title = {GENOMIC LANGUAGE MODELS (GLMS) DECODE BACTERIAL GENOMES FOR IMPROVED GENE PREDICTION AND TRANSLATION INITIATION SITE IDENTIFICATION},
+	elocation-id = {2025.03.20.644312},
+	year = {2025},
+	doi = {10.1101/2025.03.20.644312},
+	publisher = {Cold Spring Harbor Laboratory},
+	URL = {https://www.biorxiv.org/content/early/2025/03/22/2025.03.20.644312},
+	eprint = {https://www.biorxiv.org/content/early/2025/03/22/2025.03.20.644312.full.pdf},
+	journal = {bioRxiv}
 }
 ```
