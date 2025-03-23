@@ -1,3 +1,5 @@
 webtool/venv
 .DS_Store
 finetune/generate_structure.py
+finetune/data-pipeline/*
+finetune/train-pipeline/*

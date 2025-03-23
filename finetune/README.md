@@ -1,3 +1,7 @@
+# Note
+
+<span style="color: red;">Note: The contents of finetune/data-pipeline/* and finetune/train-pipeline/* have been excluded from this release. We will make the full code pipeline for self-training—including data preprocessing and training scripts—publicly available soon to allow full reproducibility of our work.</span>
+
 # Finetune Directory Structure
 
 This directory contains the files and folders related to model finetuning operations.

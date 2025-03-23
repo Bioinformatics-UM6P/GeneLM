@@ -56,7 +56,7 @@ Navigate to the web tool and submit a FASTA/FNA file containing your full genome
 <img src="./webtool/ui/static/web_tool_2b.png"/>
 
 
-## 2. Loading model from hugginface
+## 2. Loading model from hugginface (Quick inference)
 Depending wethever you wanna classify CDS of TIS you can download the model from higginface au use it following higginface api. To load our GeneLM CDS-CLASSIFIER model, you can use transformers library: 
 
 ```python
@@ -121,18 +121,14 @@ By following the resources in this directory, users can replicate or extend the 
 ## 4. Citation
 If you have used GeneLM in your research, please kindly cite the following publication:
 ```bib
-@article{xxxxxxxxx,
-    author = {Author, Name and Another, Name},
-    title = "{Dummy Title for GeneLM}",
-    journal = {Journal Name},
-    volume = {XX},
-    number = {X},
-    pages = {XXX-XXX},
-    year = {YYYY},
-    month = {MM},
-    issn = {XXXX-XXXX},
-    doi = {XX.XXXX/XXXXXXX},
-    url = {https://dummy.url},
-    eprint = {https://dummy.url/pdf},
+@article{akotenou2025genomic,
+    author = {Akotenou, G. and El Allali, A.},
+    title = {Genomic Language Models (gLMs) Decode Bacterial Genomes for Improved Gene Prediction and Translation Initiation Site Identification},
+    journal = {bioRxiv},
+    year = {2025},
+    month = {March},
+    doi = {10.1101/2025.03.20.644312},
+    url = {https://doi.org/10.1101/2025.03.20.644312},
+    eprint = {https://www.biorxiv.org/content/10.1101/2025.03.20.644312v1}
 }
 ```
