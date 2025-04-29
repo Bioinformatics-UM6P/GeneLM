@@ -13,6 +13,7 @@ import pandas as pd
 from pathlib import Path
 from dotenv import load_dotenv
 load_dotenv()
+import subprocess
 
 # ---------------------------------------------------------------
 # API UTILS 
@@ -275,7 +276,7 @@ def load_custom_header():
     st.markdown(header_html, unsafe_allow_html=True)
 
 def set_ui_navigation():
-    list_of_tabs = ["🏠 Home", "🔬 Try the Tool", "📖 API Docs", "⚠️ Disclaimer"]
+    list_of_tabs = ["🏠 Home", "🔬 Try the Tool", "📖 API Docs", "⚠️ Disclaimer", "🧪 Developer Lab"]
     tabs = st.tabs(list_of_tabs)
 
     query_params = st.query_params
@@ -309,6 +310,8 @@ def set_ui_navigation():
         api_documentation()
     with tabs[3]:
         disclaimer()
+    with tabs[4]:
+        developer_lab()
 
 def create_flowchart():
     col1, col2 = st.columns([0.1, 0.9])
@@ -810,7 +813,6 @@ def api_documentation():
             **See full example of hugginface documentation: [BacteriaCDS-DNABERT-K6-89M](https://huggingface.co/Genereux-akotenou/BacteriaCDS-DNABERT-K6-89M) and [BacteriaTIS-DNABERT-K6-89M](https://huggingface.co/Genereux-akotenou/BacteriaTIS-DNABERT-K6-89M)**
         """)
 
-
 def disclaimer():
     st.subheader("Disclaimer & Contact")
     st.markdown("""
@@ -820,6 +822,31 @@ def disclaimer():
     **Contact:**
     - Support: [GitHub Issues](https://github.com/Bioinformatics-UM6P/GeneLM/issues)
     """)
+
+def developer_lab():
+    st.subheader("Developer Lab")
+
+    st.markdown("""
+    Welcome to the **Developer Lab**! Here, you can experiment with the model interactively using notebooks.
+    Click the button below to launch your JupyterLab environment.
+    """, unsafe_allow_html=True)
+    
+    col1, col2, col3 = st.columns([2, 1, 2])
+    with col2:
+        if st.button('🚀 Launch Developer Lab'):
+            developer_folder = os.path.abspath('./webtool/developer-lab')
+            if not os.path.exists(developer_folder):
+                os.makedirs(developer_folder)
+            subprocess.Popen([
+                "jupyter", "lab",
+                "--no-browser",
+                "--ip=127.0.0.1",
+                "--port=8503",
+                "--NotebookApp.token=''",
+                "--NotebookApp.password=''",
+                f"--notebook-dir={developer_folder}"
+            ])
+            st.success("✅ JupyterLab has been launched! You can now access it at [http://localhost:8503](http://localhost:8503)")
 
     
 # ---------------------------------------------------------------
