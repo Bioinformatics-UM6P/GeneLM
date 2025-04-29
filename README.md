@@ -21,7 +21,7 @@ GeneLM: Gene Language Model for Translation Initiation Site Prediction in Bacter
 
 ## Benchmark
 
-We evaluated our approach against the widely used gene annotation tool, Prodigal, on an experimentally verified bacterial dataset. The results of this comparison are presented in the image below. You can access the our [preprint here](https://www.biorxiv.org/content/early/2025/03/22/2025.03.20.644312.full.pdf). 
+We evaluated our approach against the widely used gene annotation tool, Prodigal, on an experimentally verified bacterial dataset. The results of this comparison are presented in the image below. You can access our [pre-print here](https://www.biorxiv.org/content/early/2025/03/22/2025.03.20.644312.full.pdf). 
 
 <img src="./webtool/ui/static/benchmark_table.png"/>
 
