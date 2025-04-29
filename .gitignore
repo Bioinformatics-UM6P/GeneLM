@@ -3,3 +3,4 @@ webtool/venv
 finetune/generate_structure.py
 finetune/data-pipeline/*
 finetune/train-pipeline/*
+benchmark

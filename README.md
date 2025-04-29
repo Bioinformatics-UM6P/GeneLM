@@ -1,3 +1,17 @@
+<div align="center" style="">
+  <br>
+  <img src="./webtool/ui/static/banner/banner-6.png"/ style="height: 7em; width: 13em">
+  <br>
+  <!-- <h1>GeneLM</h1> -->
+  GeneLM: Gene Language Model for Translation Initiation Site Prediction in Bacteria
+  <br>
+  <br>
+
+  [![DOI:10.1101/2025.03.20.644312](https://zenodo.org/badge/DOI/10.1101/2025.03.20.644312.svg)](https://doi.org/10.1101/2025.03.20.644312)
+  [![Hugging Face](https://img.shields.io/badge/Hugging_Face-CDS--Model-orange?style=flat&logo=HuggingFace&logoColor=)](https://huggingface.co/Genereux-akotenou/BacteriaCDS-DNABERT-K6-89M)
+  [![Hugging Face](https://img.shields.io/badge/Hugging_Face-TIS--Model-orange?style=flat&logo=HuggingFace&logoColor=)](https://huggingface.co/Genereux-akotenou/BacteriaTIS-DNABERT-K6-89M)
+</div>
+
 ## GeneLM
 
 <!-- [![Watch the video](./webtool/ui/static/cta.png)](./webtool/ui/static/demo-gene-prediction-prokaryotes.mp4) -->
