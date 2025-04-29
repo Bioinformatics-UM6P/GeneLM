@@ -15,7 +15,6 @@
 ## GeneLM
 
 <!-- [![Watch the video](./webtool/ui/static/cta.png)](./webtool/ui/static/demo-gene-prediction-prokaryotes.mp4) -->
-<!-- [![Watch the video](./webtool/ui/static/cta.png)](https://genereux-akotenou.github.io/assets/images/demo-gene-prediction-prokaryotes.mp4) -->
 <a href="https://genereux-akotenou.github.io/assets/images/demo-gene-prediction-prokaryotes.mp4" target="_blank">
   <img src="./webtool/ui/static/cta.png" alt="Watch the video" />
 </a>

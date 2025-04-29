@@ -1,0 +1,40 @@
+2025-04-29 19:09:11,039 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10924 MB
+2025-04-29 19:09:19,303 - INFO - Inference using: cuda
+
+2025-04-29 19:09:19,303 - INFO - Optimal batch size: 728
+2025-04-29 19:11:14,357 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10923 MB
+2025-04-29 19:11:15,552 - INFO - Inference using: cuda
+
+2025-04-29 19:11:15,552 - INFO - Optimal batch size: 728
+2025-04-29 19:11:19,524 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10906 MB
+2025-04-29 19:11:20,719 - INFO - Inference using: cuda
+
+2025-04-29 19:11:20,719 - INFO - Optimal batch size: 727
+2025-04-29 19:11:24,447 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10909 MB
+2025-04-29 19:11:25,489 - INFO - Inference using: cuda
+
+2025-04-29 19:11:25,489 - INFO - Optimal batch size: 727
+2025-04-29 19:11:37,236 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10943 MB
+2025-04-29 19:11:38,320 - INFO - Inference using: cuda
+
+2025-04-29 19:11:38,320 - INFO - Optimal batch size: 729
+2025-04-29 19:11:42,053 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10937 MB
+2025-04-29 19:11:43,318 - INFO - Inference using: cuda
+
+2025-04-29 19:11:43,319 - INFO - Optimal batch size: 729
+2025-04-29 19:11:47,255 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10852 MB
+2025-04-29 19:11:48,348 - INFO - Inference using: cuda
+
+2025-04-29 19:11:48,348 - INFO - Optimal batch size: 723
+2025-04-29 19:12:29,236 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10887 MB
+2025-04-29 19:12:30,440 - INFO - Inference using: cuda
+
+2025-04-29 19:12:30,440 - INFO - Optimal batch size: 725
+2025-04-29 19:12:34,118 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10923 MB
+2025-04-29 19:12:35,473 - INFO - Inference using: cuda
+
+2025-04-29 19:12:35,473 - INFO - Optimal batch size: 728
+2025-04-29 19:14:30,373 - INFO - GPU Total Memory: 11925 MB, Free Memory: 10916 MB
+2025-04-29 19:14:31,615 - INFO - Inference using: cuda
+
+2025-04-29 19:14:31,615 - INFO - Optimal batch size: 727

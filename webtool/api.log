@@ -1,0 +1,60 @@
+INFO:     Will watch for changes in these directories: ['/home/biolab-office-1/DATALAB/DEV/GeneLM/webtool']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [15311] using StatReload
+INFO:     Started server process [15315]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:58704 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58704 - "GET /openapi.json HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'ui/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15315]
+WARNING:  StatReload detected changes in 'ui/app.py'. Reloading...
+INFO:     Started server process [15559]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'ui/app.py'. Reloading...
+INFO:     Started server process [15582]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Started server process [15605]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'ui/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15605]
+WARNING:  StatReload detected changes in 'ui/app.py'. Reloading...
+INFO:     Started server process [15624]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'ui/app.py'. Reloading...
+INFO:     Started server process [15643]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Started server process [15662]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'ui/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15662]
+WARNING:  StatReload detected changes in 'ui/app.py'. Reloading...
+INFO:     Started server process [15690]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Started server process [15712]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'ui/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15712]
+INFO:     Started server process [15745]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.

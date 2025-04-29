@@ -266,7 +266,7 @@ def load_custom_header():
         </nav>
     </div>
     <div class="hero">
-        <h1>GeneLM  - AI powered Gene Predictior tool</h1>
+        <h1>GeneLM  - AI powered Gene Predictor tool</h1>
         <p>Effortlessly analyze genomes using our AI-driven annotation pipeline.</p>
         <a href="?tab=tool" class="btn" target="_self">Try the Tool</a>
     </div>
@@ -443,21 +443,32 @@ def annotation_process(uploaded_file, output_format, flowchart, flowchart_placeh
 # PAGE 
 # ---------------------------------------------------------------
 def home():
-    st.subheader("Translation Initiation Site Predictor in Bacteria")
-    
+    st.subheader("Translation Initiation Site Predictor")
     st.markdown("""
-    ## **Project Overview**
-    Accurate gene annotation is essential for understanding bacterial genomes and their functional roles. This tool leverages transformer-based models to predict **Translation Initiation Sites (TIS)** in bacterial sequences, improving upon traditional gene prediction methods. Using **Genomic Language Models (gLMs)**, we enhance the identification of coding sequences and refine TIS predictions.
+    Accurate bacterial gene prediction is essential for understanding microbial functions and advancing biotechnology.
+    Traditional methods based on sequence homology and statistical models often struggle with complex genetic variations and
+    novel sequences due to their limited ability to interpret the ”language of genes.” To overcome these challenges, we explore
+    Genomic Language Models (gLMs) —inspired by Large Language Models in Natural Language Processing— to enhance
+    bacterial gene prediction. These models learn patterns and contextual dependencies within genetic sequences, similar to
+    how LLMs process human language. We employ transformers, specifically DNABERT, for bacterial gene prediction using
+    a two-stage framework: first, identifying Coding Sequence (CDS) regions, and then refining predictions by identifying
+    the correct Translation Initiation Sites (TIS). DNABERT is fine-tuned on a curated set of NCBI complete bacterial
+    genomes using a k-mer tokenizer for sequence processing. Our results show that GeneLM significantly improves gene
+    prediction accuracy. Compared to Prodigal, a leading prokaryotic gene finder, GeneLM reduces missed CDS predictions
+    while increasing matched annotations. More notably, our TIS predictions surpass traditional methods when tested against
+    experimentally verified sites. GeneLM demonstrates the power of gLMs in decoding genetic information, achieving state-
+    of-the-art performance in bacterial genome analysis. This advancement highlights the potential of language models to
+    revolutionize genome annotation, outperforming conventional tools and enabling more precise genetic insights.
 
     ---
-    ### **Features**
+    #### **Features**
     - **Predicts Translation Initiation Sites (TIS) with high precision**
     - **Leverages transformer-based architectures for sequence classification**
     - **Fine-tuned on complete bacterial genomes to improve annotation accuracy**
     - **Outperforms conventional gene prediction tools in various bacterial species**
     
     ---
-    ### **GitHub Repository**
+    #### **GitHub Repository**
     The implementation and source code are available on GitHub:  
     [GitHub Repository](https://github.com/Bioinformatics-UM6P/GeneLM)
 

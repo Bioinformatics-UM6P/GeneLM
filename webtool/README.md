@@ -9,6 +9,14 @@ Our web-based annotation tool allows users to submit genome sequences for automa
 After providing input, users can specify the desired output format (GFF or CSV). Once submitted, the system processes the annotation and generates structured output files.
 
 ### 1.1 Setting Up the Environment
+
+> To speed up the setup process, you can simply run the `setup-and-run.sh` script. This script will automatically create the Python environment, install the necessary dependencies, and start both the API and the web tool services for you.
+>
+> Please make sure that ports 8501 (for the web UI) and 8000 (for the API) are available on your machine.
+>
+> To proceed, make the script executable (`chmod +x setup-and-run.sh`) and run it (`./setup-and-run.sh`). If any errors occur during execution, you can still perform the setup manually by following the detailed steps described below.
+
+#### Manual Setup
 #### Step 1: Create a Python Environment
 ```sh
 git clone https://github.com/Bioinformatics-UM6P/GeneLM
