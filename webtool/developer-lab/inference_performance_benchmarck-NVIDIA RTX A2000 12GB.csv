@@ -1,0 +1,2 @@
+Genome,GPU Name,GPU Total Memory (GB),Batch Size,File Size (KB),Inference Time (s),Peak GPU Memory (MB),Number of Predictions,Throughput (seqs/sec),Output Path
+bacteria-1.fasta,NVIDIA RTX A2000 12GB,11.65,655,14.83,18.55,0.0,12,0.65,__files__/results/bacteria-1.csv

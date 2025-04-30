@@ -15,6 +15,7 @@ from itertools import groupby
 import traceback
 
 OUTPUT_DIR = Path("./__files__/results")
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 class AnnotatorPipeline:
     def __init__(self):

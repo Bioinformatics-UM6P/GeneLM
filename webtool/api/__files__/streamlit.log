@@ -1,0 +1,82 @@
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://10.52.88.33:8501
+  External URL: http://41.137.204.12:8501
+
+[I 2025-04-30 17:26:48.214 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-04-30 17:26:48.218 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2025-04-30 17:26:48.219 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-04-30 17:26:48.219 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-04-30 17:26:48.223 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2025-04-30 17:26:48.223 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-04-30 17:26:48.230 ServerApp] notebook | extension was successfully linked.
+[I 2025-04-30 17:26:48.427 ServerApp] notebook_shim | extension was successfully linked.
+[W 2025-04-30 17:26:48.461 ServerApp] All authentication is disabled.  Anyone who can connect to this server will be able to run code.
+[I 2025-04-30 17:26:48.462 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-04-30 17:26:48.463 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-04-30 17:26:48.464 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-04-30 17:26:48.467 LabApp] JupyterLab extension loaded from /home/biolab-office-1/DATALAB/DEV/GeneLM/webtool/venv/lib/python3.12/site-packages/jupyterlab
+[I 2025-04-30 17:26:48.467 LabApp] JupyterLab application directory is /home/biolab-office-1/DATALAB/DEV/GeneLM/webtool/venv/share/jupyter/lab
+[I 2025-04-30 17:26:48.467 LabApp] Extension Manager is 'pypi'.
+[I 2025-04-30 17:26:48.506 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-04-30 17:26:48.508 ServerApp] notebook | extension was successfully loaded.
+[I 2025-04-30 17:26:48.509 ServerApp] Serving notebooks from local directory: /home/biolab-office-1/DATALAB/DEV/GeneLM/webtool/developer-lab
+[I 2025-04-30 17:26:48.509 ServerApp] Jupyter Server 2.15.0 is running at:
+[I 2025-04-30 17:26:48.509 ServerApp] http://127.0.0.1:8502/lab
+[I 2025-04-30 17:26:48.509 ServerApp]     http://127.0.0.1:8502/lab
+[I 2025-04-30 17:26:48.509 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-04-30 17:26:48.897 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-04-30 17:26:50.546 ServerApp] 302 GET / (@127.0.0.1) 1.27ms
+[W 2025-04-30 17:26:51.947 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2025-04-30 17:26:52.282 ServerApp] 404 GET /api/contents/03-overfiting-risk.ipynb?content=0&hash=0&1746030412273 (012317caab724e589cfbdfdf9b7718f0@127.0.0.1) 2.11ms referer=http://localhost:8502/lab?
+[W 2025-04-30 17:26:52.282 ServerApp] 404 GET /api/contents/03-overfiting-risk.ipynb?content=0&hash=0&1746030412273 (127.0.0.1): No such file or directory: 03-overfiting-risk.ipynb
+[W 2025-04-30 17:26:52.284 ServerApp] 404 GET /api/contents/01-upstreaam-disruption-analysis.ipynb?content=0&hash=0&1746030412274 (012317caab724e589cfbdfdf9b7718f0@127.0.0.1) 1.33ms referer=http://localhost:8502/lab?
+[W 2025-04-30 17:26:52.284 ServerApp] 404 GET /api/contents/01-upstreaam-disruption-analysis.ipynb?content=0&hash=0&1746030412274 (127.0.0.1): No such file or directory: 01-upstreaam-disruption-analysis.ipynb
+[W 2025-04-30 17:26:52.285 ServerApp] 404 GET /api/contents/inference-cost.ipynb?content=0&hash=0&1746030412274 (012317caab724e589cfbdfdf9b7718f0@127.0.0.1) 1.63ms referer=http://localhost:8502/lab?
+[W 2025-04-30 17:26:52.285 ServerApp] 404 GET /api/contents/inference-cost.ipynb?content=0&hash=0&1746030412274 (127.0.0.1): No such file or directory: inference-cost.ipynb
+[W 2025-04-30 17:26:52.286 ServerApp] 404 GET /api/contents/Untitled.ipynb?content=0&hash=0&1746030412273 (012317caab724e589cfbdfdf9b7718f0@127.0.0.1) 0.67ms referer=http://localhost:8502/lab?
+[W 2025-04-30 17:26:52.286 ServerApp] 404 GET /api/contents/Untitled.ipynb?content=0&hash=0&1746030412273 (127.0.0.1): No such file or directory: Untitled.ipynb
+[W 2025-04-30 17:26:52.293 ServerApp] 404 GET /api/contents/upstreaam-disruption-analysis.ipynb?content=0&hash=0&1746030412274 (012317caab724e589cfbdfdf9b7718f0@127.0.0.1) 1.18ms referer=http://localhost:8502/lab?
+[W 2025-04-30 17:26:52.293 ServerApp] 404 GET /api/contents/upstreaam-disruption-analysis.ipynb?content=0&hash=0&1746030412274 (127.0.0.1): No such file or directory: upstreaam-disruption-analysis.ipynb
+[W 2025-04-30 17:26:52.296 ServerApp] 404 GET /api/contents/inference-cost.ipynb?content=0&hash=0&1746030412274 (012317caab724e589cfbdfdf9b7718f0@127.0.0.1) 1.95ms referer=http://localhost:8502/lab?
+[W 2025-04-30 17:26:52.296 ServerApp] 404 GET /api/contents/inference-cost.ipynb?content=0&hash=0&1746030412274 (127.0.0.1): No such file or directory: inference-cost.ipynb
+[I 2025-04-30 17:26:53.904 ServerApp] Kernel started: 7523d3f8-9575-49fe-8a06-d2a6a4410244
+[I 2025-04-30 17:26:53.925 ServerApp] Kernel started: 23c7956f-c1c6-412d-bbab-505375b81315
+[I 2025-04-30 17:26:53.925 ServerApp] Kernel started: f46df6fe-6d53-4ab4-a8d5-4042a4814458
+[I 2025-04-30 17:26:55.051 ServerApp] Connecting to kernel f46df6fe-6d53-4ab4-a8d5-4042a4814458.
+[I 2025-04-30 17:26:55.109 ServerApp] Starting buffering for f46df6fe-6d53-4ab4-a8d5-4042a4814458:d83ab0df-a7ca-4c2c-971a-a33255f2f67b
+[I 2025-04-30 17:26:56.013 ServerApp] Connecting to kernel 7523d3f8-9575-49fe-8a06-d2a6a4410244.
+[I 2025-04-30 17:26:56.327 ServerApp] Connecting to kernel 23c7956f-c1c6-412d-bbab-505375b81315.
+[I 2025-04-30 17:26:56.341 ServerApp] Connecting to kernel f46df6fe-6d53-4ab4-a8d5-4042a4814458.
+[I 2025-04-30 17:26:56.358 ServerApp] Connecting to kernel f46df6fe-6d53-4ab4-a8d5-4042a4814458.
+[W 2025-04-30 17:28:44.132 ServerApp] 404 GET /api/contents/data2-genome/bacteria-1.fasta?content=0&hash=0&1746030524129 (012317caab724e589cfbdfdf9b7718f0@127.0.0.1) 0.99ms referer=http://localhost:8502/lab/tree/__files__/results
+[W 2025-04-30 17:28:44.132 ServerApp] 404 GET /api/contents/data2-genome/bacteria-1.fasta?content=0&hash=0&1746030524129 (127.0.0.1): No such file or directory: data2-genome/bacteria-1.fasta
+[I 2025-04-30 17:28:53.576 ServerApp] Saving file at /02-inference-cost.ipynb
+[W 2025-04-30 17:29:07.861 ServerApp] 404 GET /api/contents/data2-genome/bacteria-3.fasta?content=0&hash=0&1746030547856 (012317caab724e589cfbdfdf9b7718f0@127.0.0.1) 1.12ms referer=http://localhost:8502/lab/tree/__files__/results
+[W 2025-04-30 17:29:07.861 ServerApp] 404 GET /api/contents/data2-genome/bacteria-3.fasta?content=0&hash=0&1746030547856 (127.0.0.1): No such file or directory: data2-genome/bacteria-3.fasta
+[W 2025-04-30 17:29:07.862 ServerApp] 404 GET /api/contents/data2-genome/bacteria-2.fasta?content=0&hash=0&1746030547856 (012317caab724e589cfbdfdf9b7718f0@127.0.0.1) 1.03ms referer=http://localhost:8502/lab/tree/__files__/results
+[W 2025-04-30 17:29:07.863 ServerApp] 404 GET /api/contents/data2-genome/bacteria-2.fasta?content=0&hash=0&1746030547856 (127.0.0.1): No such file or directory: data2-genome/bacteria-2.fasta
+[I 2025-04-30 17:29:44.896 ServerApp] AsyncIOLoopKernelRestarter: restarting kernel (1/5), keep random ports
+[W 2025-04-30 17:29:44.896 ServerApp] kernel 23c7956f-c1c6-412d-bbab-505375b81315 restarted
+[I 2025-04-30 17:29:44.902 ServerApp] Starting buffering for 23c7956f-c1c6-412d-bbab-505375b81315:acde166b-534d-4dcd-a032-dfc6836c0d2a
+[I 2025-04-30 17:29:44.921 ServerApp] Connecting to kernel 23c7956f-c1c6-412d-bbab-505375b81315.
+[I 2025-04-30 17:29:44.921 ServerApp] Restoring connection for 23c7956f-c1c6-412d-bbab-505375b81315:acde166b-534d-4dcd-a032-dfc6836c0d2a
+[W 2025-04-30 17:30:22.008 ServerApp] 404 GET /api/contents/data2-genome/bacteria-2.fasta?content=0&hash=0&1746030622005 (012317caab724e589cfbdfdf9b7718f0@127.0.0.1) 1.01ms referer=http://localhost:8502/lab
+[W 2025-04-30 17:30:22.008 ServerApp] 404 GET /api/contents/data2-genome/bacteria-2.fasta?content=0&hash=0&1746030622005 (127.0.0.1): No such file or directory: data2-genome/bacteria-2.fasta
+[I 2025-04-30 17:30:53.937 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-04-30 17:34:32.910 ServerApp] AsyncIOLoopKernelRestarter: restarting kernel (1/5), keep random ports
+[W 2025-04-30 17:34:32.910 ServerApp] kernel 23c7956f-c1c6-412d-bbab-505375b81315 restarted
+[I 2025-04-30 17:34:32.916 ServerApp] Starting buffering for 23c7956f-c1c6-412d-bbab-505375b81315:acde166b-534d-4dcd-a032-dfc6836c0d2a
+[I 2025-04-30 17:34:32.938 ServerApp] Connecting to kernel 23c7956f-c1c6-412d-bbab-505375b81315.
+[I 2025-04-30 17:34:32.938 ServerApp] Restoring connection for 23c7956f-c1c6-412d-bbab-505375b81315:acde166b-534d-4dcd-a032-dfc6836c0d2a
+[I 2025-04-30 17:34:37.767 ServerApp] Kernel restarted: 23c7956f-c1c6-412d-bbab-505375b81315
+[I 2025-04-30 17:34:37.774 ServerApp] Starting buffering for 23c7956f-c1c6-412d-bbab-505375b81315:acde166b-534d-4dcd-a032-dfc6836c0d2a
+[I 2025-04-30 17:34:37.779 ServerApp] Connecting to kernel 23c7956f-c1c6-412d-bbab-505375b81315.
+[I 2025-04-30 17:34:37.779 ServerApp] Restoring connection for 23c7956f-c1c6-412d-bbab-505375b81315:acde166b-534d-4dcd-a032-dfc6836c0d2a
+[I 2025-04-30 17:34:54.134 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-04-30 17:35:26.759 ServerApp] Kernel restarted: 23c7956f-c1c6-412d-bbab-505375b81315
+[I 2025-04-30 17:35:26.765 ServerApp] Starting buffering for 23c7956f-c1c6-412d-bbab-505375b81315:acde166b-534d-4dcd-a032-dfc6836c0d2a
+[I 2025-04-30 17:35:26.769 ServerApp] Connecting to kernel 23c7956f-c1c6-412d-bbab-505375b81315.
+[I 2025-04-30 17:35:26.770 ServerApp] Restoring connection for 23c7956f-c1c6-412d-bbab-505375b81315:acde166b-534d-4dcd-a032-dfc6836c0d2a
