@@ -20,7 +20,7 @@ bash postinstall.sh
 
 # Launch Streamlit UI in the background
 echo "Starting Streamlit UI..."
-nohup streamlit run ui/app.py > __files__/streamlit.log 2>&1 &
+nohup streamlit run ui/app.py --server.headless true > __files__/streamlit.log 2>&1 &
 
 # Launch FastAPI server in the background
 echo "Starting FastAPI server..."
