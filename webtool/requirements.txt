@@ -1,6 +1,7 @@
 # ui
 streamlit
 graphviz
+matplotlib
 
 # api
 fastapi
@@ -19,3 +20,5 @@ biopython
 
 # for lab experiementation
 jupyterlab
+jupyter
+ipykernel

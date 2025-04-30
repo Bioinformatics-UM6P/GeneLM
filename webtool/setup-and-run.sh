@@ -16,13 +16,14 @@ source venv/bin/activate
 # Install dependencies
 echo "Installing Python dependencies..."
 pip install -r requirements.txt
+bash postinstall.sh
 
 # Launch Streamlit UI in the background
 echo "Starting Streamlit UI..."
-nohup streamlit run ui/app.py > streamlit.log 2>&1 &
+nohup streamlit run ui/app.py > __files__/streamlit.log 2>&1 &
 
 # Launch FastAPI server in the background
 echo "Starting FastAPI server..."
-nohup uvicorn --app-dir api api:app --host 127.0.0.1 --port 8000 --reload > api.log 2>&1 &
+nohup uvicorn --app-dir api api:app --host 127.0.0.1 --port 8000 --reload > __files__/api.log 2>&1 &
 
 echo "✅ All services started! Access the web UI at http://localhost:8501 and API at http://localhost:8000"

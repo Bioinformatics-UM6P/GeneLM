@@ -14,6 +14,9 @@ from pathlib import Path
 from dotenv import load_dotenv
 load_dotenv()
 import subprocess
+import atexit
+
+jupyter_proc = None
 
 # ---------------------------------------------------------------
 # API UTILS 
@@ -834,19 +837,67 @@ def developer_lab():
     col1, col2, col3 = st.columns([2, 1, 2])
     with col2:
         if st.button('🚀 Launch Developer Lab'):
-            developer_folder = os.path.abspath('./webtool/developer-lab')
+            developer_folder = os.path.abspath('./developer-lab')
             if not os.path.exists(developer_folder):
                 os.makedirs(developer_folder)
+
+            # Make sure there's something inside, or JupyterLab will show root
+            placeholder_file = os.path.join(developer_folder, "README.txt")
+            if not os.path.exists(placeholder_file):
+                with open(placeholder_file, "w") as f:
+                    f.write("This is your Developer Lab folder. Add notebooks here.")
+
             subprocess.Popen([
                 "jupyter", "lab",
                 "--no-browser",
                 "--ip=127.0.0.1",
-                "--port=8503",
+                "--port=8502",
                 "--NotebookApp.token=''",
                 "--NotebookApp.password=''",
                 f"--notebook-dir={developer_folder}"
             ])
-            st.success("✅ JupyterLab has been launched! You can now access it at [http://localhost:8503](http://localhost:8503)")
+            st.success(f"✅ JupyterLab launched! Access it at [http://localhost:8502](http://localhost:8502)")
+
+def developer_lab():
+    global jupyter_proc
+    st.subheader("Developer Lab")
+
+    st.markdown("""
+    Welcome to the **Developer Lab**! Here, you can experiment with the model interactively using notebooks.
+    Click the button below to launch your JupyterLab environment.
+    """, unsafe_allow_html=True)
+    
+    col1, col2, col3 = st.columns([2, 1, 2])
+    with col2:
+        if st.button('🚀 Launch Developer Lab'):
+            developer_folder = os.path.abspath('./developer-lab')
+            if not os.path.exists(developer_folder):
+                os.makedirs(developer_folder)
+
+            placeholder_file = os.path.join(developer_folder, "README.txt")
+            if not os.path.exists(placeholder_file):
+                with open(placeholder_file, "w") as f:
+                    f.write("This is your Developer Lab folder. Add notebooks here.")
+
+            # Launch JupyterLab and save the process
+            jupyter_proc = subprocess.Popen([
+                "jupyter", "lab",
+                "--no-browser",
+                "--ip=127.0.0.1",
+                "--port=8502",
+                "--NotebookApp.token=''",
+                "--NotebookApp.password=''",
+                f"--notebook-dir={developer_folder}"
+            ])
+            st.success("✅ JupyterLab launched! Access it at [http://localhost:8502](http://localhost:8502)")
+
+# Automatically stop Jupyter when the Streamlit app exits
+def stop_jupyter():
+    global jupyter_proc
+    if jupyter_proc is not None:
+        jupyter_proc.terminate()
+        jupyter_proc.wait()
+        print("🛑 JupyterLab terminated.")
 
     
 # ---------------------------------------------------------------
@@ -860,4 +911,5 @@ def main():
 # main 
 # ---------------------------------------------------------------
 if __name__ == "__main__":
+    atexit.register(stop_jupyter)
     main()

@@ -1,0 +1,184 @@
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://10.52.88.33:8501
+
+[I 2025-04-30 01:00:48.753 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-04-30 01:00:48.756 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2025-04-30 01:00:48.757 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-04-30 01:00:48.757 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-04-30 01:00:48.759 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2025-04-30 01:00:48.759 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-04-30 01:00:48.762 ServerApp] notebook | extension was successfully linked.
+[I 2025-04-30 01:00:48.926 ServerApp] notebook_shim | extension was successfully linked.
+[W 2025-04-30 01:00:48.942 ServerApp] All authentication is disabled.  Anyone who can connect to this server will be able to run code.
+[I 2025-04-30 01:00:48.942 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-04-30 01:00:48.944 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-04-30 01:00:48.944 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-04-30 01:00:48.946 LabApp] JupyterLab extension loaded from /home/biolab-office-1/DATALAB/DEV/GeneLM/webtool/venv/lib/python3.12/site-packages/jupyterlab
+[I 2025-04-30 01:00:48.946 LabApp] JupyterLab application directory is /home/biolab-office-1/DATALAB/DEV/GeneLM/webtool/venv/share/jupyter/lab
+[I 2025-04-30 01:00:48.946 LabApp] Extension Manager is 'pypi'.
+[I 2025-04-30 01:00:48.970 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-04-30 01:00:48.972 ServerApp] notebook | extension was successfully loaded.
+[I 2025-04-30 01:00:48.973 ServerApp] Serving notebooks from local directory: /home/biolab-office-1/DATALAB/DEV/GeneLM/webtool/developer-lab
+[I 2025-04-30 01:00:48.973 ServerApp] Jupyter Server 2.15.0 is running at:
+[I 2025-04-30 01:00:48.973 ServerApp] http://127.0.0.1:8502/lab
+[I 2025-04-30 01:00:48.973 ServerApp]     http://127.0.0.1:8502/lab
+[I 2025-04-30 01:00:48.973 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-04-30 01:00:49.131 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-04-30 01:00:49.183 ServerApp] 302 GET / (@127.0.0.1) 0.52ms
+[W 2025-04-30 01:00:49.998 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2025-04-30 01:00:50.591 ServerApp] Notebook upstreaam-disruption-analysis.ipynb is not trusted
+[I 2025-04-30 01:00:57.740 ServerApp] Kernel started: eafde19b-db9a-42cc-95a8-217bcb382009
+[I 2025-04-30 01:00:58.435 ServerApp] Connecting to kernel eafde19b-db9a-42cc-95a8-217bcb382009.
+[I 2025-04-30 01:00:58.450 ServerApp] Connecting to kernel eafde19b-db9a-42cc-95a8-217bcb382009.
+[I 2025-04-30 01:00:58.463 ServerApp] Connecting to kernel eafde19b-db9a-42cc-95a8-217bcb382009.
+[I 2025-04-30 01:02:50.624 ServerApp] Saving file at /upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 01:04:51.089 ServerApp] Saving file at /upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 01:06:29.334 ServerApp] Kernel restarted: eafde19b-db9a-42cc-95a8-217bcb382009
+[I 2025-04-30 01:06:29.341 ServerApp] Starting buffering for eafde19b-db9a-42cc-95a8-217bcb382009:0dbfbd36-6577-432e-8d7a-308e2a856e5d
+[I 2025-04-30 01:06:29.347 ServerApp] Connecting to kernel eafde19b-db9a-42cc-95a8-217bcb382009.
+[I 2025-04-30 01:06:29.347 ServerApp] Restoring connection for eafde19b-db9a-42cc-95a8-217bcb382009:0dbfbd36-6577-432e-8d7a-308e2a856e5d
+[I 2025-04-30 01:06:51.254 ServerApp] Saving file at /upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 01:08:51.454 ServerApp] Saving file at /upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 01:12:34.261 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 01:18:34.512 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 01:20:29.098 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 01:22:29.312 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 01:30:29.514 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 01:32:29.692 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 01:34:29.907 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 01:36:30.079 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 01:38:30.270 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 01:40:28.435 ServerApp] Kernel restarted: eafde19b-db9a-42cc-95a8-217bcb382009
+[I 2025-04-30 01:40:28.441 ServerApp] Starting buffering for eafde19b-db9a-42cc-95a8-217bcb382009:0dbfbd36-6577-432e-8d7a-308e2a856e5d
+[I 2025-04-30 01:40:28.446 ServerApp] Connecting to kernel eafde19b-db9a-42cc-95a8-217bcb382009.
+[I 2025-04-30 01:40:28.446 ServerApp] Restoring connection for eafde19b-db9a-42cc-95a8-217bcb382009:0dbfbd36-6577-432e-8d7a-308e2a856e5d
+[I 2025-04-30 01:40:30.469 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 01:42:30.681 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 01:44:30.901 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 01:46:31.118 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 01:48:31.427 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 01:54:33.105 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 01:56:33.331 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 02:00:34.108 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 02:08:34.329 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 02:10:34.552 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 02:14:35.102 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[W 2025-04-30 02:14:57.542 ServerApp] Notebook inference-cost.ipynb is not trusted
+[I 2025-04-30 02:15:03.389 ServerApp] Kernel started: edfd6550-89ed-4ee1-a12c-a1fb4cefb2b1
+[I 2025-04-30 02:15:03.964 ServerApp] Connecting to kernel edfd6550-89ed-4ee1-a12c-a1fb4cefb2b1.
+[I 2025-04-30 02:16:57.605 ServerApp] Saving file at /inference-cost.ipynb
+[I 2025-04-30 09:53:08.685 ServerApp] Starting buffering for edfd6550-89ed-4ee1-a12c-a1fb4cefb2b1:9f3e0342-be59-4baa-b47e-82d13815ecd1
+[I 2025-04-30 09:53:19.608 ServerApp] Kernel restarted: eafde19b-db9a-42cc-95a8-217bcb382009
+[I 2025-04-30 09:53:19.613 ServerApp] Starting buffering for eafde19b-db9a-42cc-95a8-217bcb382009:0dbfbd36-6577-432e-8d7a-308e2a856e5d
+[I 2025-04-30 09:53:19.619 ServerApp] Connecting to kernel eafde19b-db9a-42cc-95a8-217bcb382009.
+[I 2025-04-30 09:53:19.619 ServerApp] Restoring connection for eafde19b-db9a-42cc-95a8-217bcb382009:0dbfbd36-6577-432e-8d7a-308e2a856e5d
+[I 2025-04-30 09:56:55.181 ServerApp] Kernel restarted: eafde19b-db9a-42cc-95a8-217bcb382009
+[I 2025-04-30 09:56:55.186 ServerApp] Starting buffering for eafde19b-db9a-42cc-95a8-217bcb382009:0dbfbd36-6577-432e-8d7a-308e2a856e5d
+[I 2025-04-30 09:56:55.191 ServerApp] Connecting to kernel eafde19b-db9a-42cc-95a8-217bcb382009.
+[I 2025-04-30 09:56:55.191 ServerApp] Restoring connection for eafde19b-db9a-42cc-95a8-217bcb382009:0dbfbd36-6577-432e-8d7a-308e2a856e5d
+[I 2025-04-30 09:56:56.605 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 09:56:56.932 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 09:56:57.249 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 09:57:48.978 ServerApp] Kernel restarted: eafde19b-db9a-42cc-95a8-217bcb382009
+[I 2025-04-30 09:57:48.985 ServerApp] Starting buffering for eafde19b-db9a-42cc-95a8-217bcb382009:0dbfbd36-6577-432e-8d7a-308e2a856e5d
+[I 2025-04-30 09:57:48.990 ServerApp] Connecting to kernel eafde19b-db9a-42cc-95a8-217bcb382009.
+[I 2025-04-30 09:57:48.990 ServerApp] Restoring connection for eafde19b-db9a-42cc-95a8-217bcb382009:0dbfbd36-6577-432e-8d7a-308e2a856e5d
+[I 2025-04-30 09:58:36.098 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 10:00:36.346 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 10:02:36.564 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 10:04:36.782 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 10:06:37.071 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 10:08:38.099 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 10:12:38.290 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 10:14:08.992 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 10:15:46.311 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 10:17:46.527 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 10:21:48.092 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 10:23:48.286 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 11:25:02.102 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 11:27:02.305 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 11:29:02.571 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 11:31:03.103 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 11:43:21.826 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 11:51:24.114 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 11:53:24.364 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 11:55:24.576 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 11:57:24.803 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 11:57:38.538 ServerApp] Kernel restarted: eafde19b-db9a-42cc-95a8-217bcb382009
+[I 2025-04-30 11:57:38.547 ServerApp] Starting buffering for eafde19b-db9a-42cc-95a8-217bcb382009:0dbfbd36-6577-432e-8d7a-308e2a856e5d
+[I 2025-04-30 11:57:38.552 ServerApp] Connecting to kernel eafde19b-db9a-42cc-95a8-217bcb382009.
+[I 2025-04-30 11:57:38.552 ServerApp] Restoring connection for eafde19b-db9a-42cc-95a8-217bcb382009:0dbfbd36-6577-432e-8d7a-308e2a856e5d
+[I 2025-04-30 11:59:25.054 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 12:01:25.277 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 12:02:05.480 ServerApp] Copying '01-upstreaam-disruption-analysis.ipynb' to ''
+[I 2025-04-30 12:03:25.577 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 12:05:25.796 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 12:07:26.040 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 12:09:26.258 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 12:11:26.448 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 12:12:10.218 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 12:14:10.423 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 12:16:11.107 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 12:22:13.106 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 12:23:57.139 ServerApp] Kernel restarted: eafde19b-db9a-42cc-95a8-217bcb382009
+[I 2025-04-30 12:23:57.145 ServerApp] Starting buffering for eafde19b-db9a-42cc-95a8-217bcb382009:0dbfbd36-6577-432e-8d7a-308e2a856e5d
+[I 2025-04-30 12:23:57.151 ServerApp] Connecting to kernel eafde19b-db9a-42cc-95a8-217bcb382009.
+[I 2025-04-30 12:23:57.151 ServerApp] Restoring connection for eafde19b-db9a-42cc-95a8-217bcb382009:0dbfbd36-6577-432e-8d7a-308e2a856e5d
+[I 2025-04-30 12:24:13.328 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 12:26:13.555 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 12:28:13.757 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 13:28:45.502 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 13:28:45.860 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 13:28:54.829 ServerApp] Kernel restarted: eafde19b-db9a-42cc-95a8-217bcb382009
+[I 2025-04-30 13:28:54.835 ServerApp] Starting buffering for eafde19b-db9a-42cc-95a8-217bcb382009:0dbfbd36-6577-432e-8d7a-308e2a856e5d
+[I 2025-04-30 13:28:54.840 ServerApp] Connecting to kernel eafde19b-db9a-42cc-95a8-217bcb382009.
+[I 2025-04-30 13:28:54.841 ServerApp] Restoring connection for eafde19b-db9a-42cc-95a8-217bcb382009:0dbfbd36-6577-432e-8d7a-308e2a856e5d
+[I 2025-04-30 13:30:45.706 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 13:32:45.919 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 13:36:47.105 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 13:38:47.328 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 13:40:20.690 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 13:40:21.020 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 13:45:21.843 ServerApp] Saving file at /01-upstreaam-disruption-analysis.ipynb
+[I 2025-04-30 13:55:03.753 ServerApp] Kernel started: fe4d6ce1-be44-4471-aff0-db4132edd348
+[I 2025-04-30 13:55:04.260 ServerApp] Connecting to kernel fe4d6ce1-be44-4471-aff0-db4132edd348.
+[I 2025-04-30 13:57:00.112 ServerApp] Saving file at /01-disruption-analysis.ipynb
+[I 2025-04-30 13:59:01.104 ServerApp] Saving file at /01-disruption-analysis.ipynb
+[I 2025-04-30 14:01:01.309 ServerApp] Saving file at /01-disruption-analysis.ipynb
+[I 2025-04-30 14:06:33.504 ServerApp] Saving file at /01-disruption-analysis.ipynb
+[I 2025-04-30 14:08:00.102 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-04-30 14:08:15.199 ServerApp] Creating new directory in 
+[I 2025-04-30 14:09:31.587 ServerApp] Saving file at /01-disruption-analysis.ipynb
+[I 2025-04-30 14:09:31.872 ServerApp] Saving file at /01-disruption-analysis.ipynb
+[I 2025-04-30 14:09:50.140 ServerApp] Saving file at /01-disruption-analysis.ipynb
+[I 2025-04-30 14:10:00.295 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-04-30 14:12:00.469 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-04-30 14:14:00.659 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-04-30 15:01:00.101 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-04-30 15:01:39.740 ServerApp] AsyncIOLoopKernelRestarter: restarting kernel (1/5), keep random ports
+[W 2025-04-30 15:01:39.740 ServerApp] kernel fe4d6ce1-be44-4471-aff0-db4132edd348 restarted
+[I 2025-04-30 15:01:39.748 ServerApp] Starting buffering for fe4d6ce1-be44-4471-aff0-db4132edd348:2e989683-8f80-4d4c-91fe-4bef6cf22a37
+[I 2025-04-30 15:01:39.768 ServerApp] Connecting to kernel fe4d6ce1-be44-4471-aff0-db4132edd348.
+[I 2025-04-30 15:01:39.768 ServerApp] Restoring connection for fe4d6ce1-be44-4471-aff0-db4132edd348:2e989683-8f80-4d4c-91fe-4bef6cf22a37
+[I 2025-04-30 15:01:39.818 ServerApp] AsyncIOLoopKernelRestarter: restarting kernel (1/5), keep random ports
+[W 2025-04-30 15:01:39.819 ServerApp] kernel eafde19b-db9a-42cc-95a8-217bcb382009 restarted
+[I 2025-04-30 15:01:39.821 ServerApp] Starting buffering for eafde19b-db9a-42cc-95a8-217bcb382009:0dbfbd36-6577-432e-8d7a-308e2a856e5d
+[I 2025-04-30 15:01:39.833 ServerApp] Connecting to kernel eafde19b-db9a-42cc-95a8-217bcb382009.
+[I 2025-04-30 15:01:39.833 ServerApp] Restoring connection for eafde19b-db9a-42cc-95a8-217bcb382009:0dbfbd36-6577-432e-8d7a-308e2a856e5d
+[I 2025-04-30 15:01:48.814 ServerApp] Kernel restarted: fe4d6ce1-be44-4471-aff0-db4132edd348
+[I 2025-04-30 15:01:48.821 ServerApp] Starting buffering for fe4d6ce1-be44-4471-aff0-db4132edd348:2e989683-8f80-4d4c-91fe-4bef6cf22a37
+[I 2025-04-30 15:01:48.825 ServerApp] Connecting to kernel fe4d6ce1-be44-4471-aff0-db4132edd348.
+[I 2025-04-30 15:01:48.825 ServerApp] Restoring connection for fe4d6ce1-be44-4471-aff0-db4132edd348:2e989683-8f80-4d4c-91fe-4bef6cf22a37
+[I 2025-04-30 15:03:00.316 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-04-30 15:11:02.095 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-04-30 15:17:03.090 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-04-30 15:17:20.807 ServerApp] Kernel restarted: fe4d6ce1-be44-4471-aff0-db4132edd348
+[I 2025-04-30 15:17:20.813 ServerApp] Starting buffering for fe4d6ce1-be44-4471-aff0-db4132edd348:2e989683-8f80-4d4c-91fe-4bef6cf22a37
+[I 2025-04-30 15:17:20.818 ServerApp] Connecting to kernel fe4d6ce1-be44-4471-aff0-db4132edd348.
+[I 2025-04-30 15:17:20.819 ServerApp] Restoring connection for fe4d6ce1-be44-4471-aff0-db4132edd348:2e989683-8f80-4d4c-91fe-4bef6cf22a37
+[I 2025-04-30 15:18:49.936 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-04-30 15:18:50.121 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-04-30 15:18:50.488 ServerApp] Saving file at /02-inference-cost.ipynb
