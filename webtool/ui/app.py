@@ -183,6 +183,11 @@ def load_custom_header():
             padding-top: 30px;
         }}
         
+        .stMainBlockContainer{{
+            width: 100%;
+            padding: 0 !important;
+            max-width: 100% !important;
+        }}
         .st-emotion-cache-mtjnbi{{
             width: 100%;
             padding: 0 !important;
