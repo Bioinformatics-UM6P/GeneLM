@@ -1,0 +1,8 @@
+Method,Bacteria,GC,Total Verified CDS,GeneLM,GeneLM,GeneLM,Prodigal v3.0,Prodigal v3.0,Prodigal v3.0,GeneMark-HMM v2.8,GeneMark-HMM v2.8,GeneMark-HMM v2.8,Glimmer-schatch v3.02,Glimmer-schatch v3.02,Glimmer-schatch v3.02,Glimmer-iterated v3.02,Glimmer-iterated v3.02,Glimmer-iterated v3.02
+Metric,,,,Matched TIS,Missed TIS,Total Found CDS,Matched TIS,Missed TIS,Total Found CDS,Matched TIS,Missed TIS,Total Found CDS,Matched TIS,Missed TIS,Total Found CDS,Matched TIS,Missed TIS,Total Found CDS
+0,Escherichia_coli_K_12_substr__MG1655_uid57779,50.8,769,744,25,4213,338,431,4347,595,174,4308,276,493,4397,319,450,4478
+1,Halobacterium_salinarum_R1_uid61571,65.7,530,438,92,2659,243,287,2851,493,37,2762,220,310,2717,220,310,2762
+2,Mycobacterium_tuberculosis_H37Rv_uid57777,65.6,701,626,75,3853,311,390,4204,545,156,4029,274,427,4240,271,430,4349
+3,Natronomonas_pharaonis_DSM_2160_uid58435,63.1,315,248,67,2737,169,146,2873,302,13,2826,164,151,2878,163,152,2894
+4,Roseobacter_denitrificans_Och114,58.9,526,492,34,4006,0,526,4120,0,526,4104,204,322,4260,233,293,4345
+5,All Genomes,-,2841,2548,293,17468,1061,1780,18395,1935,906,18029,1138,1703,18492,1206,1635,18828

@@ -80,3 +80,85 @@
 [I 2025-04-30 17:35:26.765 ServerApp] Starting buffering for 23c7956f-c1c6-412d-bbab-505375b81315:acde166b-534d-4dcd-a032-dfc6836c0d2a
 [I 2025-04-30 17:35:26.769 ServerApp] Connecting to kernel 23c7956f-c1c6-412d-bbab-505375b81315.
 [I 2025-04-30 17:35:26.770 ServerApp] Restoring connection for 23c7956f-c1c6-412d-bbab-505375b81315:acde166b-534d-4dcd-a032-dfc6836c0d2a
+[I 2025-04-30 17:36:54.308 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-04-30 21:52:00.123 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-05-02 09:19:05.750 ServerApp] AsyncIOLoopKernelRestarter: restarting kernel (1/5), keep random ports
+[W 2025-05-02 09:19:05.750 ServerApp] kernel 23c7956f-c1c6-412d-bbab-505375b81315 restarted
+[I 2025-05-02 09:19:05.846 ServerApp] Starting buffering for 23c7956f-c1c6-412d-bbab-505375b81315:acde166b-534d-4dcd-a032-dfc6836c0d2a
+[I 2025-05-02 09:19:05.867 ServerApp] Connecting to kernel 23c7956f-c1c6-412d-bbab-505375b81315.
+[I 2025-05-02 09:19:05.867 ServerApp] Restoring connection for 23c7956f-c1c6-412d-bbab-505375b81315:acde166b-534d-4dcd-a032-dfc6836c0d2a
+[I 2025-05-02 09:20:57.617 ServerApp] Starting buffering for f46df6fe-6d53-4ab4-a8d5-4042a4814458:ea7570f0-7acb-442b-b421-a2b745c1facf
+[I 2025-05-02 09:20:59.583 ServerApp] Connecting to kernel f46df6fe-6d53-4ab4-a8d5-4042a4814458.
+[I 2025-05-02 09:33:26.323 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-05-02 09:34:25.202 ServerApp] Starting buffering for 7523d3f8-9575-49fe-8a06-d2a6a4410244:a9621ef6-8dde-4e37-9864-97effd5c2984
+[I 2025-05-02 09:35:26.478 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-05-02 10:10:13.085 ServerApp] Connecting to kernel 7523d3f8-9575-49fe-8a06-d2a6a4410244.
+[I 2025-05-02 10:10:26.508 ServerApp] Kernel restarted: 7523d3f8-9575-49fe-8a06-d2a6a4410244
+[I 2025-05-02 10:10:26.512 ServerApp] Starting buffering for 7523d3f8-9575-49fe-8a06-d2a6a4410244:bf813818-ebd6-4f67-83ff-f8fa86c46d7f
+[I 2025-05-02 10:10:26.517 ServerApp] Connecting to kernel 7523d3f8-9575-49fe-8a06-d2a6a4410244.
+[I 2025-05-02 10:10:26.517 ServerApp] Restoring connection for 7523d3f8-9575-49fe-8a06-d2a6a4410244:bf813818-ebd6-4f67-83ff-f8fa86c46d7f
+[I 2025-05-02 10:12:12.968 ServerApp] Saving file at /03-overfitting-risk.ipynb
+[I 2025-05-02 10:14:13.131 ServerApp] Saving file at /03-overfitting-risk.ipynb
+[I 2025-05-02 10:16:13.290 ServerApp] Saving file at /03-overfitting-risk.ipynb
+[I 2025-05-02 10:20:13.507 ServerApp] Saving file at /03-overfitting-risk.ipynb
+[I 2025-05-02 10:22:13.672 ServerApp] Saving file at /03-overfitting-risk.ipynb
+[I 2025-05-02 10:24:13.890 ServerApp] Saving file at /03-overfitting-risk.ipynb
+[I 2025-05-02 10:25:09.011 ServerApp] Kernel restarted: 7523d3f8-9575-49fe-8a06-d2a6a4410244
+[I 2025-05-02 10:25:09.015 ServerApp] Starting buffering for 7523d3f8-9575-49fe-8a06-d2a6a4410244:bf813818-ebd6-4f67-83ff-f8fa86c46d7f
+[I 2025-05-02 10:25:09.019 ServerApp] Connecting to kernel 7523d3f8-9575-49fe-8a06-d2a6a4410244.
+[I 2025-05-02 10:25:09.019 ServerApp] Restoring connection for 7523d3f8-9575-49fe-8a06-d2a6a4410244:bf813818-ebd6-4f67-83ff-f8fa86c46d7f
+[I 2025-05-02 10:26:14.130 ServerApp] Saving file at /03-overfitting-risk.ipynb
+[I 2025-05-02 10:27:32.644 ServerApp] Saving file at /03-overfitting-risk.ipynb
+[I 2025-05-02 10:27:32.867 ServerApp] Saving file at /03-overfitting-risk.ipynb
+[I 2025-05-02 10:27:33.140 ServerApp] Saving file at /03-overfitting-risk.ipynb
+[I 2025-05-02 10:49:32.828 ServerApp] Saving file at /03-overfitting-risk.ipynb
+[I 2025-05-02 16:33:45.791 ServerApp] Starting buffering for 7523d3f8-9575-49fe-8a06-d2a6a4410244:bf813818-ebd6-4f67-83ff-f8fa86c46d7f
+[I 2025-05-02 16:33:48.533 ServerApp] Connecting to kernel 7523d3f8-9575-49fe-8a06-d2a6a4410244.
+[I 2025-05-02 16:36:12.858 ServerApp] Starting buffering for 7523d3f8-9575-49fe-8a06-d2a6a4410244:26540cd2-8146-47c2-83bf-98738db30c8d
+[I 2025-05-02 16:36:14.837 ServerApp] Starting buffering for 23c7956f-c1c6-412d-bbab-505375b81315:acde166b-534d-4dcd-a032-dfc6836c0d2a
+[I 2025-05-02 16:36:14.838 ServerApp] Starting buffering for f46df6fe-6d53-4ab4-a8d5-4042a4814458:b8e0d7e0-7941-4ca5-8ddb-1c099a68851a
+[I 2025-05-02 16:36:17.483 ServerApp] Connecting to kernel 7523d3f8-9575-49fe-8a06-d2a6a4410244.
+[I 2025-05-02 16:36:17.497 ServerApp] Connecting to kernel 23c7956f-c1c6-412d-bbab-505375b81315.
+[I 2025-05-02 16:36:17.511 ServerApp] Connecting to kernel f46df6fe-6d53-4ab4-a8d5-4042a4814458.
+[I 2025-05-02 16:36:17.700 ServerApp] Starting buffering for 7523d3f8-9575-49fe-8a06-d2a6a4410244:d89a0017-8870-45fd-a850-f4c2a20d1a5b
+[I 2025-05-02 16:36:17.701 ServerApp] Starting buffering for 23c7956f-c1c6-412d-bbab-505375b81315:3225eb5d-70a8-41c2-b5c3-f5c1308cdebc
+[I 2025-05-02 16:36:17.701 ServerApp] Starting buffering for f46df6fe-6d53-4ab4-a8d5-4042a4814458:cc3ac612-2617-4c8f-b650-89081e1b22de
+[W 2025-05-02 16:36:17.781 ServerApp] 404 GET /api/contents/03-overfitting-risk.ipynb?content=0&hash=0&1746200177766 (012317caab724e589cfbdfdf9b7718f0@127.0.0.1) 3.13ms referer=http://localhost:8502/lab/tree/inference_performance_benchmarck-NVIDIA%20A100-SXM4-80GB.csv
+[W 2025-05-02 16:36:17.781 ServerApp] 404 GET /api/contents/03-overfitting-risk.ipynb?content=0&hash=0&1746200177766 (127.0.0.1): No such file or directory: 03-overfitting-risk.ipynb
+[W 2025-05-02 16:36:17.794 ServerApp] 404 GET /api/contents/03-overfitting-risk.ipynb?content=0&hash=0&1746200177767 (012317caab724e589cfbdfdf9b7718f0@127.0.0.1) 4.11ms referer=http://localhost:8502/lab/tree/inference_performance_benchmarck-NVIDIA%20A100-SXM4-80GB.csv
+[W 2025-05-02 16:36:17.795 ServerApp] 404 GET /api/contents/03-overfitting-risk.ipynb?content=0&hash=0&1746200177767 (127.0.0.1): No such file or directory: 03-overfitting-risk.ipynb
+[I 2025-05-02 16:36:18.555 ServerApp] Connecting to kernel 23c7956f-c1c6-412d-bbab-505375b81315.
+[I 2025-05-02 16:36:18.572 ServerApp] Connecting to kernel f46df6fe-6d53-4ab4-a8d5-4042a4814458.
+[W 2025-05-02 16:36:19.568 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2025-05-02 16:36:49.005 ServerApp] Notebook 03-overfitting-risk.ipynb is not trusted
+[I 2025-05-02 16:36:49.151 ServerApp] Connecting to kernel 7523d3f8-9575-49fe-8a06-d2a6a4410244.
+[I 2025-05-02 16:38:49.096 ServerApp] Saving file at /03-overfitting-risk.ipynb
+[W 2025-05-02 16:38:49.097 ServerApp] Notebook 03-overfitting-risk.ipynb is not trusted
+[I 2025-05-02 16:40:40.840 ServerApp] New terminal with automatic name: 1
+[I 2025-05-02 16:42:53.142 ServerApp] Saving file at /01-disruption-analysis.ipynb
+[I 2025-05-02 16:43:12.989 ServerApp] Saving file at /01-disruption-analysis.ipynb
+[I 2025-05-02 16:43:15.487 ServerApp] Starting buffering for f46df6fe-6d53-4ab4-a8d5-4042a4814458:7a12025e-5a2d-4c5c-a2ce-69b29b75486d
+[I 2025-05-02 16:43:19.986 ServerApp] Starting buffering for 7523d3f8-9575-49fe-8a06-d2a6a4410244:1203081a-40f4-4863-a730-497eb53975a2
+[I 2025-05-02 16:53:00.102 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-05-02 16:55:00.460 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-05-02 17:01:01.093 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-05-02 17:03:01.287 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-05-02 17:05:01.479 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-05-02 17:09:02.094 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-05-02 17:09:56.892 ServerApp] Connecting to kernel f46df6fe-6d53-4ab4-a8d5-4042a4814458.
+[I 2025-05-02 17:10:00.569 ServerApp] Starting buffering for f46df6fe-6d53-4ab4-a8d5-4042a4814458:0b439ab6-d7ee-47f1-9875-cf3e58a97207
+[I 2025-05-02 17:11:02.430 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-05-02 17:13:02.658 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-05-02 17:17:03.096 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-05-02 17:23:05.095 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-05-02 17:25:06.098 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-05-02 17:27:07.104 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-05-02 17:31:08.102 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-05-02 17:33:09.102 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-05-02 17:39:11.111 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-05-02 17:49:14.112 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-05-02 17:51:14.376 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-05-02 17:53:14.614 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-05-02 17:54:48.411 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-05-02 18:04:58.096 ServerApp] Saving file at /02-inference-cost.ipynb
+[I 2025-05-02 18:04:58.450 ServerApp] Saving file at /02-inference-cost.ipynb

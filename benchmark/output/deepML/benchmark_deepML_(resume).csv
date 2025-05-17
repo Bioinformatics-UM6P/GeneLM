@@ -1,0 +1,7 @@
+Species,GC,Verified TIS,GeneLM (%),TITER (%),DeepGSR (%),DeepTIS (%)
+Escherichia_coli_K_12_substr__MG1655_uid57779,50.8,769,744 (96.7%),662 (86.1%),647 (84.1%),-
+Halobacterium_salinarum_R1_uid61571,65.7,530,438 (82.6%),391 (73.8%),395 (74.5%),-
+Mycobacterium_tuberculosis_H37Rv_uid57777,65.6,701,626 (89.3%),493 (70.3%),459 (65.5%),-
+Natronomonas_pharaonis_DSM_2160_uid58435,63.1,315,248 (78.7%),220 (69.8%),208 (66.0%),-
+Roseobacter_denitrificans_Och114,58.9,526,492 (93.5%),0 (0.0%),0 (0.0%),-
+All Genomes,-,2841,2548 (89.7%),1766 (62.2%),1709 (60.2%),-

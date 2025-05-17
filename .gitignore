@@ -3,4 +3,17 @@ webtool/venv
 finetune/generate_structure.py
 finetune/data-pipeline/*
 finetune/train-pipeline/*
-benchmark
+# benchmark
+webtool/developer-lab/__files__
+webtool/developer-lab/.ipynb_checkpoints
+webtool/developer-lab/data2-genome-tiny
+webtool/developer-lab/cds_performance_by_orf_length.csv
+webtool/developer-lab/inference_performance_benchmarck-NVIDIA A100-SXM4 80GB.csv
+webtool/developer-lab/inference_performance_benchmarck-NVIDIA RTX A2000 12GB.csv
+webtool/developer-lab/inference_performance_benchmarck-NVIDIA RTX A5000 22GB.csv
+webtool/developer-lab/MERGED-cds_performance_by_orf_length.csv
+benchmark/benchmark-ecoli-evo2.ipynb
+benchmark/output/llm/Evo2/.ipynb_checkpoints
+benchmark/.virtual_documents
+benchmark/.ipynb_checkpoints
+.virtual_documents

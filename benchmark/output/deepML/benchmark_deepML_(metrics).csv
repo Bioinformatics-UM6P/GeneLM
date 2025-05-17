@@ -1,0 +1,3 @@
+True Positives,True Negatives,False Positives,False Negatives,Precision,Recall,Specificity,F1 Score,Training Duration (h)
+2189.0,1715.0,1126.0,652.0,66.03%,77.05%,60.37%,71.12%,84.4
+2077.0,2033.0,808.0,764.0,71.99%,73.11%,71.56%,72.55%,106.7
