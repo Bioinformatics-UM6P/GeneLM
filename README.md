@@ -1,6 +1,6 @@
 <div align="center" style="">
   <br>
-  <img src="./webtool/ui/static/banner/banner-6.png"/ style="height: 6em; width: 13em">
+  <img src="./webtool/ui/static/banner/banner-6.png"/ style="height: 6em; width: 12em">
   <br>
   <!-- <h1>GeneLM</h1> -->
   GeneLM: Gene Language Model for Translation Initiation Site Prediction in Bacteria
