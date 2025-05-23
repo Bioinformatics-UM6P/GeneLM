@@ -10,15 +10,16 @@ After providing input, users can specify the desired output format (GFF or CSV).
 
 ### 1.1 Setting Up the Environment
 
-> To speed up the setup process, you can simply run the `setup-and-run.sh` script. This script will automatically create the Python environment, install the necessary dependencies, and start both the API and the web tool services for you.
+> #### 📦 **Quick Start**
+> To speed up the setup process, you can simply run the `setup-and-run.sh` script. This script will automatically create the Python environment, install the necessary dependencies, and start both the API and the web tool services for you. Please make sure that ports 8501 (for the web UI) and 8000 (for the API) are available on your machine. To proceed, make the script executable (`chmod +x setup-and-run.sh`) and run it (`./setup-and-run.sh`). If any errors occur during execution, you can still perform the setup manually by following the detailed steps described below.
 >
-> Please make sure that ports 8501 (for the web UI) and 8000 (for the API) are available on your machine.
->
-> To proceed, make the script executable (`chmod +x setup-and-run.sh`) and run it (`./setup-and-run.sh`). If any errors occur during execution, you can still perform the setup manually by following the detailed steps described below.
->
-> #### 🐳 **- Docker Support Available**
+> #### 🐳 **Docker Support Available**
 > A complete Docker setup is now provided to simplify deployment across any environment with NVIDIA GPU support.
->  **Check out the Docker setup and usage instructions in** [`README.Docker.md`](./README.Docker.md). With Docker, you can spin up GeneLM with one command `docker-compose up --build -d`.
+>  **Check out the Docker setup and usage instructions in** [`README.Docker.md`](./README.Docker.md) to build from Docker. Or you can get the pre-build image of GeneLM from hub and use it direclty doing:
+> ```bash
+> docker pull 13365920/genelm-webtool:latest
+> docker run --gpus all -p 8501:8501 -p 8000:8000 13365920/genelm-webtool:latest
+> ```
 
 #### Manual Setup
 #### Step 1: Create a Python Environment

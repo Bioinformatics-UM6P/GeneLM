@@ -10,7 +10,7 @@
   [![DOI:10.1101/2025.03.20.644312](https://zenodo.org/badge/DOI/10.1101/2025.03.20.644312.svg)](https://doi.org/10.1101/2025.03.20.644312)
   [![Hugging Face](https://img.shields.io/badge/Hugging_Face-CDS--Model-orange?style=flat&logo=HuggingFace&logoColor=)](https://huggingface.co/Genereux-akotenou/BacteriaCDS-DNABERT-K6-89M)
   [![Hugging Face](https://img.shields.io/badge/Hugging_Face-TIS--Model-orange?style=flat&logo=HuggingFace&logoColor=)](https://huggingface.co/Genereux-akotenou/BacteriaTIS-DNABERT-K6-89M)
-  [![Hugging Face](https://img.shields.io/badge/Docker-Supported-blue?style=flat&logo=Docker&logoColor=white)]()
+  [![Hugging Face](https://img.shields.io/badge/Docker-Supported-blue?style=flat&logo=Docker&logoColor=white)](https://hub.docker.com/r/13365920/genelm-webtool)
 </div>
 
 ## GeneLM
@@ -41,6 +41,19 @@ After providing input, users can specify the desired output format (GFF or CSV).
 <img src="./webtool/ui/static/web_tool_merged.png"/>
 
 ### 1.1 Setting Up the Environment
+
+
+> #### 📦 **Quick Start**
+> To speed up the setup process, you can simply run the `webtool/setup-and-run.sh` script. This script will automatically create the Python environment, install the necessary dependencies, and start both the API and the web tool services for you. Please make sure that ports 8501 (for the web UI) and 8000 (for the API) are available on your machine. To proceed, make the script executable (`chmod +x setup-and-run.sh`) and run it (`./setup-and-run.sh`). If any errors occur during execution, you can still perform the setup manually by following the detailed steps described below.
+>
+> #### 🐳 **Docker Support Available**
+> A complete Docker setup is now provided to simplify deployment across any environment with NVIDIA GPU support.
+>  **Check out the Docker setup and usage instructions in** [`README.Docker.md`](./webtool/README.Docker.md) to build from Docker. Or you can get the pre-build image of GeneLM from hub and use it direclty doing:
+> ```bash
+> docker pull 13365920/genelm-webtool:latest
+> docker run --gpus all -p 8501:8501 -p 8000:8000 13365920/genelm-webtool:latest
+> ```
+
 #### Step 1: Create a Python Environment
 ```sh
 git clone https://github.com/Bioinformatics-UM6P/GeneLM
