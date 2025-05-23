@@ -1,0 +1,19 @@
+version: "3.3"
+
+services:
+  genelm_webtool:
+    build: .
+    ports:
+      - "8501:8501"
+      - "8502:8502"
+      - "8000:8000"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    restart: always

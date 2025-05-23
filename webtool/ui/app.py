@@ -886,7 +886,7 @@ def developer_lab():
 
             # Launch JupyterLab and save the process
             jupyter_proc = subprocess.Popen([
-                "jupyter", "lab",
+                "jupyter-lab",
                 "--no-browser",
                 "--ip=127.0.0.1",
                 "--port=8502",

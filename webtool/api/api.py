@@ -44,7 +44,20 @@ job_queue = queue.Queue()
 tasks = {}
 cancel_requested = set()
 # 2. api
-app = FastAPI()
+app = FastAPI(
+    title="GeneLM Webtool",
+    description="GeneLM Webtool is a web application that allows you to annotate Bacterial Genomes with Transformer Models.",
+    version="0.0.1",
+    contact={
+        "name": "UM6P BIOINFORMATICS LAB",
+        "url": "https://bioinformatics.um6p.ma/",
+        "email": "bioinformatics@um6p.ma"
+    },
+    license_info={
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT",
+    },
+)
 # 3. annotation model
 annotator = AnnotatorPipeline()
 

@@ -15,6 +15,10 @@ After providing input, users can specify the desired output format (GFF or CSV).
 > Please make sure that ports 8501 (for the web UI) and 8000 (for the API) are available on your machine.
 >
 > To proceed, make the script executable (`chmod +x setup-and-run.sh`) and run it (`./setup-and-run.sh`). If any errors occur during execution, you can still perform the setup manually by following the detailed steps described below.
+>
+> #### 🐳 **- Docker Support Available**
+> A complete Docker setup is now provided to simplify deployment across any environment with NVIDIA GPU support.
+>  **Check out the Docker setup and usage instructions in** [`README.Docker.md`](./README.Docker.md). With Docker, you can spin up GeneLM with one command `docker-compose up --build -d`.
 
 #### Manual Setup
 #### Step 1: Create a Python Environment
