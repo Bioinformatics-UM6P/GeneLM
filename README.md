@@ -7,7 +7,7 @@
   <br>
   <br>
 
-  [![DOI:10.1101/2025.03.20.644312](https://zenodo.org/badge/DOI/10.1101/2025.03.20.644312.svg)](https://doi.org/10.1101/2025.03.20.644312)
+  [![DOI:10.1101/2025.03.20.644312](https://zenodo.org/badge/DOI/10.1093/bib/bbaf311.svg)](https://doi.org/10.1093/bib/bbaf311)
   [![Hugging Face](https://img.shields.io/badge/Hugging_Face-CDS--Model-orange?style=flat&logo=HuggingFace&logoColor=)](https://huggingface.co/Genereux-akotenou/BacteriaCDS-DNABERT-K6-89M)
   [![Hugging Face](https://img.shields.io/badge/Hugging_Face-TIS--Model-orange?style=flat&logo=HuggingFace&logoColor=)](https://huggingface.co/Genereux-akotenou/BacteriaTIS-DNABERT-K6-89M)
   [![Docker](https://img.shields.io/badge/Docker-Supported-orange?style=flat&logo=Docker&logoColor=white)](https://hub.docker.com/r/13365920/genelm-webtool)
@@ -24,7 +24,7 @@ GeneLM: Gene Language Model for Translation Initiation Site Prediction in Bacter
 
 ## Benchmark
 
-We evaluated our approach against the widely used gene annotation tool, Prodigal, on an experimentally verified bacterial dataset. The results of this comparison are presented in the image below. You can access our [pre-print here](https://www.biorxiv.org/content/early/2025/03/22/2025.03.20.644312.full.pdf). 
+We evaluated our approach against the widely used gene annotation tool, Prodigal, on an experimentally verified bacterial dataset. The results of this comparison are presented in the image below. You can access our [paper here](https://doi.org/10.1093/bib/bbaf311). 
 
 <img src="./webtool/ui/static/benchmark_table2.png"/>
 
@@ -152,7 +152,22 @@ By following the resources in this directory, users can replicate or extend the 
 ## 4. Citation
 If you have used GeneLM in your research, please kindly cite the following publication:
 ```bib
-@article {Akotenou2025.03.20.644312,
+@article{10.1093/bib/bbaf311,
+    author = {Akotenou, Genereux and El Allali, Achraf},
+    title = {Genomic language models (gLMs) decode bacterial genomes for improved gene prediction and translation initiation site identification},
+    journal = {Briefings in Bioinformatics},
+    volume = {26},
+    number = {4},
+    pages = {bbaf311},
+    year = {2025},
+    month = {07},
+    issn = {1477-4054},
+    doi = {10.1093/bib/bbaf311},
+    url = {https://doi.org/10.1093/bib/bbaf311},
+    eprint = {https://academic.oup.com/bib/article-pdf/26/4/bbaf311/63649237/bbaf311.pdf},
+}
+```
+<!-- @article {Akotenou2025.03.20.644312,
 	author = {Akotenou, Genereux and El Allali, Achraf},
 	title = {GENOMIC LANGUAGE MODELS (GLMS) DECODE BACTERIAL GENOMES FOR IMPROVED GENE PREDICTION AND TRANSLATION INITIATION SITE IDENTIFICATION},
 	elocation-id = {2025.03.20.644312},
@@ -162,5 +177,4 @@ If you have used GeneLM in your research, please kindly cite the following publi
 	URL = {https://www.biorxiv.org/content/early/2025/03/22/2025.03.20.644312},
 	eprint = {https://www.biorxiv.org/content/early/2025/03/22/2025.03.20.644312.full.pdf},
 	journal = {bioRxiv}
-}
-```
+} -->
