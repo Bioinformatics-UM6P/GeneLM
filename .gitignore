@@ -17,3 +17,6 @@ benchmark/output/llm/Evo2/.ipynb_checkpoints
 benchmark/.virtual_documents
 benchmark/.ipynb_checkpoints
 .virtual_documents
+webtool/api/__pycache__/api.cpython-313.pyc
+webtool/api/__pycache__/core.cpython-313.pyc
+webtool/__files__/streamlit.log
