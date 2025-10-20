@@ -1,0 +1,17 @@
+##gff-version 3
+##Generated using GeneLM, 2025-10-20 01:11:15
+##Project Name: test_b86f
+##Job Id: c002e298-f359-4ba4-b86f-b2cbb526d08f
+##Tool: GeneLM
+NC_000913_Small	GeneLM	CDS	337	2799	0.9982	+	.	ID=orf_P1;Logit_cls0=-2.5557;Logit_cls1=3.7385;Prob_cls0=0.0018;Prob_cls1=0.9982;Prediction=1
+NC_000913_Small	GeneLM	CDS	2801	3733	0.9986	+	.	ID=orf_P2;Logit_cls0=-2.5339;Logit_cls1=4.0655;Prob_cls0=0.0014;Prob_cls1=0.9986;Prediction=1
+NC_000913_Small	GeneLM	CDS	3734	5020	0.9987	+	.	ID=orf_P3;Logit_cls0=-2.5557;Logit_cls1=4.0674;Prob_cls0=0.0013;Prob_cls1=0.9987;Prediction=1
+NC_000913_Small	GeneLM	CDS	5234	5530	0.9986	+	.	ID=orf_P4;Logit_cls0=-2.5774;Logit_cls1=4.0288;Prob_cls0=0.0014;Prob_cls1=0.9986;Prediction=1
+NC_000913_Small	GeneLM	CDS	5683	6459	0.9874	-	.	ID=orf_N1;Logit_cls0=-2.1918;Logit_cls1=2.1673;Prob_cls0=0.0126;Prob_cls1=0.9874;Prediction=1
+NC_000913_Small	GeneLM	CDS	6529	7959	0.9986	-	.	ID=orf_N2;Logit_cls0=-2.5527;Logit_cls1=4.0262;Prob_cls0=0.0014;Prob_cls1=0.9986;Prediction=1
+NC_000913_Small	GeneLM	CDS	8238	9191	0.9986	+	.	ID=orf_P5;Logit_cls0=-2.5670;Logit_cls1=4.0339;Prob_cls0=0.0014;Prob_cls1=0.9986;Prediction=1
+NC_000913_Small	GeneLM	CDS	9306	9893	0.9986	+	.	ID=orf_P6;Logit_cls0=-2.5418;Logit_cls1=4.0200;Prob_cls0=0.0014;Prob_cls1=0.9986;Prediction=1
+NC_000913_Small	GeneLM	CDS	9928	10494	0.9954	-	.	ID=orf_N3;Logit_cls0=-2.2736;Logit_cls1=3.1085;Prob_cls0=0.0046;Prob_cls1=0.9954;Prediction=1
+NC_000913_Small	GeneLM	CDS	10643	11356	0.9986	-	.	ID=orf_N4;Logit_cls0=-2.6014;Logit_cls1=3.9724;Prob_cls0=0.0014;Prob_cls1=0.9986;Prediction=1
+NC_000913_Small	GeneLM	CDS	11382	11786	0.9987	-	.	ID=orf_N5;Logit_cls0=-2.5698;Logit_cls1=4.0824;Prob_cls0=0.0013;Prob_cls1=0.9987;Prediction=1
+NC_000913_Small	GeneLM	CDS	12163	14079	0.9987	+	.	ID=orf_P7;Logit_cls0=-2.5604;Logit_cls1=4.0743;Prob_cls0=0.0013;Prob_cls1=0.9987;Prediction=1

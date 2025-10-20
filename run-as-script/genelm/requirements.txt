@@ -1,0 +1,6 @@
+torch
+transformers
+git+https://github.com/Genereux-akotenou/orfipy
+biopython
+tqdm
+pandas
