@@ -15,6 +15,11 @@
 #### Quick start
 
 First of all you need to setup genelm environment tobe able to annotate gene using our model.
+- Download:
+Download only this folder — it’s enough to run the annotation scripts:
+`GeneLM/run-as-script`
+<br>
+- Setup:
 ```bash
 python -m venv .genelm_env
 source .genelm_env/bin/activate
