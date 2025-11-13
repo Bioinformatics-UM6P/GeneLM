@@ -298,7 +298,16 @@ class AnnotatorPipeline:
             with open(file_path, 'rt') as f:
                 fna_data = list(SeqIO.parse(f, "fasta"))
             self._update_progress(tasks, task_uuid, progress=10, status="Start", result="...", state_key="Start", state_value=100)
-                
+            
+            # NewPatch: ensure only DNA Fasta (not protein)
+            valid_dna_chars = set("ACGTUNacgtun")
+            for record in fna_data:
+                seq_set = set(str(record.seq))
+                if not seq_set.issubset(valid_dna_chars):
+                    error = f"Error: Input FASTA appears to contain non-DNA characters in record '{record.id}'. \nPlease provide a nucleotide FASTA file (DNA/RNA, not protein)."
+                    print("Logs:\n" + "-"*100 + "\n" + error + "\n" + "-"*100)
+                    raise ValueError(error)
+            
             # 2. orf extraction
             results = []
             all_bacteria = ""

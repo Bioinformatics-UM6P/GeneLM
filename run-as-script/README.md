@@ -40,6 +40,7 @@ python run_single.py \
   --device cpu \
   --out_dir __files__/results
 ```
+> NEW: `--filename my_result` or `--filename my_result.gff`: lets you specify a custom output file name (the script automatically adds .gff or .csv based on your chosen format). If you don’t set this option, the output filename will be generated from the contig names in your FASTA file, joined by underscores (_), with the appropriate .gff or .csv extension added.
 <br>
 
 **2. Batch (multi-FASTA)**

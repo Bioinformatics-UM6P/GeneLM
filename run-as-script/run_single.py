@@ -53,28 +53,32 @@ def main():
         raise FileNotFoundError(f"Input FASTA not found: {in_fasta}")
 
     # core.pipeline writes to CORE_OUTPUT_DIR and returns that path
-    out_path = annot.pipeline(in_fasta, args.format, tasks, task_uuid, logging)
+    try:
+        out_path = annot.pipeline(in_fasta, args.format, tasks, task_uuid, logging)
+        if out_path is None:
+            raise RuntimeError("Pipeline failed (see logs).")
 
-    if out_path is None:
-        raise RuntimeError("Pipeline failed (see logs).")
-
-    # Optionally copy to user-out_dir
-    if args.out_dir:
-        out_dir = Path(args.out_dir)
-        out_dir.mkdir(parents=True, exist_ok=True)
-        
-        # patch: https://github.com/Bioinformatics-UM6P/GeneLM/issues/3
-        if args.filename:
-            ext = ".gff" if args.format.upper() == "GFF" else ".csv"
-            final_name = args.filename if args.filename.lower().endswith(ext) else args.filename + ext
-            final_path = out_dir / final_name
-        else:
-            final_path = out_dir / out_path.name
+        # Optionally copy to user-out_dir
+        if args.out_dir:
+            out_dir = Path(args.out_dir)
+            out_dir.mkdir(parents=True, exist_ok=True)
             
-        shutil.copy2(out_path, final_path)
-        print(str(final_path))
-    else:
-        print(str(out_path.resolve()))
+            # patch: https://github.com/Bioinformatics-UM6P/GeneLM/issues/3
+            if args.filename:
+                ext = ".gff" if args.format.upper() == "GFF" else ".csv"
+                final_name = args.filename if args.filename.lower().endswith(ext) else args.filename + ext
+                final_path = out_dir / final_name
+            else:
+                final_path = out_dir / out_path.name
+                
+            shutil.copy2(out_path, final_path)
+            print(str(final_path))
+        else:
+            print(str(out_path.resolve()))
+            
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+        
 
 if __name__ == "__main__":
     main()

@@ -28,7 +28,12 @@ We evaluated our approach against the widely used gene annotation tool, Prodigal
 
 <img src="./webtool/ui/static/benchmark_table2.png"/>
 
-## 1. Web tools
+## 1. Run as command line
+> NEW: GeneLM can also be executed directly from the command line. This mode provides flexible scripts for running the annotation pipeline on single or multiple FASTA files, with options for CPU, GPU, and HPC (SLURM) environments.
+
+Check this: [`README.CommandLine.md`](./run-as-script/README.md)
+
+## 2. Run as Web server
 
 To streamline gene annotation after model training, we developed a post-processing pipeline that integrates an interactive web interface and an API-based system.
 
@@ -40,7 +45,7 @@ After providing input, users can specify the desired output format (GFF or CSV).
 
 <img src="./webtool/ui/static/web_tool_merged.png"/>
 
-### 1.1 Setting Up the Environment
+### 2.1 Setting Up the Environment
 
 
 > #### 📦 **Quick Start**
@@ -71,23 +76,23 @@ source ./venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 1.2 Launch the Web Tool UI
+### 2.2 Launch the Web Tool UI
 ```sh
 streamlit run ui/app.py
 ```
 
-### 1.3 Start the API Server
+### 2.3 Start the API Server
 ```sh
 uvicorn --app-dir api api:app --host 127.0.0.1 --port 8000 --reload
 ```
 
-### 1.4. Perform Annotation
+### 2.4. Perform Annotation
 Navigate to the web tool and submit a FASTA/FNA file containing your full genome sequence. The results should look like this: 
 
 <img src="./webtool/ui/static/web_tool_2b.png"/>
 
 
-## 2. Loading model from hugginface (Quick inference)
+## 3. Loading model from hugginface (Quick inference)
 Depending wethever you wanna classify CDS of TIS you can download the model from higginface au use it following higginface api. To load our GeneLM CDS-CLASSIFIER model, you can use transformers library: 
 
 ```python
@@ -125,7 +130,7 @@ with torch.no_grad():
 This will give first stage classifition ouput you can refine using the second stage classifier. See instructions here: [Loading model for second stage](https://huggingface.co/Genereux-akotenou/BacteriaTIS-DNABERT-K6-89M)
 
 
-## 3. Fine-tuning
+## 4. Fine-tuning
 If you are interested in the fine-tuning code pipeline or the data used in this process, all relevant materials can be found in the [finetune](./finetune/) folder of this repository.
 
 ### Structure of the Fine-tuning Folder
@@ -149,7 +154,7 @@ The fine-tuning process involves:
 
 By following the resources in this directory, users can replicate or extend the fine-tuning process for their specific use cases.
 
-## 4. Citation
+## 5. Citation
 If you have used GeneLM in your research, please kindly cite the following publication:
 ```bib
 @article{10.1093/bib/bbaf311,
@@ -167,14 +172,3 @@ If you have used GeneLM in your research, please kindly cite the following publi
     eprint = {https://academic.oup.com/bib/article-pdf/26/4/bbaf311/63649237/bbaf311.pdf},
 }
 ```
-<!-- @article {Akotenou2025.03.20.644312,
-	author = {Akotenou, Genereux and El Allali, Achraf},
-	title = {GENOMIC LANGUAGE MODELS (GLMS) DECODE BACTERIAL GENOMES FOR IMPROVED GENE PREDICTION AND TRANSLATION INITIATION SITE IDENTIFICATION},
-	elocation-id = {2025.03.20.644312},
-	year = {2025},
-	doi = {10.1101/2025.03.20.644312},
-	publisher = {Cold Spring Harbor Laboratory},
-	URL = {https://www.biorxiv.org/content/early/2025/03/22/2025.03.20.644312},
-	eprint = {https://www.biorxiv.org/content/early/2025/03/22/2025.03.20.644312.full.pdf},
-	journal = {bioRxiv}
-} -->
