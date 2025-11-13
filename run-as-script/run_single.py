@@ -22,6 +22,7 @@ def main():
     p.add_argument("--in_fasta", required=True, help="Path to a (preferably single-record) FASTA")
     p.add_argument("--format", default="GFF", choices=["GFF", "CSV"], help="Output format")
     p.add_argument("--out_dir", default=None, help="Optional final destination dir")
+    p.add_argument("--filename", default=None, help="Optional custom output filename (will auto-append .gff if not)")
     p.add_argument("--device", default=None, help="cpu | cuda | cuda:0 | cuda:1 | (leave unset to auto)")
     p.add_argument("--verbose", action="store_true")
     args = p.parse_args()
@@ -61,7 +62,15 @@ def main():
     if args.out_dir:
         out_dir = Path(args.out_dir)
         out_dir.mkdir(parents=True, exist_ok=True)
-        final_path = out_dir / out_path.name
+        
+        # patch: https://github.com/Bioinformatics-UM6P/GeneLM/issues/3
+        if args.filename:
+            ext = ".gff" if args.format.upper() == "GFF" else ".csv"
+            final_name = args.filename if args.filename.lower().endswith(ext) else args.filename + ext
+            final_path = out_dir / final_name
+        else:
+            final_path = out_dir / out_path.name
+            
         shutil.copy2(out_path, final_path)
         print(str(final_path))
     else:
