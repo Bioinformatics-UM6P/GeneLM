@@ -1,7 +1,7 @@
 ##gff-version 3
-##Generated using GeneLM, 2025-10-20 01:11:15
-##Project Name: test_8122
-##Job Id: 7f5b9118-1b38-4362-8122-c4ea9d82efcf
+##Generated using GeneLM, 2025-11-18 13:26:26
+##Project Name: test_aeb1
+##Job Id: 1a4cd0ee-0428-423d-aeb1-8d3f0524061d
 ##Tool: GeneLM
 NC_000914_Small	GeneLM	CDS	337	2799	0.9982	+	.	ID=orf_P1;Logit_cls0=-2.5557;Logit_cls1=3.7385;Prob_cls0=0.0018;Prob_cls1=0.9982;Prediction=1
 NC_000914_Small	GeneLM	CDS	2801	3733	0.9986	+	.	ID=orf_P2;Logit_cls0=-2.5339;Logit_cls1=4.0655;Prob_cls0=0.0014;Prob_cls1=0.9986;Prediction=1

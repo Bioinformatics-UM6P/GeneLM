@@ -106,6 +106,17 @@ def main():
     if not args.keep_temp:
         shutil.rmtree(workdir, ignore_errors=True)
 
+    if args.keep_temp:
+        print("\n" + "="*80)
+        print("⚠️  DEBUG MODE ENABLED (--keep_temp)")
+        print("Temporary folder was NOT deleted.")
+        print(f"Debug folder: {workdir}")
+        print("\nInside this folder you will find:")
+        print(f"  • split/          — one FASTA file per sequence")
+        print(f"  • chunk_results/  — per-sequence GFF/CSV results (from run_single)")
+        print(f"  • merge_logs/     — merged output (if created)")
+        print(f"  • {workdir}/**/*  — additional GeneLM-related temporary files")
+        print("="*80 + "\n")
     print(str(merged))
 
 if __name__ == "__main__":
