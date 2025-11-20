@@ -22,3 +22,6 @@ webtool/api/__pycache__/core.cpython-313.pyc
 webtool/__files__/streamlit.log
 run-as-script/.genelm_env
 run-as-script/genelm/__pycache__/core.cpython-311.pyc
+run-as-script/__files__/results/*.log
+run-as-script/run_batch_copy.py
+run-as-script/gpu_run_debug
