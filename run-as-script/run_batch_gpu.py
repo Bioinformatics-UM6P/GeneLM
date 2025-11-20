@@ -185,7 +185,6 @@ def main():
         results.append(Path(stdout.strip()))
 
     # Merge
-    print(results)
     merged = merge_all(results, args.format, out_path, args.job_name)
 
     if not args.keep_temp:
