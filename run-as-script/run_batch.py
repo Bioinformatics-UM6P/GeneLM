@@ -11,8 +11,9 @@ import tempfile
 from pathlib import Path
 from Bio import SeqIO
 import shutil
-import os
-from concurrent.futures import ThreadPoolExecutor, as_completed
+import os, uuid
+# from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ProcessPoolExecutor, as_completed
 
 ROOT = Path(__file__).resolve().parents[1]
 RUN_SINGLE = ROOT / "run-as-script" / "run_single.py"
@@ -25,12 +26,15 @@ def write_single_fasta(record, out_dir: Path, index: int):
         SeqIO.write(record, w, "fasta")
     return fp
 
-def run_one(in_fa: Path, fmt: str, out_dir: Path, device: str, verbose: bool):
+def run_one(in_fa: Path, fmt: str, out_dir: Path, device: str, verbose: bool, task_uuid: str, job_name: str = "mainjob"):
     cmd = [
         "python", str(RUN_SINGLE),
         "--in_fasta", str(in_fa),
         "--format", fmt,
         "--out_dir", str(out_dir),
+        "--task_uuid", str(task_uuid),
+        "--job_name", str(job_name),
+        "--verbose"
     ]
     if device:
         cmd += ["--device", device]
@@ -62,6 +66,8 @@ def main():
     ap.add_argument("--keep_temp", action="store_true", help="Keep split FASTAs and per-chunk outputs")
     ap.add_argument("--verbose", action="store_true")
     args = ap.parse_args()
+    
+    task_uuid = str(uuid.uuid4())
 
     inp = Path(args.input_fasta).resolve()
     if not inp.exists():
@@ -76,6 +82,17 @@ def main():
     per_out_dir = workdir / "chunk_results"
     split_dir.mkdir(parents=True, exist_ok=True)
     per_out_dir.mkdir(parents=True, exist_ok=True)
+    
+    if args.keep_temp:
+        print("\n" + "="*80)
+        print("⚠️  DEBUG MODE ENABLED (--keep_temp)")
+        print("Temporary folder was NOT deleted.")
+        print(f"Debug folder: {workdir}")
+        print("\nInside this folder you will find:")
+        print(f"  • split/          — one FASTA file per sequence")
+        print(f"  • chunk_results/  — per-sequence GFF/CSV results (from run_single)")
+        print(f"  • {workdir}/**/*  — additional GeneLM-related temporary files")
+        print("="*80 + "\n")
 
     # split FASTA
     records = list(SeqIO.parse(str(inp), "fasta"))
@@ -86,10 +103,11 @@ def main():
     # parallel runs
     # For GPU: workers=1 is sane. For CPU: increase workers.
     results = []
-    with ThreadPoolExecutor(max_workers=args.workers) as ex:
+    with ProcessPoolExecutor(max_workers=args.workers) as ex:  #TIME-05:03 # but when we force kill it kill everything
+    # with ThreadPoolExecutor(max_workers=args.workers) as ex: #TIME-04:48 # not the case here
         fut2file = {
-            ex.submit(run_one, fa, args.format, per_out_dir, args.device, args.verbose): fa
-            for fa in split_files
+            ex.submit(run_one, fa, args.format, per_out_dir, args.device, args.verbose, task_uuid, "job"+str(i)): fa
+            for i,fa in enumerate(split_files)
         }
         for fut in as_completed(fut2file):
             fa = fut2file[fut]
@@ -105,18 +123,7 @@ def main():
 
     if not args.keep_temp:
         shutil.rmtree(workdir, ignore_errors=True)
-
-    if args.keep_temp:
-        print("\n" + "="*80)
-        print("⚠️  DEBUG MODE ENABLED (--keep_temp)")
-        print("Temporary folder was NOT deleted.")
-        print(f"Debug folder: {workdir}")
-        print("\nInside this folder you will find:")
-        print(f"  • split/          — one FASTA file per sequence")
-        print(f"  • chunk_results/  — per-sequence GFF/CSV results (from run_single)")
-        print(f"  • merge_logs/     — merged output (if created)")
-        print(f"  • {workdir}/**/*  — additional GeneLM-related temporary files")
-        print("="*80 + "\n")
+    
     print(str(merged))
 
 if __name__ == "__main__":

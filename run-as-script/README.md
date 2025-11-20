@@ -95,7 +95,7 @@ Below is a minimal test using a tiny mixed FASTA (sequence_tiny_mixt.fasta) to q
 ```bash
 python run_batch_gpu.py \
   --input_fasta smoke-test/sequence_tiny_mixt.fasta \
-  --output __files__/results/t-smoke.gff \
+  --output __files__/results/t-smoke.gff
 ```
 
 2 - Use only GPU 0 and GPU 1
@@ -153,14 +153,16 @@ genelm_gpu_batch_xxxxxx/
 │      00002_recordB.fasta
 │      ...
 │
-├── chunk_results/
-│      00001_recordA.gff
-│      00002_recordB.gff
-│      ...
+└── chunk_results/
+       00001_recordA.gff
+       00002_recordB.gff
+```
+
+Logs are execptionally here:
+```
+__files__/results
 │
-└── merge_logs/
-      merge_stdout.txt
-      merge_stderr.txt
+└── ***.log
 ```
 
 **3. HPC (SLURM)**

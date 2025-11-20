@@ -30,8 +30,10 @@ def merge_gff(files, out_file, project_name="merged_job"):
         w.write("##gff-version 3\n")
         w.write(f"##Generated using GeneLM (merged), {current_time}\n")
         w.write(f"##Project Name: {project_name}\n")
-        w.write(f"##Tool: GeneLM, \n")
-        w.write(f"##Website: https://bioinformatics.um6p.ma/platform\n")
+        w.write(f"##Tool: GeneLM\n")
+        w.write(f"##DOI: https://doi.org/10.1093/bib/bbaf311\n")
+        w.write(f"##Web: https://bioinformatics.um6p.ma/platform\n")
+        w.write("\n")
         for f in files:
             with open(f, "r") as r:
                 for line in r:

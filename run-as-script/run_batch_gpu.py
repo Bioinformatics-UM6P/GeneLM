@@ -13,7 +13,7 @@ import tempfile
 from pathlib import Path
 from Bio import SeqIO
 import shutil
-import os
+import os, uuid
 import time
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -29,13 +29,16 @@ def write_single_fasta(record, out_dir: Path, index: int):
     return fp
 
 
-def run_one(in_fa: Path, fmt: str, out_dir: Path, device: str, verbose: bool):
+def run_one(in_fa: Path, fmt: str, out_dir: Path, device: str, verbose: bool, task_uuid: str, job_name: str = "mainjob"):
     cmd = [
         "python", str(RUN_SINGLE),
         "--in_fasta", str(in_fa),
         "--format", fmt,
         "--out_dir", str(out_dir),
         "--device", device,
+        "--task_uuid", str(task_uuid),
+        "--job_name", str(job_name),
+        "--verbose"
     ]
     if verbose:
         cmd += ["--verbose"]
@@ -95,6 +98,9 @@ def main():
     ap.add_argument("--keep_temp", action="store_true")
     ap.add_argument("--verbose", action="store_true")
     args = ap.parse_args()
+    
+    task_uuid = str(uuid.uuid4())
+    
 
     inp = Path(args.input_fasta).resolve()
     if not inp.exists():
@@ -109,6 +115,17 @@ def main():
     per_out_dir = workdir / "chunk_results"
     split_dir.mkdir(parents=True, exist_ok=True)
     per_out_dir.mkdir(parents=True, exist_ok=True)
+    
+    if args.keep_temp:
+        print("\n" + "="*80)
+        print("⚠️  DEBUG MODE ENABLED (--keep_temp)")
+        print("Temporary folder was NOT deleted.")
+        print(f"Debug folder: {workdir}")
+        print("\nInside this folder you will find:")
+        print(f"  • split/          — one FASTA file per sequence")
+        print(f"  • chunk_results/  — per-sequence GFF/CSV results (from run_single)")
+        print(f"  • {workdir}/**/*  — additional GeneLM-related temporary files")
+        print("="*80 + "\n")
 
     # split
     records = list(SeqIO.parse(str(inp), "fasta"))
@@ -126,12 +143,14 @@ def main():
 
     # Running jobs with GPU queue
     running_jobs = []    # list of (Popen, fasta_path, device)
+    all_jobs = []
     results = []
 
-    for fa in split_files:
+    for i,fa in enumerate(split_files):
         # Wait until a GPU slot is free
         while len(running_jobs) >= len(gpu_list):
             wait_for_free_job([p for p, _, _ in running_jobs])
+            finished_jobs = [(p, f, d) for (p, f, d) in running_jobs if p.poll() is not None]
             running_jobs = [(p, f, d) for (p, f, d) in running_jobs if p.poll() is None]
 
         # Assign next GPU
@@ -144,15 +163,19 @@ def main():
             "--format", args.format,
             "--out_dir", str(per_out_dir),
             "--device", device,
+            "--task_uuid", str(task_uuid),
+            "--job_name", "job"+str(i),
+            "--verbose"
         ]
-        if args.verbose:
-            cmd.append("--verbose")
+        # if args.verbose:
+        #     cmd.append("--verbose")
 
         p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        all_jobs.append((p, fa, device))
         running_jobs.append((p, fa, device))
 
     # Collect all results
-    for p, fa, device in running_jobs:
+    for p, fa, device in all_jobs:
         stdout, stderr = p.communicate()
         if p.returncode != 0:
             raise RuntimeError(
@@ -162,24 +185,13 @@ def main():
         results.append(Path(stdout.strip()))
 
     # Merge
+    print(results)
     merged = merge_all(results, args.format, out_path, args.job_name)
 
     if not args.keep_temp:
         shutil.rmtree(workdir, ignore_errors=True)
 
-    if args.keep_temp:
-        print("\n" + "="*80)
-        print("⚠️  DEBUG MODE ENABLED (--keep_temp)")
-        print("Temporary folder was NOT deleted.")
-        print(f"Debug folder: {workdir}")
-        print("\nInside this folder you will find:")
-        print(f"  • split/          — one FASTA file per sequence")
-        print(f"  • chunk_results/  — per-sequence GFF/CSV results (from run_single)")
-        print(f"  • merge_logs/     — merged output (if created)")
-        print(f"  • {workdir}/**/*  — additional GeneLM-related temporary files")
-        print("="*80 + "\n")
     print(str(merged))
-
 
 if __name__ == "__main__":
     main()

@@ -25,6 +25,11 @@ def main():
     p.add_argument("--filename", default=None, help="Optional custom output filename (will auto-append .gff if not)")
     p.add_argument("--device", default=None, help="cpu | cuda | cuda:0 | cuda:1 | (leave unset to auto)")
     p.add_argument("--verbose", action="store_true")
+    p.add_argument("--task_uuid", default=None, help="Task unique uuid (optional/auto-generated)")
+    p.add_argument("--job_name", default="[single_job]", help="Job unique name (optional)")
+    p.add_argument("--keep_temp", action="store_true")
+    
+    
     args = p.parse_args()
 
     if args.device is not None:
@@ -37,17 +42,18 @@ def main():
             else:
                 pass
 
+    tasks = {}
+    task_uuid = str(uuid.uuid4()) if not args.task_uuid else str(args.task_uuid)
+    tasks[task_uuid] = {"status": "Queued", "progress": 0, "result": None, "exec_state": {}}
+    
     logging.basicConfig(
-        filename="__files__/run_single.log",
+        filename=f"./__files__/results/exec_{'-'.join(task_uuid.split("-")[:2])}_{args.job_name}.log",
         level=logging.INFO if args.verbose else logging.WARNING,
         format="%(asctime)s - %(levelname)s - %(message)s",
     )
 
     annot = AnnotatorPipeline()
-    tasks = {}
-    task_uuid = str(uuid.uuid4())
-    tasks[task_uuid] = {"status": "Queued", "progress": 0, "result": None, "exec_state": {}}
-
+    
     in_fasta = Path(args.in_fasta).resolve()
     if not in_fasta.exists():
         raise FileNotFoundError(f"Input FASTA not found: {in_fasta}")
@@ -75,6 +81,14 @@ def main():
             print(str(final_path))
         else:
             print(str(out_path.resolve()))
+            
+        # cleanup temp folder
+        if not args.keep_temp:
+            annot.cleanup(task_uuid)
+        else:
+            print('TEMP FOLDER FOR DEBUG: ')
+            print(f'-  /__files__/results/{task_uuid}]')
+            print(f'-  /__files__/results/exec_{'-'.join(task_uuid.split("-")[:2])}_{args.job_name}.log]')
             
     except Exception as e:
         print(f"An unexpected error occurred: {e}")

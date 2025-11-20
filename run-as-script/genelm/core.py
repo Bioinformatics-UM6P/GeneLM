@@ -248,7 +248,9 @@ class AnnotatorPipeline:
         return results
 
     def _save_output(self, df: pd.DataFrame, output_format: str, file_path: Path, task_uuid: str):
-        output_file = OUTPUT_DIR / f"{file_path.stem}.{output_format.lower()}"
+        UNIQUE_OUTPUT_DIR = OUTPUT_DIR / task_uuid
+        UNIQUE_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+        output_file = UNIQUE_OUTPUT_DIR / f"{file_path.stem}.{output_format.lower()}"
         
         df = df[df["prediction_max_likelihood"] == 1].copy()
         df["start"] = df["start"].astype(int)
@@ -269,7 +271,9 @@ class AnnotatorPipeline:
                 f.write(f"##Project Name: test_{str(task_uuid).split('-')[-2]}\n")
                 f.write(f"##Job Id: {task_uuid}\n")
                 f.write(f"##Tool: GeneLM\n")
-
+                f.write(f"##DOI: https://doi.org/10.1093/bib/bbaf311\n")
+                f.write(f"##Web: https://bioinformatics.um6p.ma/platform\n")
+                
                 for _, row in df.iterrows():
                     if row['prediction_max_likelihood'] == 1:
                         gff_line = "\t".join([
@@ -288,6 +292,18 @@ class AnnotatorPipeline:
             raise ValueError("Invalid output format. Choose 'CSV' or 'GFF'.")
         
         return output_file
+    
+    def cleanup(self, task_uuid: str):
+        """Delete temporary result folder safely."""
+        WORK_FOLDER = OUTPUT_DIR / task_uuid
+        try:
+            if WORK_FOLDER.exists():
+                for file in WORK_FOLDER.iterdir():
+                    file.unlink()
+                WORK_FOLDER.rmdir()
+        except Exception as e:
+            logging.error(f"Temp cleanup failed for {WORK_FOLDER}: {e}")
+
 
     def pipeline(self, file_path: Path, output_format: str, tasks: dict, task_uuid: str, logging: logging) -> Path:
         """Runs annotation and updates progress in real-time."""
@@ -385,7 +401,19 @@ class AnnotatorPipeline:
                 all_bacteria += bacteria if all_bacteria == "" else ("-" + bacteria)
                 
             # 7. Output: format output file and return
-            final_df = pd.concat([df for df in results if not df.empty], ignore_index=True)
+            # Patch:(issue3) No objects to concatenate error 
+            # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            try:
+                final_df = pd.concat([df for df in results if not df.empty], ignore_index=True)
+            except ValueError:
+                # No output: create empty dataframe
+                final_df = pd.DataFrame(columns=[
+                    "seq_id", "start", "end", "strand", "orf_group",
+                    "logit_cls0", "logit_cls1", "prob_cls0", "prob_cls1",
+                    "prediction_max_likelihood","sequence"
+                ])
+            # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                
             self._update_progress(tasks, task_uuid, progress=100, status="Generating output files", result="...", state_key="Output", state_value=50)
             result_path = self._save_output(final_df, output_format, file_path, task_uuid)
             self._update_progress(tasks, task_uuid, progress=100, status="Completed", result=str(result_path), state_key="Output", state_value=100)
@@ -393,6 +421,7 @@ class AnnotatorPipeline:
             return result_path
         
         except Exception as e:
+            print(e)
             logging.error(f"Unexpected error while reading file: {file_path} - {str(e)}")
             self._update_progress(
                 tasks, 
@@ -404,16 +433,3 @@ class AnnotatorPipeline:
                 state_value=None
             )
             return None
-        # except Exception as e:
-        #     error_details = traceback.format_exc() 
-        #     logging.error(f"Unexpected error while reading file: {file_path}\n{error_details}")
-        #     self._update_progress(
-        #         tasks, 
-        #         task_uuid, 
-        #         progress=100, 
-        #         status="Canceled", 
-        #         result=f"Error: {str(e)}", 
-        #         state_key=None, 
-        #         state_value=None
-        #     )
-        #     return None
