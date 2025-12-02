@@ -1,162 +1,229 @@
-<div align="center" style="">
-  <br>
-  <img src="./webtool/ui/static/banner/banner-6.png"/ style="height: 6em; width: 12em">
-  <br>
-  <!-- <h1>GeneLM</h1> -->
-  GeneLM: Gene Language Model for Translation Initiation Site Prediction in Bacteria
-  <br>
-  <br>
 
-  [![DOI:10.1101/2025.03.20.644312](https://zenodo.org/badge/DOI/10.1093/bib/bbaf311.svg)](https://doi.org/10.1093/bib/bbaf311)
-  [![Hugging Face](https://img.shields.io/badge/Hugging_Face-CDS--Model-orange?style=flat&logo=HuggingFace&logoColor=)](https://huggingface.co/Genereux-akotenou/BacteriaCDS-DNABERT-K6-89M)
-  [![Hugging Face](https://img.shields.io/badge/Hugging_Face-TIS--Model-orange?style=flat&logo=HuggingFace&logoColor=)](https://huggingface.co/Genereux-akotenou/BacteriaTIS-DNABERT-K6-89M)
-  [![Docker](https://img.shields.io/badge/Docker-Supported-orange?style=flat&logo=Docker&logoColor=white)](https://hub.docker.com/r/13365920/genelm-webtool)
+# GeneLM: Gene Language Model for Translation Initiation Site Prediction in Bacteria
+
+<div align="center">
+  <br>
+  <img src="./webtool/ui/static/banner/banner-6.png" style="height: 6em; width: 12em"/>
+  <br><br>
+  GeneLM: Gene Language Model for Translation Initiation Site Prediction in Bacteria
+  <br><br>
+
+  <a href="https://doi.org/10.1093/bib/bbaf311">
+    <img src="https://zenodo.org/badge/DOI/10.1093/bib/bbaf311.svg"/>
+  </a>
+  <a href="https://huggingface.co/Genereux-akotenou/BacteriaCDS-DNABERT-K6-89M">
+    <img src="https://img.shields.io/badge/Hugging_Face-CDS--Model-orange?style=flat&logo=HuggingFace"/>
+  </a>
+  <a href="https://huggingface.co/Genereux-akotenou/BacteriaTIS-DNABERT-K6-89M">
+    <img src="https://img.shields.io/badge/Hugging_Face-TIS--Model-orange?style=flat&logo=HuggingFace"/>
+  </a>
+  <a href="https://hub.docker.com/r/13365920/genelm-webtool">
+    <img src="https://img.shields.io/badge/Docker-Supported-orange?style=flat&logo=Docker"/>
+  </a>
 </div>
 
-## GeneLM
+---
 
-<!-- [![Watch the video](./webtool/ui/static/cta.png)](./webtool/ui/static/demo-gene-prediction-prokaryotes.mp4) -->
+## **Online GeneLM Platform**
+
+We are pleased to announce that **GeneLM is now available online**:
+
+👉 **[http://bioinformatics.um6p.ma/GeneLM](http://bioinformatics.um6p.ma/GeneLM)**
+
+No installation is required — simply upload a FASTA genome or paste a sequence to receive:
+
+* CDS predictions
+* Translation Initiation Site (TIS) refinement
+* Gene annotation tables (CSV, GFF)
+* Interactive visualization
+
+⚠️ **Note:** The online platform currently runs **on CPU only**, which may lead to longer processing times for large bacterial genomes.
+
+---
+
+## GeneLM Overview
+
 <a href="https://genereux-akotenou.github.io/assets/images/demo-gene-prediction-prokaryotes.mp4" target="_blank">
-  <img src="./webtool/ui/static/cta.png" alt="Watch the video" />
+  <img src="./webtool/ui/static/cta.png" alt="Watch the video"/>
 </a>
 
-GeneLM: Gene Language Model for Translation Initiation Site Prediction in Bacteria. This repository includes the implementation of GeneLM, a genomic language model designed for predicting coding sequences (CDS) and refining Translation Initiation Sites (TIS) in bacterial genomes. The model operates through a two-stage genomic language model pipeline. In this package, we provide resources including: source codes of the GeneLM model, usage examples, pre-trained models, fine-tuned models, and a web-based visualization tool. The repository is still under development, and more features will be included gradually. Training of GeneLM consists of general-purpose pre-training and task-specific fine-tuning. The code for model training can be found in the subfolder [finetune](./finetune/), while the web tool we developed can be found in the subfolder [webtool](./webtool/). Our implementation extends existing transformer-based models and adapts them for genomic sequence analysis.
+GeneLM is a genomic language model designed to improve **coding sequence (CDS) prediction** and **Translation Initiation Site (TIS) identification** in bacterial genomes.
+It operates through a **two-stage transformer-based pipeline**, combining:
+
+1. **CDS classification**
+2. **TIS refinement**
+
+The repository contains:
+
+* Model source code
+* Pretrained + fine-tuned models
+* Command-line tools
+* Web-based visualization tool
+* Docker deployment setup
+
+Training includes **general pre-training** and **task-specific fine-tuning**.
+Model training code is available in the [`finetune/`](./finetune/) directory, and the web interface is located in [`webtool/`](./webtool/).
+
+---
 
 ## Benchmark
 
-We evaluated our approach against the widely used gene annotation tool, Prodigal, on an experimentally verified bacterial dataset. The results of this comparison are presented in the image below. You can access our [paper here](https://doi.org/10.1093/bib/bbaf311). 
+GeneLM was evaluated against **Prodigal** using experimentally verified datasets.
+Results are shown below:
 
 <img src="./webtool/ui/static/benchmark_table2.png"/>
 
-## 1. Run as command line
-> NEW: GeneLM can also be executed directly from the command line. This mode provides flexible scripts for running the annotation pipeline on single or multiple FASTA files, with options for CPU, GPU, and HPC (SLURM) environments.
+For full details, read our paper:
+📄 [https://doi.org/10.1093/bib/bbaf311](https://doi.org/10.1093/bib/bbaf311)
 
-Check this: [`README.CommandLine.md`](./run-as-script/README.md)
+---
 
-## 2. Run as Web server
+# 1. Run as Command Line
 
-To streamline gene annotation after model training, we developed a post-processing pipeline that integrates an interactive web interface and an API-based system.
+> NEW: GeneLM can now be executed directly from the command line for FASTA annotation (CPU, GPU, or SLURM HPC).
 
-Our web-based annotation tool allows users to submit genome sequences for automatic annotation. It supports two input modes: 
-1. **Direct input** – Users can paste a genome sequence into the provided text area.
-2. **File upload** – Users can upload a FASTA file for processing.
+See: [`README.CommandLine.md`](./run-as-script/README.md)
 
-After providing input, users can specify the desired output format (GFF or CSV). Once submitted, the system processes the annotation and generates structured output files. A preview of the interface is shown below:
+---
+
+# 2. Run as Web Server (Local Deployment)
+
+The local web tool offers:
+
+* **Direct sequence input** or **FASTA upload**
+* **CSV or GFF output**
+* **Interactive genome visualization**
+
+Example interface:
 
 <img src="./webtool/ui/static/web_tool_merged.png"/>
 
-### 2.1 Setting Up the Environment
+---
 
+## 2.1 Environment Setup
 
-> #### 📦 **Quick Start**
-> To speed up the setup process, you can simply run the `webtool/setup-and-run.sh` script. This script will automatically create the Python environment, install the necessary dependencies, and start both the API and the web tool services for you. Please make sure that ports 8501 (for the web UI) and 8000 (for the API) are available on your machine. To proceed, make the script executable (`chmod +x setup-and-run.sh`) and run it (`./setup-and-run.sh`). If any errors occur during execution, you can still perform the setup manually by following the detailed steps described below.
->
-> #### 🐳 **Docker Support Available**
-> A complete Docker setup is now provided to simplify deployment across any environment with NVIDIA GPU support.
->  **Check out the Docker setup and usage instructions in** [`README.Docker.md`](./webtool/README.Docker.md) to build from Docker. Or you can get the pre-build image of GeneLM from hub and use it direclty doing:
-> ```bash
-> docker pull 13365920/genelm-webtool:latest
-> docker run --gpus all -p 8501:8501 -p 8000:8000 13365920/genelm-webtool:latest
-> ```
+### Quick Start (Recommended)
 
-#### Step 1: Create a Python Environment
+```sh
+cd webtool
+chmod +x setup-and-run.sh
+./setup-and-run.sh
+```
+
+This automatically:
+
+* Creates a Python environment
+* Installs dependencies
+* Launches the API + Web UI
+
+Requires ports **8501** (UI) and **8000** (API).
+
+### Manual Setup
+
+#### Step 1: Create Environment
+
 ```sh
 git clone https://github.com/Bioinformatics-UM6P/GeneLM
 cd webtool
 python -m venv venv
 ```
 
-#### Step 2: Activate the Environment
+#### Step 2: Activate Environment
+
 ```sh
 source ./venv/bin/activate
 ```
 
 #### Step 3: Install Dependencies
+
 ```sh
 pip install -r requirements.txt
 ```
 
-### 2.2 Launch the Web Tool UI
+### 2.2 Launch UI
+
 ```sh
 streamlit run ui/app.py
 ```
 
-### 2.3 Start the API Server
+### 2.3 Start API
+
 ```sh
 uvicorn --app-dir api api:app --host 127.0.0.1 --port 8000 --reload
 ```
 
-### 2.4. Perform Annotation
-Navigate to the web tool and submit a FASTA/FNA file containing your full genome sequence. The results should look like this: 
+### 2.4 Annotate a Genome
+
+Upload a FASTA file and obtain:
 
 <img src="./webtool/ui/static/web_tool_2b.png"/>
 
+---
 
-## 3. Loading model from hugginface (Quick inference)
-Depending wethever you wanna classify CDS of TIS you can download the model from higginface au use it following higginface api. To load our GeneLM CDS-CLASSIFIER model, you can use transformers library: 
+# 3. Loading GeneLM from Hugging Face (Quick Inference)
+
+### Load the CDS classifier
 
 ```python
 import torch
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
-# Load Model
 model_checkpoint = "Genereux-akotenou/BacteriaCDS-DNABERT-K6-89M"
 model = AutoModelForSequenceClassification.from_pretrained(model_checkpoint)
 tokenizer = AutoTokenizer.from_pretrained(model_checkpoint)
 ```
-**Inference Example**: This model works with 6-mer tokenized sequences. You need to convert raw DNA sequences into k-mer format:
+
+### Generate 6-mers
 
 ```python
-def generate_kmer(sequence: str, k: int, overlap: int = 1):
+def generate_kmer(sequence, k, overlap=1):
     return " ".join([sequence[j:j+k] for j in range(0, len(sequence) - k + 1, overlap)])
-
-sequence = "ATGAGAACCAGCCGGAGACCTCCTGCTCGTACATGAAAGGCTCGAGCAGCCGGGCGAGGGCGGTAG" 
-seq_kmer = generate_kmer(sequence, k=6, overlap=3)
-
-# Run inference
-inputs = tokenizer(
-  seq_kmer,
-  return_tensors="pt",
-  max_length=tokenizer.model_max_length,
-  padding="max_length",
-  truncation=True
-)
-with torch.no_grad():
-  outputs = model(**inputs)
-  logits = outputs.logits
-  predicted_class = torch.argmax(logits, dim=-1).item()
 ```
 
-This will give first stage classifition ouput you can refine using the second stage classifier. See instructions here: [Loading model for second stage](https://huggingface.co/Genereux-akotenou/BacteriaTIS-DNABERT-K6-89M)
+### Run inference
 
+```python
+sequence = "ATGAGAACCAGCCGGAGACCTCCTGCTCGTACATGAAAGGCTCGAGCAGCCGGGCGAGGGCGGTAG"
+seq_kmer = generate_kmer(sequence, k=6, overlap=3)
 
-## 4. Fine-tuning
-If you are interested in the fine-tuning code pipeline or the data used in this process, all relevant materials can be found in the [finetune](./finetune/) folder of this repository.
+inputs = tokenizer(seq_kmer, return_tensors="pt", max_length=tokenizer.model_max_length,
+                   padding="max_length", truncation=True)
 
-### Structure of the Fine-tuning Folder
-Within the `finetune/` directory, you will find two key subfolders:
+with torch.no_grad():
+    outputs = model(**inputs)
+    predicted_class = torch.argmax(outputs.logits, dim=-1).item()
+```
 
-1. **data-pipeline/** – This folder contains scripts and preprocessing workflows for preparing training data. It includes:
-   - Data collection and formatting procedures
-   - Preprocessing scripts to clean and structure genomic sequences
+Use the TIS-refinement model for stage 2:
+👉 [https://huggingface.co/Genereux-akotenou/BacteriaTIS-DNABERT-K6-89M](https://huggingface.co/Genereux-akotenou/BacteriaTIS-DNABERT-K6-89M)
 
-2. **train-pipeline/** – This folder provides all necessary scripts for training and fine-tuning the model. It includes:
-   - Model configuration files
-   - Training scripts for executing fine-tuning using preprocessed data
-   - Hyperparameter settings and training logs for reproducibility
+---
 
-### Fine-tuning Process Overview
-The fine-tuning process involves:
-1. **Data Preparation** – Formatting raw genomic sequences into a structured dataset.
-2. **Model Training** – Using the preprocessed data to fine-tune a pre-trained model.
-3. **Evaluation** – Assessing performance using validation datasets and benchmark comparisons.
-4. **Result Analysis** – Generating reports and metrics to analyze model effectiveness.
+# 4. Fine-tuning
 
-By following the resources in this directory, users can replicate or extend the fine-tuning process for their specific use cases.
+Fine-tuning resources are located in `finetune/`:
 
-## 5. Citation
-If you have used GeneLM in your research, please kindly cite the following publication:
-```bib
+### Folder Structure
+
+| Folder            | Description                                |
+| ----------------- | ------------------------------------------ |
+| `data-pipeline/`  | Data preparation, cleaning, and formatting |
+| `train-pipeline/` | Training scripts, configs, hyperparameters |
+
+### Steps
+
+1. Preprocess genomic data
+2. Fine-tune GeneLM
+3. Evaluate results
+4. Generate reports & metrics
+
+---
+
+# 5. Citation
+
+If you use GeneLM, please cite:
+
+```bibtex
 @article{10.1093/bib/bbaf311,
     author = {Akotenou, Genereux and El Allali, Achraf},
     title = {Genomic language models (gLMs) decode bacterial genomes for improved gene prediction and translation initiation site identification},
@@ -172,3 +239,4 @@ If you have used GeneLM in your research, please kindly cite the following publi
     eprint = {https://academic.oup.com/bib/article-pdf/26/4/bbaf311/63649237/bbaf311.pdf},
 }
 ```
+
