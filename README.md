@@ -18,7 +18,7 @@
 
 ---
 
-### Overview
+## Overview
 
 <a href="https://genereux-akotenou.github.io/assets/images/demo-gene-prediction-prokaryotes.mp4" target="_blank">
   <img src="./webtool/ui/static/cta.png" alt="Watch the video"/>
