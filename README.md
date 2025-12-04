@@ -1,30 +1,19 @@
 
 # GeneLM: Gene Language Model for Translation Initiation Site Prediction in Bacteria
 
-<div align="center">
+<div align="center" style="">
   <br>
-  <img src="./webtool/ui/static/banner/banner-6.png" style="height: 6em; width: 12em"/>
-  <br><br>
+  <img src="./webtool/ui/static/banner/banner-6.png"/ style="height: 6em; width: 12em">
+  <br>
+  <!-- <h1>GeneLM</h1> -->
   GeneLM: Gene Language Model for Translation Initiation Site Prediction in Bacteria
-  <br><br>
+  <br>
+  <br>
 
-  <a href="https://doi.org/10.1093/bib/bbaf311">
-    <img src="https://zenodo.org/badge/DOI/10.1093/bib/bbaf311.svg"/>
-  </a>
-  <a href="https://huggingface.co/Genereux-akotenou/BacteriaCDS-DNABERT-K6-89M">
-    <img src="https://img.shields.io/badge/Hugging_Face-CDS--Model-orange?style=flat&logo=HuggingFace"/>
-  </a>
-  <a href="https://huggingface.co/Genereux-akotenou/BacteriaTIS-DNABERT-K6-89M">
-    <img src="https://img.shields.io/badge/Hugging_Face-TIS--Model-orange?style=flat&logo=HuggingFace"/>
-  </a>
-  <a href="https://hub.docker.com/r/13365920/genelm-webtool">
-    <img src="https://img.shields.io/badge/Docker-Supported-orange?style=flat&logo=Docker&logoColor=white"/>
-  </a>
-  
-  <!--[![DOI:10.1101/2025.03.20.644312](https://zenodo.org/badge/DOI/10.1093/bib/bbaf311.svg)](https://doi.org/10.1093/bib/bbaf311)
+  [![DOI:10.1101/2025.03.20.644312](https://zenodo.org/badge/DOI/10.1093/bib/bbaf311.svg)](https://doi.org/10.1093/bib/bbaf311)
   [![Hugging Face](https://img.shields.io/badge/Hugging_Face-CDS--Model-orange?style=flat&logo=HuggingFace&logoColor=)](https://huggingface.co/Genereux-akotenou/BacteriaCDS-DNABERT-K6-89M)
   [![Hugging Face](https://img.shields.io/badge/Hugging_Face-TIS--Model-orange?style=flat&logo=HuggingFace&logoColor=)](https://huggingface.co/Genereux-akotenou/BacteriaTIS-DNABERT-K6-89M)
-  [![Docker](https://img.shields.io/badge/Docker-Supported-orange?style=flat&logo=Docker&logoColor=white)](https://hub.docker.com/r/13365920/genelm-webtool)-->
+  [![Docker](https://img.shields.io/badge/Docker-Supported-orange?style=flat&logo=Docker&logoColor=white)](https://hub.docker.com/r/13365920/genelm-webtool)
 </div>
 
 ---
@@ -52,9 +41,9 @@ Check this: [`README.CommandLine.md`](./run-as-script/README.md)
 
 ## 2. Run on Online Webserver
 
-We are pleased to announce that **GeneLM is now available online**: **[http://bioinformatics.um6p.ma/GeneLM](http://bioinformatics.um6p.ma/GeneLM). ** No installation is required — simply upload a FASTA genome or paste a sequence to receive the annotated file (gff or csv).
-
-⚠️ **Note:** The online platform currently runs **on CPU only**, and submissions are processed through a queue, which may lead to longer processing times for large bacterial genomes.
+> NEW: We are pleased to announce that **GeneLM is now available online**: [http://bioinformatics.um6p.ma/GeneLM](http://bioinformatics.um6p.ma/GeneLM). No installation is required — simply upload a FASTA genome or paste a sequence to receive the annotated file (gff or csv).
+> 
+> ⚠️ **Note:** The online platform currently runs **on CPU only**, and submissions are processed through a queue, which may lead to longer processing times for large bacterial genomes.
 
 ## 3. Run on Local Webserver (Local Deployment)
 
