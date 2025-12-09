@@ -10,7 +10,7 @@
   <br>
   <br>
 
-  [![DOI:10.1101/2025.03.20.644312](https://zenodo.org/badge/DOI/10.1093/bib/bbaf311.svg)](https://doi.org/10.1093/bib/bbaf311)
+  [![DOI:10.1093/bib/bbaf311](https://zenodo.org/badge/DOI/10.1093/bib/bbaf311.svg)](https://doi.org/10.1093/bib/bbaf311)
   [![Hugging Face](https://img.shields.io/badge/Hugging_Face-CDS--Model-orange?style=flat&logo=HuggingFace&logoColor=)](https://huggingface.co/Genereux-akotenou/BacteriaCDS-DNABERT-K6-89M)
   [![Hugging Face](https://img.shields.io/badge/Hugging_Face-TIS--Model-orange?style=flat&logo=HuggingFace&logoColor=)](https://huggingface.co/Genereux-akotenou/BacteriaTIS-DNABERT-K6-89M)
   [![Docker](https://img.shields.io/badge/Docker-Supported-orange?style=flat&logo=Docker&logoColor=white)](https://hub.docker.com/r/13365920/genelm-webtool)
