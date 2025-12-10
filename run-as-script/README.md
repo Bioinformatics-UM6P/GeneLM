@@ -29,7 +29,7 @@ pip install -r genelm/requirements.txt
 
 #### Usage
 
-**1. Single sequence**
+#### **1. Single sequence**
 
 ![Run on CPU/GPU via sequential gene annotation](https://img.shields.io/badge/CPU/GPU-SEQUENTIAL%20GENE%20ANNOTATION-0b75b6?style=for-the-badge&logo=&logoColor=white)
 
@@ -46,12 +46,14 @@ python run_single.py \
   --out_dir __files__/results
 ```
 **Optional Args**: `--filename my_result` or `--filename my_result.gff`: lets you specify a custom output file name (the script automatically adds .gff or .csv based on your chosen format). If you don’t set this option, the output filename will be generated from the contig names in your FASTA file, joined by underscores (_), with the appropriate .gff or .csv extension added.
+
+**New**: Add this arg `--extract_orf_protein` to generate in the output folder `predicted_orfs.fasta` and `predicted_proteins.fasta`. By default the codon table used is 11. you can still chnage this by adding `--codon_table 11`.
 <br>
 <br>
 <br>
 
 
-**2. Batch (multi-FASTA)**
+#### **2. Batch (multi-FASTA)**
 
 Use this for a multi-FASTA: it automatically splits the input into per-record FASTAs, runs each one in parallel (either on **CPU** or **GPU**), and then merges all per-record outputs into a single file.
 
@@ -81,7 +83,10 @@ python run_batch.py \
 | `--job_name`    | No       | Name placed in merged **GFF header** for tracking the batch job.                              | Any string                                                                                                                               | `"batch_job"` |
 | `--output`      | **Yes**  | Final merged output file path (`.gff` or `.csv`).                                             | Path must end with `.gff` or `.csv`.                                                                                                     | *None*        |
 | `--keep_temp`   | No       | Keep temporary directory containing split FASTAs + per-record outputs.                        | Flag; no value. If present → temp dirs kept.                                                                                             |       |
+| `--extract_orf_protein` | No       | After merging, run ORF & protein FASTA extraction | Flag                                          | `False` |
+| `--codon_table`         | No       | NCBI codon table ID used for translation          | Integer (11 recommended for bacteria/archaea) | `11`    |
 | `--verbose`     | No       | Enable verbose logging passed to run_single.py.                                               | Flag; if set → verbose mode.                                                                                                             |      |
+
 
 <br>
 
@@ -116,6 +121,8 @@ python run_batch_gpu.py \
 | `--job_name`    | No       | Name inserted into GFF output header and used by the merger.                                                                     | Any string                                                                                                                                  | `"batch_job"` |
 | `--output`      | **Yes**  | Final merged output file (`.gff` or `.csv`).                                                                                     | Must end with `.gff` or `.csv`.                                                                                                             | *None*        |
 | `--keep_temp`   | No       | Keep temporary directory with split FASTAs and per-chunk results. Useful for debugging.                                          | Flag; if present → keep temp folder                                                                                                         | `False`       |
+| `--extract_orf_protein` | No       | After merging, run ORF & protein FASTA extraction | Flag                                          | `False` |
+| `--codon_table`         | No       | NCBI codon table ID used for translation          | Integer (11 recommended for bacteria/archaea) | `11`    |
 | `--verbose`     | No       | Enables verbose mode for each GPU job (passed to run_single.py).                                                                 | Flag; if present → verbose                                                                                                                  | `False`       |
 
 <br>
@@ -165,7 +172,33 @@ __files__/results
 └── ***.log
 ```
 
-**3. HPC (SLURM)**
+#### **3. Extract ORFs & Proteins from FASTA + GFF**
+
+After running GeneLM and obtaining the GFF annotation, you can optionally extract:
+
+- **Predicted ORF nucleotide sequences**  
+- **Predicted protein amino-acid sequences**  
+
+This helper script works for **bacterial genomes** (Genetic Code 11) and if no output directory is provided, files are written to the current directory.
+
+**Usage**
+```bash
+python extract_orf_protein.py \
+  --fasta path/to/genome.fasta \
+  --gff path/to/annotations.gff \
+```
+Or specify an output directory:
+```bash
+python extract_orf_protein.py \
+  --fasta path/to/genome.fasta \
+  --gff path/to/annotations.gff \
+  --output_dir path/to/outputdir/where/to/save/ \
+  --codon_table 11
+```
+
+This script produces: `predicted_orfs.fasta` and `predicted_proteins.fasta`
+
+#### **4. HPC (SLURM)**
 
 Use the provided SLURM helper to run the batch workflow on a cluster.
 Arguments: `INPUT_FASTA FORMAT DEVICE WORKERS OUT_FILE JOB_NAME`.

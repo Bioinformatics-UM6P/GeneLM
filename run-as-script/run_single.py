@@ -1,5 +1,5 @@
 """
-Run AnnotatorPipeline on a single-FASTA file (one record recommended).
+Run AnnotatorPipeline on a single-FASTA file.
 Writes output (CSV or GFF) to __files__/results (as defined in core.py),
 then copies it to --out_dir if provided.
 """
@@ -11,6 +11,7 @@ import shutil
 import uuid
 import logging
 import sys
+import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -28,7 +29,18 @@ def main():
     p.add_argument("--task_uuid", default=None, help="Task unique uuid (optional/auto-generated)")
     p.add_argument("--job_name", default="[single_job]", help="Job unique name (optional)")
     p.add_argument("--keep_temp", action="store_true")
-    
+    # new feature
+    p.add_argument(
+        "--extract_orf_protein",
+        action="store_true",
+        help="After annotation finishes, extract ORF & protein FASTA files."
+    )
+    p.add_argument(
+        "--codon_table",
+        type=int,
+        default=11,
+        help="NCBI codon table ID (default: 11 — Bacterial/Archaeal)"
+    )
     
     args = p.parse_args()
 
@@ -76,10 +88,12 @@ def main():
                 final_path = out_dir / final_name
             else:
                 final_path = out_dir / out_path.name
-                
+            gff_final = final_path
+            
             shutil.copy2(out_path, final_path)
             print(str(final_path))
         else:
+            gff_final = out_path
             print(str(out_path.resolve()))
             
         # cleanup temp folder
@@ -89,6 +103,31 @@ def main():
             print('TEMP FOLDER FOR DEBUG: ')
             print(f'-  /__files__/results/{task_uuid}]')
             print(f'-  /__files__/results/exec_{'-'.join(task_uuid.split("-")[:2])}_{args.job_name}.log]')
+            
+        # --------------------------------------------------------------
+        # OPTIONAL: Extract ORFs + Proteins by calling external script
+        # --------------------------------------------------------------
+        if args.extract_orf_protein and args.format.upper() == "GFF":
+            print("[ORF-PROTEIN] Running extract_orf_protein.py ...")
+
+            script_path = Path(__file__).parent / "extract_orf_protein.py"
+            output_dir = args.out_dir if args.out_dir else "."
+
+            cmd = [
+                sys.executable,
+                str(script_path),
+                str(in_fasta),
+                str(gff_final),
+                str(output_dir),
+                "--codon_table", str(args.codon_table)
+            ]
+
+            try:
+                subprocess.run(cmd, check=True)
+                print(f"[ORF-PROTEIN] Extraction completed → {output_dir}")
+            except subprocess.CalledProcessError:
+                print("[ORF-PROTEIN] Extraction failed! Check extract_orf_protein.py")
+
             
     except Exception as e:
         print(f"An unexpected error occurred: {e}")

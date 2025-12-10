@@ -13,7 +13,7 @@ import tempfile
 from pathlib import Path
 from Bio import SeqIO
 import shutil
-import os, uuid
+import os, uuid, sys
 import time
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -97,6 +97,17 @@ def main():
     ap.add_argument("--output", required=True)
     ap.add_argument("--keep_temp", action="store_true")
     ap.add_argument("--verbose", action="store_true")
+    ap.add_argument(
+        "--extract_orf_protein",
+        action="store_true",
+        help="After merging, extract ORF & protein FASTA files"
+    )
+    ap.add_argument(
+        "--codon_table",
+        type=int,
+        default=11,
+        help="NCBI codon table ID (default: 11 — Bacterial/Archaeal)"
+    )
     args = ap.parse_args()
     
     task_uuid = str(uuid.uuid4())
@@ -186,6 +197,31 @@ def main():
 
     # Merge
     merged = merge_all(results, args.format, out_path, args.job_name)
+
+    # --------------------------------------------------------------
+    # OPTIONAL: ORF+Protein extraction (GFF only)
+    # --------------------------------------------------------------
+    if args.extract_orf_protein and args.format.upper() == "GFF":
+        print("[ORF-PROTEIN] Running extract_orf_protein.py on merged output...")
+
+        script_path = Path(__file__).parent / "extract_orf_protein.py"
+        output_dir = out_path.parent
+
+        cmd = [
+            sys.executable,
+            str(script_path),
+            str(inp),
+            str(merged),
+            str(output_dir),
+            "--codon_table", str(args.codon_table)
+        ]
+
+        try:
+            subprocess.run(cmd, check=True)
+            print(f"[ORF-PROTEIN] Extraction completed → {output_dir}")
+        except subprocess.CalledProcessError:
+            print("[ORF-PROTEIN] Extraction failed! Check extract_orf_protein.py")
+
 
     if not args.keep_temp:
         shutil.rmtree(workdir, ignore_errors=True)

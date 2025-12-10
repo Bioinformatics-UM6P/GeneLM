@@ -1,7 +1,7 @@
 """
 Count number of FASTA records in a given file.
 Usage:
-    python run_count_fasta.py --input myfile.fasta
+    python count_fasta.py --input myfile.fasta
     
 Extended(in shell):
     COUNT=$(python run_count_fasta.py -i smoke-test/sequence_tiny_mixt.fasta)
