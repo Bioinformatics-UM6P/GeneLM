@@ -184,15 +184,15 @@ This helper script works for **bacterial genomes** (Genetic Code 11) and if no o
 **Usage**
 ```bash
 python extract_orf_protein.py \
-  --fasta path/to/genome.fasta \
-  --gff path/to/annotations.gff \
+  path/to/genome.fasta \
+  path/to/annotations.gff \
 ```
 Or specify an output directory:
 ```bash
 python extract_orf_protein.py \
-  --fasta path/to/genome.fasta \
-  --gff path/to/annotations.gff \
-  --output_dir path/to/outputdir/where/to/save/ \
+  path/to/genome.fasta \
+  path/to/annotations.gff \
+  path/to/outputdir/where/to/save/ \
   --codon_table 11
 ```
 
