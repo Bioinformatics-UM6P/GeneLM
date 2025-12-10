@@ -1,3 +1,6 @@
+
+# GeneLM: Gene Language Model for Translation Initiation Site Prediction in Bacteria
+
 <div align="center" style="">
   <br>
   <img src="./webtool/ui/static/banner/banner-6.png"/ style="height: 6em; width: 12em">
@@ -7,20 +10,23 @@
   <br>
   <br>
 
-  [![DOI:10.1101/2025.03.20.644312](https://zenodo.org/badge/DOI/10.1093/bib/bbaf311.svg)](https://doi.org/10.1093/bib/bbaf311)
+  [![DOI:10.1093/bib/bbaf311](https://zenodo.org/badge/DOI/10.1093/bib/bbaf311.svg)](https://doi.org/10.1093/bib/bbaf311)
   [![Hugging Face](https://img.shields.io/badge/Hugging_Face-CDS--Model-orange?style=flat&logo=HuggingFace&logoColor=)](https://huggingface.co/Genereux-akotenou/BacteriaCDS-DNABERT-K6-89M)
   [![Hugging Face](https://img.shields.io/badge/Hugging_Face-TIS--Model-orange?style=flat&logo=HuggingFace&logoColor=)](https://huggingface.co/Genereux-akotenou/BacteriaTIS-DNABERT-K6-89M)
   [![Docker](https://img.shields.io/badge/Docker-Supported-orange?style=flat&logo=Docker&logoColor=white)](https://hub.docker.com/r/13365920/genelm-webtool)
 </div>
 
-## GeneLM
+---
 
-<!-- [![Watch the video](./webtool/ui/static/cta.png)](./webtool/ui/static/demo-gene-prediction-prokaryotes.mp4) -->
+## Overview
+
 <a href="https://genereux-akotenou.github.io/assets/images/demo-gene-prediction-prokaryotes.mp4" target="_blank">
-  <img src="./webtool/ui/static/cta.png" alt="Watch the video" />
+  <img src="./webtool/ui/static/cta.png" alt="Watch the video"/>
 </a>
 
-GeneLM: Gene Language Model for Translation Initiation Site Prediction in Bacteria. This repository includes the implementation of GeneLM, a genomic language model designed for predicting coding sequences (CDS) and refining Translation Initiation Sites (TIS) in bacterial genomes. The model operates through a two-stage genomic language model pipeline. In this package, we provide resources including: source codes of the GeneLM model, usage examples, pre-trained models, fine-tuned models, and a web-based visualization tool. The repository is still under development, and more features will be included gradually. Training of GeneLM consists of general-purpose pre-training and task-specific fine-tuning. The code for model training can be found in the subfolder [finetune](./finetune/), while the web tool we developed can be found in the subfolder [webtool](./webtool/). Our implementation extends existing transformer-based models and adapts them for genomic sequence analysis.
+GeneLM: Gene Language Model for Translation Initiation Site Prediction in Bacteria. This repository includes the implementation of GeneLM, a genomic language model designed for predicting coding sequences (CDS) and refining Translation Initiation Sites (TIS) in bacterial genomes. The model operates through a two-stage genomic language model pipeline. In this package, we provide resources including: source codes of the GeneLM model, usage examples, pre-trained models, fine-tuned models, and a web-based visualization tool. Training of GeneLM consists of general-purpose pre-training and task-specific fine-tuning. The code for model training can be found in the subfolder [finetune](./finetune/), while the web tool we developed can be found in the subfolder [webtool](./webtool/). Our implementation extends existing transformer-based models and adapts them for genomic sequence analysis.
+
+---
 
 ## Benchmark
 
@@ -33,7 +39,13 @@ We evaluated our approach against the widely used gene annotation tool, Prodigal
 
 Check this: [`README.CommandLine.md`](./run-as-script/README.md)
 
-## 2. Run as Web server
+## 2. Run on Online Webserver
+
+> NEW: We are pleased to announce that **GeneLM is now available online**: [http://bioinformatics.um6p.ma/GeneLM](http://bioinformatics.um6p.ma/GeneLM). No installation is required — simply upload a FASTA genome or paste a sequence to receive the annotated file (gff or csv).
+> 
+> ⚠️ **Note:** The online platform currently runs **on CPU only**, and submissions are processed through a queue, which may lead to longer processing times for large bacterial genomes.
+
+## 3. Run on Local Webserver (Local Deployment)
 
 To streamline gene annotation after model training, we developed a post-processing pipeline that integrates an interactive web interface and an API-based system.
 
@@ -45,7 +57,7 @@ After providing input, users can specify the desired output format (GFF or CSV).
 
 <img src="./webtool/ui/static/web_tool_merged.png"/>
 
-### 2.1 Setting Up the Environment
+### 3.1 Setting Up the Environment
 
 
 > #### 📦 **Quick Start**
@@ -76,23 +88,23 @@ source ./venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 2.2 Launch the Web Tool UI
+### 3.2 Launch the Web Tool UI
 ```sh
 streamlit run ui/app.py
 ```
 
-### 2.3 Start the API Server
+### 3.3 Start the API Server
 ```sh
 uvicorn --app-dir api api:app --host 127.0.0.1 --port 8000 --reload
 ```
 
-### 2.4. Perform Annotation
+### 3.4. Perform Annotation
 Navigate to the web tool and submit a FASTA/FNA file containing your full genome sequence. The results should look like this: 
 
 <img src="./webtool/ui/static/web_tool_2b.png"/>
 
 
-## 3. Loading model from hugginface (Quick inference)
+## 4. Loading model from hugginface (Quick inference)
 Depending wethever you wanna classify CDS of TIS you can download the model from higginface au use it following higginface api. To load our GeneLM CDS-CLASSIFIER model, you can use transformers library: 
 
 ```python
@@ -130,7 +142,22 @@ with torch.no_grad():
 This will give first stage classifition ouput you can refine using the second stage classifier. See instructions here: [Loading model for second stage](https://huggingface.co/Genereux-akotenou/BacteriaTIS-DNABERT-K6-89M)
 
 
-## 4. Fine-tuning
+<!-- ## 4. Fine-tuning
+If you are interested in the fine-tuning code pipeline or the data used in this process, all relevant materials can be found in the [finetune](./finetune/) folder of this repository. -->
+
+<!-- ### Structure of the Fine-tuning Folder
+Within the `finetune/` directory, you will find two key subfolders:
+
+1. **data-pipeline/** – This folder contains scripts and preprocessing workflows for preparing training data. It includes:
+   - Data collection and formatting procedures
+   - Preprocessing scripts to clean and structure genomic sequences
+
+2. **train-pipeline/** – This folder provides all necessary scripts for training and fine-tuning the model. It includes:
+   - Model configuration files
+   - Training scripts for executing fine-tuning using preprocessed data
+   - Hyperparameter settings and training logs for reproducibility -->
+
+## 5. Fine-tuning
 If you are interested in the fine-tuning code pipeline or the data used in this process, all relevant materials can be found in the [finetune](./finetune/) folder of this repository.
 
 ### Structure of the Fine-tuning Folder
@@ -154,7 +181,7 @@ The fine-tuning process involves:
 
 By following the resources in this directory, users can replicate or extend the fine-tuning process for their specific use cases.
 
-## 5. Citation
+## 6. Citation
 If you have used GeneLM in your research, please kindly cite the following publication:
 ```bib
 @article{10.1093/bib/bbaf311,
@@ -172,3 +199,4 @@ If you have used GeneLM in your research, please kindly cite the following publi
     eprint = {https://academic.oup.com/bib/article-pdf/26/4/bbaf311/63649237/bbaf311.pdf},
 }
 ```
+
