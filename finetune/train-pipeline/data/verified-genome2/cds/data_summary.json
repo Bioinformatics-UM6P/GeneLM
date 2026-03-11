@@ -1,0 +1,22 @@
+{
+    "Escherichia_coli_K_12_substr__MG1655_uid57779.0": {
+        "bacteria": "Escherichia_coli_K_12_substr__MG1655_uid57779",
+        "path": "../data/verified-genome2/cds/database/bacteria_1.csv"
+    },
+    "Mycobacterium_tuberculosis_H37Rv_uid57777.1": {
+        "bacteria": "Mycobacterium_tuberculosis_H37Rv_uid57777",
+        "path": "../data/verified-genome2/cds/database/bacteria_2.csv"
+    },
+    "Roseobacter_denitrificans_Och114.2": {
+        "bacteria": "Roseobacter_denitrificans_Och114",
+        "path": "../data/verified-genome2/cds/database/bacteria_3.csv"
+    },
+    "Natronomonas_pharaonis_DSM_2160_uid58435.3": {
+        "bacteria": "Natronomonas_pharaonis_DSM_2160_uid58435",
+        "path": "../data/verified-genome2/cds/database/bacteria_4.csv"
+    },
+    "Halobacterium_salinarum_R1_uid61571.4": {
+        "bacteria": "Halobacterium_salinarum_R1_uid61571",
+        "path": "../data/verified-genome2/cds/database/bacteria_5.csv"
+    }
+}

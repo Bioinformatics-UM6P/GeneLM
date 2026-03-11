@@ -1,0 +1,112 @@
+The provided kmer is: 6, data_path is ../data/verified-genome/tis_iter/
+CUDA available: True
+field size limit: 9223372036854775807
+Some weights of the model checkpoint at zhihan1996/DNA_bert_6 were not used when initializing DNABertForSequenceClassification: ['cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.decoder.bias']
+- This IS expected if you are initializing DNABertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DNABertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of DNABertForSequenceClassification were not initialized from the model checkpoint at zhihan1996/DNA_bert_6 and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+DNABertForSequenceClassification(
+  (bert): BertModel(
+    (embeddings): BertEmbeddings(
+      (word_embeddings): Embedding(4101, 768, padding_idx=0)
+      (position_embeddings): Embedding(512, 768)
+      (token_type_embeddings): Embedding(2, 768)
+      (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (encoder): BertEncoder(
+      (layer): ModuleList(
+        (0-11): 12 x BertLayer(
+          (attention): BertAttention(
+            (self): BertSelfAttention(
+              (query): Linear(in_features=768, out_features=768, bias=True)
+              (key): Linear(in_features=768, out_features=768, bias=True)
+              (value): Linear(in_features=768, out_features=768, bias=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (output): BertSelfOutput(
+              (dense): Linear(in_features=768, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (intermediate): BertIntermediate(
+            (dense): Linear(in_features=768, out_features=3072, bias=True)
+            (intermediate_act_fn): GELUActivation()
+          )
+          (output): BertOutput(
+            (dense): Linear(in_features=3072, out_features=768, bias=True)
+            (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+      )
+    )
+    (pooler): BertPooler(
+      (dense): Linear(in_features=768, out_features=768, bias=True)
+      (activation): Tanh()
+    )
+  )
+  (dropout): Dropout(p=0.1, inplace=False)
+  (classifier): Linear(in_features=768, out_features=2, bias=True)
+)
+Using cuda_amp half precision backend
+***** Running training *****
+  Num examples = 265,326,543
+  Num Epochs = 1
+  Instantaneous batch size per device = 1
+  Total train batch size (w. parallel, distributed & accumulation) = 1
+  Gradient Accumulation steps = 1
+  Total optimization steps = 265,326,543
+  Number of trainable parameters = 89,192,450
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+wandb: Currently logged in as: genereux-akotenou (genereux-akotenou-local). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.19.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.17.7
+wandb: Run data is saved locally in /srv/lustre01/project/genomics-um6p-st-agc-vmauca60agi/users/mahouzonssou.akoteno/gLMs/GeneAnnotator/finetune/wandb/run-20250209_171559-dmccnreu
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run DNABERT-kmer6-hpc
+wandb: ⭐️ View project at https://wandb.ai/genereux-akotenou-local/TIS_BaBert_k6-db_v3-PseudoLabel
+wandb: 🚀 View run at https://wandb.ai/genereux-akotenou-local/TIS_BaBert_k6-db_v3-PseudoLabel/runs/dmccnreu
+  0%|          | 0/265326543 [00:00<?, ?it/s][rank0]:[W209 17:16:06.090527378 reducer.cpp:1400] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+  0%|          | 1/265326543 [00:00<56058:17:38,  1.31it/s]  0%|          | 2/265326543 [00:00<29139:10:58,  2.53it/s]  0%|          | 3/265326543 [00:01<20474:16:54,  3.60it/s]  0%|          | 4/265326543 [00:01<16301:34:26,  4.52it/s]  0%|          | 5/265326543 [00:01<13980:21:04,  5.27it/s]  0%|          | 6/265326543 [00:01<12572:14:56,  5.86it/s]  0%|          | 7/265326543 [00:01<11656:08:23,  6.32it/s]  0%|          | 8/265326543 [00:01<11052:14:34,  6.67it/s]  0%|          | 9/265326543 [00:01<10638:16:56,  6.93it/s]  0%|          | 10/265326543 [00:01<10377:55:06,  7.10it/s]  0%|          | 11/265326543 [00:02<10200:00:04,  7.23it/s]  0%|          | 12/265326543 [00:02<10290:15:21,  7.16it/s]  0%|          | 13/265326543 [00:02<10213:13:25,  7.22it/s]  0%|          | 14/265326543 [00:02<10074:21:35,  7.32it/s]  0%|          | 15/265326543 [00:02<9985:46:24,  7.38it/s]   0%|          | 16/265326543 [00:02<9926:29:45,  7.42it/s]  0%|          | 17/265326543 [00:02<9867:28:31,  7.47it/s]  0%|          | 18/265326543 [00:03<9825:30:08,  7.50it/s]  0%|          | 19/265326543 [00:03<9801:37:06,  7.52it/s]  0%|          | 20/265326543 [00:03<9782:00:24,  7.53it/s]  0%|          | 21/265326543 [00:03<9764:13:30,  7.55it/s]  0%|          | 22/265326543 [00:03<9751:51:43,  7.56it/s]  0%|          | 23/265326543 [00:03<9745:11:35,  7.56it/s]  0%|          | 24/265326543 [00:03<9740:27:45,  7.57it/s]  0%|          | 25/265326543 [00:03<9747:46:49,  7.56it/s]  0%|          | 26/265326543 [00:04<9758:55:23,  7.55it/s]  0%|          | 27/265326543 [00:04<9946:11:39,  7.41it/s]  0%|          | 28/265326543 [00:04<9944:34:13,  7.41it/s]  0%|          | 29/265326543 [00:04<9886:52:43,  7.45it/s]  0%|          | 30/265326543 [00:04<9841:42:31,  7.49it/s]  0%|          | 31/265326543 [00:04<9807:50:02,  7.51it/s]  0%|          | 32/265326543 [00:04<9798:58:00,  7.52it/s]  0%|          | 33/265326543 [00:05<9776:42:08,  7.54it/s]  0%|          | 34/265326543 [00:05<9765:43:48,  7.55it/s]  0%|          | 35/265326543 [00:05<9756:29:39,  7.55it/s]  0%|          | 36/265326543 [00:05<9746:59:34,  7.56it/s]  0%|          | 37/265326543 [00:05<9740:12:36,  7.57it/s]  0%|          | 38/265326543 [00:05<9736:36:03,  7.57it/s]  0%|          | 39/265326543 [00:05<9733:52:26,  7.57it/s]  0%|          | 40/265326543 [00:05<9738:16:50,  7.57it/s]  0%|          | 41/265326543 [00:06<9798:37:49,  7.52it/s]  0%|          | 42/265326543 [00:06<9955:58:46,  7.40it/s]  0%|          | 43/265326543 [00:06<9954:25:29,  7.40it/s]  0%|          | 44/265326543 [00:06<9891:20:15,  7.45it/s]  0%|          | 45/265326543 [00:06<9841:50:49,  7.49it/s]  0%|          | 46/265326543 [00:06<9808:44:34,  7.51it/s]  0%|          | 47/265326543 [00:07<12541:07:00,  5.88it/s]  0%|          | 48/265326543 [00:07<11728:56:19,  6.28it/s]  0%|          | 49/265326543 [00:07<11131:01:29,  6.62it/s]  0%|          | 50/265326543 [00:07<10711:16:22,  6.88it/s]  0%|          | 51/265326543 [00:07<10419:42:09,  7.07it/s]  0%|          | 52/265326543 [00:07<10216:20:29,  7.21it/s]  0%|          | 53/265326543 [00:07<10071:25:55,  7.32it/s]  0%|          | 54/265326543 [00:07<9973:34:47,  7.39it/s]   0%|          | 55/265326543 [00:08<9898:02:07,  7.45it/s]  0%|          | 56/265326543 [00:08<9916:21:07,  7.43it/s]  0%|          | 57/265326543 [00:08<9869:30:55,  7.47it/s]  0%|          | 58/265326543 [00:08<9830:32:45,  7.50it/s]  0%|          | 59/265326543 [00:08<9802:46:19,  7.52it/s]  0%|          | 60/265326543 [00:08<9783:40:22,  7.53it/s]  0%|          | 62/265326543 [00:08<9360:48:40,  7.87it/s]  0%|          | 63/265326543 [00:09<9472:10:58,  7.78it/s]  0%|          | 64/265326543 [00:09<9545:11:14,  7.72it/s]  0%|          | 65/265326543 [00:09<9606:44:58,  7.67it/s]  0%|          | 66/265326543 [00:09<9638:30:28,  7.65it/s]  0%|          | 67/265326543 [00:09<9665:24:26,  7.63it/s]  0%|          | 68/265326543 [00:09<9679:29:51,  7.61it/s]  0%|          | 69/265326543 [00:09<9705:31:31,  7.59it/s]  0%|          | 70/265326543 [00:10<9715:04:54,  7.59it/s]  0%|          | 71/265326543 [00:10<9852:50:35,  7.48it/s]  0%|          | 72/265326543 [00:10<9828:39:50,  7.50it/s]  0%|          | 73/265326543 [00:10<9801:29:39,  7.52it/s]  0%|          | 74/265326543 [00:10<9788:40:21,  7.53it/s]  0%|          | 75/265326543 [00:10<9771:11:30,  7.54it/s]  0%|          | 76/265326543 [00:10<9758:04:37,  7.55it/s]  0%|          | 77/265326543 [00:10<9763:25:21,  7.55it/s]  0%|          | 78/265326543 [00:11<9766:52:04,  7.55it/s]  0%|          | 79/265326543 [00:11<9757:20:40,  7.55it/s]  0%|          | 80/265326543 [00:11<9755:40:49,  7.55it/s]  0%|          | 81/265326543 [00:11<9749:42:13,  7.56it/s]  0%|          | 82/265326543 [00:11<9741:44:43,  7.57it/s]  0%|          | 83/265326543 [00:11<9745:30:28,  7.56it/s]  0%|          | 84/265326543 [00:11<9760:34:53,  7.55it/s]  0%|          | 85/265326543 [00:12<9758:04:57,  7.55it/s]  0%|          | 86/265326543 [00:12<9752:03:29,  7.56it/s]  0%|          | 87/265326543 [00:12<9917:19:31,  7.43it/s]  0%|          | 88/265326543 [00:12<9881:07:31,  7.46it/s]  0%|          | 89/265326543 [00:12<9850:04:13,  7.48it/s]  0%|          | 90/265326543 [00:12<9825:55:40,  7.50it/s]  0%|          | 91/265326543 [00:12<9798:51:33,  7.52it/s]  0%|          | 92/265326543 [00:12<9793:53:09,  7.53it/s]  0%|          | 93/265326543 [00:13<9787:23:39,  7.53it/s]  0%|          | 94/265326543 [00:13<9772:44:22,  7.54it/s]  0%|          | 95/265326543 [00:13<9757:28:23,  7.55it/s]  0%|          | 96/265326543 [00:13<9745:29:04,  7.56it/s]  0%|          | 97/265326543 [00:13<9737:37:10,  7.57it/s]  0%|          | 98/265326543 [00:13<9735:43:11,  7.57it/s]  0%|          | 99/265326543 [00:13<9730:52:26,  7.57it/s]  0%|          | 100/265326543 [00:14<9729:32:34,  7.58it/s]                                                            {'loss': 0.2108, 'learning_rate': 2.9999994346587923e-05, 'epoch': 0.0}
+  0%|          | 100/265326543 [00:14<9729:32:34,  7.58it/s]  0%|          | 101/265326543 [00:14<10001:26:08,  7.37it/s]  0%|          | 102/265326543 [00:14<10155:16:34,  7.26it/s]  0%|          | 103/265326543 [00:14<10028:36:42,  7.35it/s]  0%|          | 104/265326543 [00:14<9951:39:37,  7.41it/s]   0%|          | 105/265326543 [00:14<9892:59:11,  7.45it/s]  0%|          | 106/265326543 [00:14<9846:46:30,  7.48it/s]  0%|          | 107/265326543 [00:14<9844:45:53,  7.49it/s]  0%|          | 108/265326543 [00:15<9889:54:20,  7.45it/s]  0%|          | 109/265326543 [00:15<9846:47:06,  7.48it/s]  0%|          | 110/265326543 [00:15<9814:28:15,  7.51it/s]  0%|          | 111/265326543 [00:15<9789:27:46,  7.53it/s]  0%|          | 112/265326543 [00:15<9775:25:33,  7.54it/s]  0%|          | 113/265326543 [00:15<9769:30:04,  7.54it/s]  0%|          | 114/265326543 [00:15<9760:33:43,  7.55it/s]  0%|          | 115/265326543 [00:16<9754:00:52,  7.56it/s]  0%|          | 116/265326543 [00:16<9755:12:32,  7.56it/s]  0%|          | 117/265326543 [00:16<10017:10:18,  7.36it/s]  0%|          | 118/265326543 [00:16<9948:29:10,  7.41it/s]   0%|          | 119/265326543 [00:16<9900:24:22,  7.44it/s]  0%|          | 120/265326543 [00:16<9862:43:02,  7.47it/s]  0%|          | 121/265326543 [00:16<9821:06:39,  7.50it/s]  0%|          | 122/265326543 [00:16<9809:04:17,  7.51it/s]  0%|          | 123/265326543 [00:17<9797:22:13,  7.52it/s]  0%|          | 124/265326543 [00:17<9393:20:35,  7.85it/s]  0%|          | 125/265326543 [00:17<10298:19:23,  7.16it/s]  0%|          | 126/265326543 [00:17<10132:06:08,  7.27it/s]  0%|          | 127/265326543 [00:17<10009:14:34,  7.36it/s]  0%|          | 128/265326543 [00:17<9923:08:08,  7.43it/s]   0%|          | 129/265326543 [00:17<9881:14:33,  7.46it/s]  0%|          | 130/265326543 [00:18<9840:37:33,  7.49it/s]  0%|          | 131/265326543 [00:18<9807:24:45,  7.51it/s]  0%|          | 132/265326543 [00:18<9951:24:51,  7.41it/s]  0%|          | 133/265326543 [00:18<9900:40:26,  7.44it/s]  0%|          | 134/265326543 [00:18<9857:57:35,  7.48it/s]  0%|          | 135/265326543 [00:18<9819:57:09,  7.51it/s]  0%|          | 136/265326543 [00:18<9793:14:30,  7.53it/s]  0%|          | 137/265326543 [00:18<9786:23:41,  7.53it/s]  0%|          | 138/265326543 [00:19<9783:48:57,  7.53it/s]  0%|          | 139/265326543 [00:19<9768:40:06,  7.54it/s]  0%|          | 140/265326543 [00:19<9758:48:49,  7.55it/s]  0%|          | 141/265326543 [00:19<9749:54:24,  7.56it/s]  0%|          | 142/265326543 [00:19<9742:58:34,  7.56it/s]  0%|          | 143/265326543 [00:19<9746:49:03,  7.56it/s]  0%|          | 144/265326543 [00:19<9745:12:18,  7.56it/s]  0%|          | 145/265326543 [00:20<9747:44:42,  7.56it/s]  0%|          | 146/265326543 [00:20<9748:24:39,  7.56it/s]  0%|          | 147/265326543 [00:20<9800:43:03,  7.52it/s]  0%|          | 148/265326543 [00:20<9796:17:34,  7.52it/s]  0%|          | 149/265326543 [00:20<9793:59:30,  7.53it/s]  0%|          | 150/265326543 [00:20<9781:59:45,  7.53it/s]  0%|          | 151/265326543 [00:20<9767:07:50,  7.55it/s]  0%|          | 152/265326543 [00:20<9787:52:10,  7.53it/s]  0%|          | 153/265326543 [00:21<9789:04:33,  7.53it/s]  0%|          | 154/265326543 [00:21<9776:17:35,  7.54it/s]  0%|          | 155/265326543 [00:21<9773:28:15,  7.54it/s]  0%|          | 156/265326543 [00:21<9768:43:02,  7.54it/s]  0%|          | 157/265326543 [00:21<9763:08:57,  7.55it/s]  0%|          | 158/265326543 [00:21<9755:09:01,  7.56it/s]  0%|          | 159/265326543 [00:21<9746:07:48,  7.56it/s]  0%|          | 160/265326543 [00:22<9741:42:48,  7.57it/s]  0%|          | 161/265326543 [00:22<9738:58:48,  7.57it/s]  0%|          | 162/265326543 [00:22<9785:51:00,  7.53it/s]  0%|          | 163/265326543 [00:22<9776:10:12,  7.54it/s]  0%|          | 164/265326543 [00:22<9763:08:12,  7.55it/s]  0%|          | 165/265326543 [00:22<9762:46:48,  7.55it/s]  0%|          | 166/265326543 [00:22<9755:19:27,  7.56it/s]  0%|          | 167/265326543 [00:22<9761:57:00,  7.55it/s]  0%|          | 168/265326543 [00:23<9756:05:14,  7.55it/s]  0%|          | 169/265326543 [00:23<9752:54:59,  7.56it/s]  0%|          | 171/265326543 [00:23<8808:23:24,  8.37it/s]  0%|          | 172/265326543 [00:23<9043:36:40,  8.15it/s]  0%|          | 173/265326543 [00:23<9225:48:13,  7.99it/s]  0%|          | 174/265326543 [00:23<9364:11:36,  7.87it/s]  0%|          | 175/265326543 [00:23<9483:06:15,  7.77it/s]  0%|          | 176/265326543 [00:24<9558:50:50,  7.71it/s]  0%|          | 177/265326543 [00:24<9680:38:44,  7.61it/s]  0%|          | 178/265326543 [00:24<10799:11:21,  6.82it/s]  0%|          | 179/265326543 [00:24<11591:10:25,  6.36it/s]  0%|          | 180/265326543 [00:24<11608:32:07,  6.35it/s]  0%|          | 181/265326543 [00:24<11818:36:35,  6.24it/s]  0%|          | 182/265326543 [00:25<11503:33:11,  6.41it/s]  0%|          | 183/265326543 [00:25<10981:30:35,  6.71it/s]***** Running Evaluation *****
+  Num examples = 265326543
+  Batch size = 1
+
+  0%|          | 0/265326543 [00:00<?, ?it/s][A
+  0%|          | 3/265326543 [00:00<3336:37:09, 22.09it/s][A
+  0%|          | 6/265326543 [00:00<4323:58:10, 17.04it/s][A
+  0%|          | 8/265326543 [00:00<4574:28:57, 16.11it/s][A
+  0%|          | 10/265326543 [00:00<4724:26:55, 15.60it/s][A
+  0%|          | 12/265326543 [00:00<4855:41:55, 15.18it/s][A
+  0%|          | 14/265326543 [00:00<4924:43:35, 14.97it/s][A
+  0%|          | 16/265326543 [00:01<4959:23:21, 14.86it/s][A
+  0%|          | 18/265326543 [00:01<4994:20:11, 14.76it/s][A
+  0%|          | 20/265326543 [00:01<5004:08:25, 14.73it/s][A
+  0%|          | 22/265326543 [00:01<5008:17:59, 14.72it/s][A
+  0%|          | 24/265326543 [00:01<5127:13:17, 14.37it/s][A
+  0%|          | 26/265326543 [00:01<5098:25:54, 14.46it/s][A
+  0%|          | 28/265326543 [00:01<5067:59:55, 14.54it/s][A                                                             
+                                                           [A{'eval_loss': 0.16881360113620758, 'eval_accuracy': 0.965675057208238, 'eval_f1': 0.4912689173457509, 'eval_matthews_correlation': 0.0, 'eval_precision': 0.482837528604119, 'eval_recall': 0.5, 'eval_runtime': 2.1013, 'eval_samples_per_second': 126268652.281, 'eval_steps_per_second': 126268652.281, 'epoch': 0.0}
+  0%|          | 184/265326543 [00:27<10981:30:35,  6.71it/s]
+  0%|          | 30/265326543 [00:01<5067:59:55, 14.54it/s][A
+                                                           [ASaving model checkpoint to output/BaBert_k6-TIS-PseudoLabel/checkpoint-184
+Configuration saved in output/BaBert_k6-TIS-PseudoLabel/checkpoint-184/config.json
+Model weights saved in output/BaBert_k6-TIS-PseudoLabel/checkpoint-184/pytorch_model.bin
+tokenizer config file saved in output/BaBert_k6-TIS-PseudoLabel/checkpoint-184/tokenizer_config.json
+Special tokens file saved in output/BaBert_k6-TIS-PseudoLabel/checkpoint-184/special_tokens_map.json
+
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+                                                             {'train_runtime': 37.3048, 'train_samples_per_second': 7112387.733, 'train_steps_per_second': 7112387.733, 'train_loss': 0.17048792735390042, 'epoch': 0.0}
+  0%|          | 184/265326543 [00:28<10981:30:35,  6.71it/s]  0%|          | 184/265326543 [00:28<11588:06:07,  6.36it/s]
+***** Running Evaluation *****
+  Num examples = 265326543
+  Batch size = 1
+  0%|          | 0/265326543 [00:00<?, ?it/s]  0%|          | 3/265326543 [00:00<3449:46:56, 21.36it/s]  0%|          | 6/265326543 [00:00<4445:42:04, 16.58it/s]  0%|          | 8/265326543 [00:00<4657:43:32, 15.82it/s]  0%|          | 10/265326543 [00:00<4767:39:07, 15.46it/s]  0%|          | 12/265326543 [00:00<4836:34:32, 15.24it/s]  0%|          | 14/265326543 [00:00<4899:54:43, 15.04it/s]  0%|          | 16/265326543 [00:01<4936:59:16, 14.93it/s]  0%|          | 18/265326543 [00:01<4962:01:45, 14.85it/s]  0%|          | 20/265326543 [00:01<4969:06:10, 14.83it/s]  0%|          | 22/265326543 [00:01<4973:56:36, 14.82it/s]  0%|          | 24/265326543 [00:01<4978:56:42, 14.80it/s]  0%|          | 26/265326543 [00:01<4981:06:21, 14.80it/s]  0%|          | 28/265326543 [00:01<4982:59:52, 14.79it/s]  0%|          | 30/265326543 [00:01<4795:15:53, 15.37it/s]
+slurmstepd-slurm-a100-gpu-h22a2-u18-sv: error: *** JOB 3305047 ON slurm-a100-gpu-h22a2-u18-sv CANCELLED AT 2025-02-09T17:16:38 ***

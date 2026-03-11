@@ -1,0 +1,50 @@
+2025-02-09 17:25:22 - INFO - ############################################################
+2025-02-09 17:25:31 - INFO - 1/4 - Fully used ../data/verified-genome/tis_iter//database/bacteria_1.csv for training
+2025-02-09 17:25:39 - INFO - 2/4 - Fully used ../data/verified-genome/tis_iter//database/bacteria_2.csv for training
+2025-02-09 17:25:45 - INFO - 3/4 - Fully used ../data/verified-genome/tis_iter//database/bacteria_3.csv for training
+2025-02-09 17:25:47 - INFO - 4/4 - Fully used ../data/verified-genome/tis_iter//database/bacteria_4.csv for training
+2025-02-09 20:56:50 - INFO - ############################################################
+2025-02-09 20:56:59 - INFO - 1/5 - Fully used ../data/verified-genome/tis_iter//database/bacteria_1.csv for training
+2025-02-09 20:57:07 - INFO - 2/5 - Fully used ../data/verified-genome/tis_iter//database/bacteria_2.csv for training
+2025-02-09 20:57:14 - INFO - 3/5 - Fully used ../data/verified-genome/tis_iter//database/bacteria_3.csv for training
+2025-02-09 20:57:16 - INFO - 4/5 - Fully used ../data/verified-genome/tis_iter//database/bacteria_4.csv for training
+2025-02-09 20:57:16 - INFO - 5/5 - Fully used ../data/verified-genome/tis_iter//database/bacteria_pseudo1.csv for training
+2025-02-09 20:59:44 - INFO - ############################################################
+2025-02-09 20:59:53 - INFO - 1/5 - Fully used ../data/verified-genome/tis_iter//database/bacteria_1.csv for training
+2025-02-09 21:00:01 - INFO - 2/5 - Fully used ../data/verified-genome/tis_iter//database/bacteria_2.csv for training
+2025-02-09 21:00:08 - INFO - 3/5 - Fully used ../data/verified-genome/tis_iter//database/bacteria_3.csv for training
+2025-02-09 21:00:09 - INFO - 4/5 - Fully used ../data/verified-genome/tis_iter//database/bacteria_4.csv for training
+2025-02-09 21:00:10 - INFO - 5/5 - Fully used ../data/verified-genome/tis_iter//database/bacteria_pseudo1.csv for training
+2025-02-09 21:03:07 - INFO - ############################################################
+2025-02-09 21:03:16 - INFO - 1/5 - Fully used ../data/verified-genome/tis_iter//database/bacteria_1.csv for training
+2025-02-09 21:03:24 - INFO - 2/5 - Fully used ../data/verified-genome/tis_iter//database/bacteria_2.csv for training
+2025-02-09 21:03:30 - INFO - 3/5 - Fully used ../data/verified-genome/tis_iter//database/bacteria_3.csv for training
+2025-02-09 21:03:32 - INFO - 4/5 - Fully used ../data/verified-genome/tis_iter//database/bacteria_4.csv for training
+2025-02-09 21:03:35 - INFO - 5/5 - Fully used ../data/verified-genome/tis_iter//database/bacteria_pseudo2.csv for training
+2025-02-09 21:06:23 - INFO - ############################################################
+2025-02-09 21:06:32 - INFO - 1/5 - Fully used ../data/verified-genome/tis_iter//database/bacteria_1.csv for training
+2025-02-09 21:06:41 - INFO - 2/5 - Fully used ../data/verified-genome/tis_iter//database/bacteria_2.csv for training
+2025-02-09 21:06:47 - INFO - 3/5 - Fully used ../data/verified-genome/tis_iter//database/bacteria_3.csv for training
+2025-02-09 21:06:49 - INFO - 4/5 - Fully used ../data/verified-genome/tis_iter//database/bacteria_4.csv for training
+2025-02-09 21:06:49 - INFO - 5/5 - Fully used ../data/verified-genome/tis_iter//database/bacteria_pseudo1.csv for training
+2025-02-09 21:46:57 - INFO - ############################################################
+2025-02-09 21:47:06 - INFO - 1/6 - Fully used ../data/verified-genome/tis_iter//database/bacteria_1.csv for training
+2025-02-09 21:47:14 - INFO - 2/6 - Fully used ../data/verified-genome/tis_iter//database/bacteria_2.csv for training
+2025-02-09 21:47:20 - INFO - 3/6 - Fully used ../data/verified-genome/tis_iter//database/bacteria_3.csv for training
+2025-02-09 21:47:22 - INFO - 4/6 - Fully used ../data/verified-genome/tis_iter//database/bacteria_4.csv for training
+2025-02-09 21:47:23 - INFO - 5/6 - Fully used ../data/verified-genome/tis_iter//database/bacteria_pseudo1.csv for training
+2025-02-09 21:47:23 - INFO - 6/6 - Fully used ../data/verified-genome/tis_iter//database/bacteria_pseudo2.csv for training
+2025-02-09 21:47:27 - INFO - ############################################################
+2025-02-09 21:47:35 - INFO - 1/6 - Fully used ../data/verified-genome/tis_iter//database/bacteria_1.csv for training
+2025-02-09 21:47:43 - INFO - 2/6 - Fully used ../data/verified-genome/tis_iter//database/bacteria_2.csv for training
+2025-02-09 21:47:49 - INFO - 3/6 - Fully used ../data/verified-genome/tis_iter//database/bacteria_3.csv for training
+2025-02-09 21:47:51 - INFO - 4/6 - Fully used ../data/verified-genome/tis_iter//database/bacteria_4.csv for training
+2025-02-09 21:47:51 - INFO - 5/6 - Fully used ../data/verified-genome/tis_iter//database/bacteria_pseudo1.csv for training
+2025-02-09 21:47:52 - INFO - 6/6 - Fully used ../data/verified-genome/tis_iter//database/bacteria_pseudo2.csv for training
+2025-02-09 21:47:56 - INFO - ############################################################
+2025-02-09 21:48:04 - INFO - 1/6 - Fully used ../data/verified-genome/tis_iter//database/bacteria_1.csv for training
+2025-02-09 21:48:12 - INFO - 2/6 - Fully used ../data/verified-genome/tis_iter//database/bacteria_2.csv for training
+2025-02-09 21:48:18 - INFO - 3/6 - Fully used ../data/verified-genome/tis_iter//database/bacteria_3.csv for training
+2025-02-09 21:48:20 - INFO - 4/6 - Fully used ../data/verified-genome/tis_iter//database/bacteria_4.csv for training
+2025-02-09 21:48:20 - INFO - 5/6 - Fully used ../data/verified-genome/tis_iter//database/bacteria_pseudo1.csv for training
+2025-02-09 21:48:21 - INFO - 6/6 - Fully used ../data/verified-genome/tis_iter//database/bacteria_pseudo2.csv for training

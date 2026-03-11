@@ -1,8 +1,8 @@
 webtool/venv
 .DS_Store
 finetune/generate_structure.py
-finetune/data-pipeline/*
-finetune/train-pipeline/*
+# finetune/data-pipeline/*
+# finetune/train-pipeline/*
 # benchmark
 webtool/developer-lab/__files__
 webtool/developer-lab/.ipynb_checkpoints

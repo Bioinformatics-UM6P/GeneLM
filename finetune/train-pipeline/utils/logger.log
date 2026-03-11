@@ -1,0 +1,21 @@
+2025-01-31 17:09:41 - WARNING - Just for test purpose
+2025-02-01 01:51:03 - WARNING - Missing bacteria: GCA_045788535.1_ASM4578853v1
+2025-02-01 02:31:34 - WARNING - Missing bacteria: GCA_045866535.1_ASM4586653v1
+2025-02-01 03:33:42 - WARNING - Missing bacteria: GCA_045862825.1_ASM4586282v1
+2025-02-01 13:35:40 - WARNING - Missing bacteria: GCA_045788535.1_ASM4578853v1
+2025-02-01 13:37:27 - WARNING - Missing bacteria: GCA_045866535.1_ASM4586653v1
+2025-02-01 13:40:24 - WARNING - Missing bacteria: GCA_045862825.1_ASM4586282v1
+2025-02-02 03:41:33 - WARNING - No matching negative samples found. Returning only positive class data.: GCA_003054475.1_ASM305447v1
+2025-02-02 04:22:47 - WARNING - No matching negative samples found. Returning only positive class data.: GCA_943169635.2_ASM94316963v2
+2025-02-02 04:22:51 - WARNING - No matching negative samples found. Returning only positive class data.: GCA_943169825.2_ASM94316982v2
+2025-02-02 04:49:19 - WARNING - Missing bacteria: GCA_045788535.1_ASM4578853v1
+2025-02-02 05:08:45 - WARNING - Missing bacteria: GCA_045866535.1_ASM4586653v1
+2025-02-02 05:13:01 - WARNING - No matching negative samples found. Returning only positive class data.: GCA_943169635.2_ASM94316963v2
+2025-02-02 05:13:03 - WARNING - No matching negative samples found. Returning only positive class data.: GCA_943169825.2_ASM94316982v2
+2025-02-02 05:39:07 - WARNING - Missing bacteria: GCA_045862825.1_ASM4586282v1
+2025-02-07 14:55:52 - WARNING - No matching negative samples found. Returning only positive class data.: bacteria_4262.csv
+2025-02-07 14:56:12 - WARNING - No matching negative samples found. Returning only positive class data.: bacteria_4262.csv
+2025-02-07 14:56:12 - WARNING - No matching negative samples found. Returning only positive class data.: bacteria_5199.csv
+2025-02-07 14:56:12 - WARNING - No matching negative samples found. Returning only positive class data.: bacteria_3455.csv
+2025-02-07 14:56:12 - WARNING - No matching negative samples found. Returning only positive class data.: bacteria_5198.csv
+2025-02-07 14:56:12 - WARNING - No matching negative samples found. Returning only positive class data.: bacteria_4261.csv

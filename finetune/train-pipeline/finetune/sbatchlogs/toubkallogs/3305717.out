@@ -1,0 +1,4 @@
+Input Notebook:  train_tis_iter.ipynb
+Output Notebook: train_tis_iter-out2.ipynb
+Executing:   0%|          | 0/24 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:   4%|▍         | 1/24 [00:05<01:59,  5.18s/cell]Executing:  21%|██        | 5/24 [00:07<00:25,  1.32s/cell]Executing:  38%|███▊      | 9/24 [00:08<00:10,  1.38cell/s]Executing:  46%|████▌     | 11/24 [00:11<00:12,  1.05cell/s]Executing:  50%|█████     | 12/24 [26:15<52:30, 262.57s/cell]Executing:  54%|█████▍    | 13/24 [26:18<38:58, 212.58s/cell]Executing:  58%|█████▊    | 14/24 [26:21<27:52, 167.21s/cell]Executing:  67%|██████▋   | 16/24 [26:22<13:47, 103.49s/cell]Executing:  83%|████████▎ | 20/24 [26:22<03:18, 49.51s/cell] Executing:  96%|█████████▌| 23/24 [26:22<00:31, 31.77s/cell]Executing: 100%|██████████| 24/24 [26:23<00:00, 65.98s/cell]

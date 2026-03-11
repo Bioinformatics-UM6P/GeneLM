@@ -1,0 +1,69 @@
+The provided kmer is: 6, data_path is ../data/cds/BacteriaCDS-ORFSeq2Class-v2/
+CUDA available: True
+field size limit: 9223372036854775807
+DNABertForSequenceClassification(
+  (bert): BertModel(
+    (embeddings): BertEmbeddings(
+      (word_embeddings): Embedding(4101, 768, padding_idx=0)
+      (position_embeddings): Embedding(512, 768)
+      (token_type_embeddings): Embedding(2, 768)
+      (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (encoder): BertEncoder(
+      (layer): ModuleList(
+        (0-11): 12 x BertLayer(
+          (attention): BertAttention(
+            (self): BertSelfAttention(
+              (query): Linear(in_features=768, out_features=768, bias=True)
+              (key): Linear(in_features=768, out_features=768, bias=True)
+              (value): Linear(in_features=768, out_features=768, bias=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (output): BertSelfOutput(
+              (dense): Linear(in_features=768, out_features=768, bias=True)
+              (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (intermediate): BertIntermediate(
+            (dense): Linear(in_features=768, out_features=3072, bias=True)
+            (intermediate_act_fn): GELUActivation()
+          )
+          (output): BertOutput(
+            (dense): Linear(in_features=3072, out_features=768, bias=True)
+            (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+      )
+    )
+    (pooler): BertPooler(
+      (dense): Linear(in_features=768, out_features=768, bias=True)
+      (activation): Tanh()
+    )
+  )
+  (dropout): Dropout(p=0.1, inplace=False)
+  (classifier): Linear(in_features=768, out_features=2, bias=True)
+)
+Using cuda_amp half precision backend
+***** Running training *****
+  Num examples = 14,901,258
+  Num Epochs = 1
+  Instantaneous batch size per device = 1
+  Total train batch size (w. parallel, distributed & accumulation) = 1
+  Gradient Accumulation steps = 1
+  Total optimization steps = 14,901,258
+  Number of trainable parameters = 89,192,450
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+wandb: Currently logged in as: genereux-akotenou (genereux-akotenou-local). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.19.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.17.7
+wandb: Run data is saved locally in /srv/lustre01/project/genomics-um6p-st-agc-vmauca60agi/users/mahouzonssou.akoteno/gLMs/GeneAnnotator/finetune/wandb/run-20250205_132501-dvxxl1uw
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run DNABERT-kmer6
+wandb: ⭐️ View project at https://wandb.ai/genereux-akotenou-local/CDS_BaBert_k6-db_v2
+wandb: 🚀 View run at https://wandb.ai/genereux-akotenou-local/CDS_BaBert_k6-db_v2/runs/dvxxl1uw
+  0%|          | 0/14901258 [00:00<?, ?it/s][rank0]:[W205 13:25:09.610987624 reducer.cpp:1400] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+  0%|          | 1/14901258 [00:01<7765:56:29,  1.88s/it]  0%|          | 2/14901258 [00:02<5182:14:52,  1.25s/it]  0%|          | 3/14901258 [00:03<4315:51:09,  1.04s/it]  0%|          | 4/14901258 [00:04<3903:39:34,  1.06it/s]  0%|          | 5/14901258 [00:05<3682:05:28,  1.12it/s]  0%|          | 6/14901258 [00:05<3543:43:53,  1.17it/s]  0%|          | 7/14901258 [00:06<3480:33:56,  1.19it/s]  0%|          | 8/14901258 [00:07<3412:42:37,  1.21it/s]  0%|          | 9/14901258 [00:08<3368:02:17,  1.23it/s]  0%|          | 10/14901258 [00:09<3344:53:35,  1.24it/s]  0%|          | 11/14901258 [00:09<3322:10:57,  1.25it/s]  0%|          | 12/14901258 [00:10<3310:33:47,  1.25it/s]  0%|          | 13/14901258 [00:11<3300:36:46,  1.25it/s]  0%|          | 14/14901258 [00:12<3292:33:04,  1.26it/s]  0%|          | 15/14901258 [00:13<3289:05:11,  1.26it/s]  0%|          | 16/14901258 [00:13<3283:27:41,  1.26it/s]  0%|          | 17/14901258 [00:14<3281:14:14,  1.26it/s]  0%|          | 18/14901258 [00:15<3280:51:22,  1.26it/s]  0%|          | 19/14901258 [00:16<3279:00:53,  1.26it/s]  0%|          | 20/14901258 [00:16<2952:20:38,  1.40it/s]  0%|          | 21/14901258 [00:17<3197:01:48,  1.29it/s]  0%|          | 22/14901258 [00:18<3194:45:46,  1.30it/s]  0%|          | 23/14901258 [00:19<3193:30:35,  1.30it/s]  0%|          | 24/14901258 [00:19<2364:49:55,  1.75it/s]  0%|          | 25/14901258 [00:20<2668:56:47,  1.55it/s]  0%|          | 26/14901258 [00:20<2860:47:11,  1.45it/s]  0%|          | 27/14901258 [00:21<2980:25:35,  1.39it/s]  0%|          | 28/14901258 [00:22<3066:05:24,  1.35it/s]  0%|          | 29/14901258 [00:23<3124:35:40,  1.32it/s]  0%|          | 30/14901258 [00:24<3164:45:31,  1.31it/s]  0%|          | 31/14901258 [00:24<3255:20:29,  1.27it/s]  0%|          | 32/14901258 [00:25<3257:19:42,  1.27it/s]  0%|          | 33/14901258 [00:26<2877:14:11,  1.44it/s]  0%|          | 34/14901258 [00:26<3038:40:17,  1.36it/s]  0%|          | 35/14901258 [00:27<3102:13:26,  1.33it/s]  0%|          | 36/14901258 [00:27<2311:17:58,  1.79it/s]  0%|          | 37/14901258 [00:28<2604:17:09,  1.59it/s]  0%|          | 38/14901258 [00:29<2831:23:09,  1.46it/s]  0%|          | 39/14901258 [00:30<2948:04:46,  1.40it/s]  0%|          | 40/14901258 [00:31<3034:05:50,  1.36it/s]  0%|          | 41/14901258 [00:31<2277:54:59,  1.82it/s]  0%|          | 42/14901258 [00:31<2579:49:40,  1.60it/s]  0%|          | 43/14901258 [00:32<2782:20:00,  1.49it/s]  0%|          | 44/14901258 [00:33<2925:05:12,  1.42it/s]  0%|          | 45/14901258 [00:33<2417:21:59,  1.71it/s]  0%|          | 46/14901258 [00:34<2702:06:12,  1.53it/s]  0%|          | 47/14901258 [00:35<2890:30:11,  1.43it/s]  0%|          | 48/14901258 [00:36<2994:54:19,  1.38it/s]  0%|          | 49/14901258 [00:36<3074:34:04,  1.35it/s]  0%|          | 50/14901258 [00:37<3128:51:35,  1.32it/s]  0%|          | 51/14901258 [00:38<3162:29:26,  1.31it/s]  0%|          | 52/14901258 [00:39<3187:35:45,  1.30it/s]  0%|          | 53/14901258 [00:40<3205:43:18,  1.29it/s]  0%|          | 54/14901258 [00:40<2422:08:21,  1.71it/s]  0%|          | 55/14901258 [00:41<2699:00:43,  1.53it/s]  0%|          | 56/14901258 [00:41<2861:04:42,  1.45it/s]  0%|          | 57/14901258 [00:42<2983:59:37,  1.39it/s]  0%|          | 58/14901258 [00:43<3058:53:25,  1.35it/s]  0%|          | 59/14901258 [00:44<3115:54:42,  1.33it/s]slurmstepd-slurm-a100-gpu-h22a2-u26-sv: error: *** JOB 3293384 ON slurm-a100-gpu-h22a2-u26-sv CANCELLED AT 2025-02-05T13:25:52 ***

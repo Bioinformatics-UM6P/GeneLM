@@ -1,0 +1,4 @@
+Input Notebook:  train_tis_iter.ipynb
+Output Notebook: train_tis_iter-out2.ipynb
+Executing:   0%|          | 0/24 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:   4%|▍         | 1/24 [00:05<02:05,  5.44s/cell]Executing:  21%|██        | 5/24 [00:07<00:25,  1.35s/cell]Executing:  38%|███▊      | 9/24 [00:08<00:11,  1.35cell/s]Executing:  46%|████▌     | 11/24 [00:14<00:17,  1.34s/cell]slurmstepd-slurm-a100-gpu-h22a2-u14-sv: error: *** JOB 3305713 ON slurm-a100-gpu-h22a2-u14-sv CANCELLED AT 2025-02-09T21:10:38 ***

@@ -1,0 +1,31 @@
+The provided kmer is: 6, data_path is ../data/cds/BacteriaCDS-ORFSeq2Class-v2/
+Traceback (most recent call last):
+  File "/home/mahouzonssou.akoteno/.conda/envs/dnabert/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/mahouzonssou.akoteno/.conda/envs/dnabert/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 348, in wrapper
+    return f(*args, **kwargs)
+  File "/home/mahouzonssou.akoteno/.conda/envs/dnabert/lib/python3.8/site-packages/torch/distributed/run.py", line 901, in main
+    run(args)
+  File "/home/mahouzonssou.akoteno/.conda/envs/dnabert/lib/python3.8/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/home/mahouzonssou.akoteno/.conda/envs/dnabert/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 133, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/mahouzonssou.akoteno/.conda/envs/dnabert/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    result = agent.run()
+  File "/home/mahouzonssou.akoteno/.conda/envs/dnabert/lib/python3.8/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/home/mahouzonssou.akoteno/.conda/envs/dnabert/lib/python3.8/site-packages/torch/distributed/elastic/agent/server/api.py", line 680, in run
+    result = self._invoke_run(role)
+  File "/home/mahouzonssou.akoteno/.conda/envs/dnabert/lib/python3.8/site-packages/torch/distributed/elastic/agent/server/api.py", line 829, in _invoke_run
+    self._initialize_workers(self._worker_group)
+  File "/home/mahouzonssou.akoteno/.conda/envs/dnabert/lib/python3.8/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/home/mahouzonssou.akoteno/.conda/envs/dnabert/lib/python3.8/site-packages/torch/distributed/elastic/agent/server/api.py", line 652, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/home/mahouzonssou.akoteno/.conda/envs/dnabert/lib/python3.8/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/home/mahouzonssou.akoteno/.conda/envs/dnabert/lib/python3.8/site-packages/torch/distributed/elastic/agent/server/api.py", line 489, in _rendezvous
+    rdzv_info = spec.rdzv_handler.next_rendezvous()
+  File "/home/mahouzonssou.akoteno/.conda/envs/dnabert/lib/python3.8/site-packages/torch/distributed/elastic/rendezvous/static_tcp_rendezvous.py", line 66, in next_rendezvous
+    self._store = TCPStore(  # type: ignore[call-arg]
+RuntimeError: The server socket has failed to listen on any local network address. useIpv6: 0, code: -98, name: EADDRINUSE, message: address already in use

@@ -1,0 +1,14 @@
+{
+    "train": [
+        "bacteria_5.csv",
+        "bacteria_2.csv",
+        "bacteria_3.csv",
+        "bacteria_4.csv"
+    ],
+    "test": [
+        "bacteria_1.csv"
+    ],
+    "dev": [
+        "bacteria_1.csv"
+    ]
+}
